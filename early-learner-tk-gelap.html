@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-fixed-variant":"#5c4200","surface-variant":"#e4e2dc","on-primary-container":"#563d00","background":"#fbf9f2","on-tertiary-container":"#18407b","on-primary-fixed":"#261900","on-tertiary-fixed":"#001b3f","on-background":"#1b1c18","on-tertiary":"#ffffff","emerald":"#059669","secondary-fixed-dim":"#b6c7eb","primary":"#7a5900","surface":"#fbf9f2","on-secondary":"#ffffff","inverse-on-surface":"#f3f1ea","secondary":"#4e5f7e","tertiary-container":"#8caef0","surface-container-high":"#eae8e1","red":"#DC2626","tertiary-fixed-dim":"#abc7ff","outline":"#807665","surface-tint":"#7a5900","inverse-surface":"#30312c","error":"#ba1a1a","amber":"#F59E0B","tertiary":"#3b5e9a","on-error-container":"#93000a","primary-fixed":"#ffdea2","primary-fixed-dim":"#efc05d","on-surface":"#1b1c18","on-error":"#ffffff","error-container":"#ffdad6","secondary-fixed":"#d6e3ff","surface-bright":"#fbf9f2","surface-container-highest":"#e4e2dc","primary-container":"#d4a747","surface-container":"#f0eee7","inverse-primary":"#efc05d","on-secondary-fixed-variant":"#364765","surface-container-lowest":"#ffffff","secondary-container":"#c9daff","on-secondary-fixed":"#081b37","surface-dim":"#dcdad3","outline-variant":"#d2c5b1","on-secondary-container":"#4f5f7f","tertiary-fixed":"#d7e2ff","on-surface-variant":"#4e4637","on-primary":"#ffffff","surface-container-low":"#f6f4ed","on-tertiary-fixed-variant":"#1f4681"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{gutter:"1.5rem",margin:"2rem","space-md":"1rem","space-lg":"1.5rem","space-xl":"2.5rem","space-xs":"0.25rem","space-sm":"0.5rem"},fontFamily:{"body-md":["Poppins"],"label-md":["Poppins"],"headline-md":["Poppins"],timer:["JetBrains Mono"],"title-md":["Poppins"],"headline-sm":["Poppins"],"body-sm":["Poppins"],"body-lg":["Poppins"],"headline-lg-mobile":["Poppins"],"label-sm":["Poppins"],"headline-xl":["Poppins"],"headline-lg":["Poppins"],"title-lg":["Poppins"]},fontSize:{"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"label-md":["14px",{lineHeight:"20px",fontWeight:"500"}],"headline-md":["24px",{lineHeight:"32px",fontWeight:"600"}],timer:["16px",{lineHeight:"20px",fontWeight:"600"}],"title-md":["16px",{lineHeight:"22px",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"headline-lg-mobile":["26px",{lineHeight:"32px",fontWeight:"700"}],"label-sm":["12px",{lineHeight:"16px",fontWeight:"500"}],"headline-xl":["40px",{lineHeight:"48px",fontWeight:"700"}],"headline-lg":["32px",{lineHeight:"40px",fontWeight:"700"}],"title-lg":["18px",{lineHeight:"24px",fontWeight:"600"}]}}}};</script>  <link rel="stylesheet" href="assets/medalis_interactive.css">
+</head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl border-b border-surface-container-highest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-[72px] w-full px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md shrink-0"><img alt="medalis_logo_transparent.png" class="h-8 w-auto object-contain" src="assets/medalis_logo.svg"/><span class="font-title-lg text-title-lg tracking-wider text-primary uppercase select-none">MEDALIS</span><nav class="hidden xl:flex items-center gap-gutter ml-space-md" data-active-classes="text-primary font-title-md"><a aria-current="page" class="transition-colors text-primary font-title-md" data-path="beranda" href="dashboard-gelap.html" style="text-decoration:none;">Beranda</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="modul" href="daftar-modul-gelap.html" style="text-decoration:none;">Modul</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="tryout" href="lobby-tryout-gelap.html" style="text-decoration:none;">Tryout</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="guru-ai" href="guru-ai-gelap.html" style="text-decoration:none;">Guru AI</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="timeline" href="prep-timeline-gelap.html" style="text-decoration:none;">Timeline</a></nav></div><div class="flex items-center justify-center shrink-0"><div class="inline-flex items-center gap-space-sm px-space-md py-space-xs rounded-full bg-surface-container border border-surface-container-highest"><span class="w-2.5 h-2.5 rounded-full bg-emerald shrink-0"></span><span class="font-label-sm text-label-sm text-on-surface">Mode Bunda: soal 3 dari 10</span></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden md:inline-flex items-center p-space-xs rounded-full bg-surface-container border border-surface-container-highest"><a href="early-learner-tk-terang.html" class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-[0_1px_4px_rgba(0,0,0,0.04)]" style="text-decoration:none;"><span class="material-symbols-outlined text-[16px]">light_mode</span><span>Terang</span></a><a href="early-learner-tk-gelap.html" class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" style="text-decoration:none;"><span class="material-symbols-outlined text-[16px]">dark_mode</span><span>Gelap</span></a><a href="javascript:void(0)" onclick="handleAutoTheme()" class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" style="text-decoration:none; cursor:pointer;" title="Ikuti tema sistem OS"><span class="material-symbols-outlined text-[16px]">settings_brightness</span><span>Sistem</span></a></div><div class="h-8 w-px bg-surface-container-highest hidden md:block"></div><div class="flex items-center gap-space-sm p-space-xs pr-space-md rounded-full hover:bg-surface-container transition-colors cursor-pointer select-none"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden lg:flex flex-col text-left"><span class="font-label-sm text-label-sm text-on-surface leading-tight">Bunda &amp; Kenzo</span><span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">(TK B)</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span></div></div></div></header><main class="w-full pt-[72px] bg-surface min-h-[calc(100vh-72px)]"><div class="flex flex-col w-full">
+<!-- Interactive Practice Workspace (iPad Landscape Optimized: 1024px-1180px) -->
+<div class="w-full max-w-[1140px] mx-auto px-gutter py-space-lg flex flex-col gap-space-lg">
+<!-- Question Banner & Audio Read-Aloud Bar -->
+<section class="w-full bg-surface-container-lowest/80 backdrop-blur-md rounded-xl p-space-lg shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-lg w-full md:w-auto">
+<!-- Floating Audio Reader for Pre-readers (Touch target >= 64px) -->
+<button aria-label="Bacakan Soal" class="w-16 h-16 rounded-full bg-primary-container text-on-primary-fixed flex items-center justify-center shrink-0 shadow-md hover:scale-105 active:scale-95 transition-transform group cursor-pointer" id="btn-audio" type="button">
+<span class="material-symbols-outlined text-[32px] group-hover:animate-pulse">volume_up</span>
+</button>
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs">
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wide">Matematika Spasial</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">• Tingkat Persiapan TK B</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface leading-tight">
+            Sentuh balok yang paling tinggi ya!
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Bantu robot kecil menemukan menara balok tertinggi untuk menaruh bendera bintang emas!
+          </p>
+</div>
+</div>
+<!-- Compact Supervised Progress Tag -->
+<div class="hidden md:flex flex-col items-end gap-space-xs shrink-0 bg-surface-container-low px-space-md py-space-sm rounded-lg">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-emerald">verified_user</span>
+<span>Sesi Pendampingan Bunda</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="w-4 h-2.5 rounded-full bg-primary-container"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-variant"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-variant"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-variant"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-variant"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-variant"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-variant"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-variant"></span>
+</div>
+</div>
+</section>
+<!-- 2x2 Interactive High-Contrast Picture Block Cards (Touch Targets >= 64px) -->
+<section class="w-full">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-lg">
+<!-- CARD A: 2 Blocks (Sedang-Pendek) -->
+<button class="option-card w-full h-[220px] rounded-xl bg-surface-container-lowest p-space-md flex flex-col justify-between items-center text-center shadow-sm hover:shadow-md hover:bg-surface-container-low transition-all cursor-pointer relative group" type="button">
+<div class="w-full flex items-center justify-between px-space-xs">
+<span class="font-title-md text-title-md text-on-surface-variant group-hover:text-primary transition-colors">Menara A</span>
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant font-label-md text-label-md">A</span>
+</div>
+<!-- Block Illustration SVG -->
+<div class="w-full flex-1 flex items-end justify-center pb-space-xs">
+<svg class="overflow-visible" fill="none" height="130" viewbox="0 0 100 130" width="100" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#3b5e9a" height="38" rx="6" width="64" x="18" y="86"></rect>
+<rect fill="#ffffff" fill-opacity="0.3" height="6" rx="3" width="52" x="24" y="92"></rect>
+<rect fill="#8caef0" height="38" rx="6" width="56" x="22" y="44"></rect>
+<rect fill="#ffffff" fill-opacity="0.4" height="6" rx="3" width="44" x="28" y="50"></rect>
+<line stroke="#d2c5b1" stroke-linecap="round" stroke-width="4" x1="10" x2="90" y1="126" y2="126"></line>
+</svg>
+</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">2 Tingkat Balok</div>
+</button>
+<!-- CARD B: 5 Blocks (Paling Tinggi - SELECTED STATE) -->
+<button class="option-card selected-card w-full h-[220px] rounded-xl bg-surface-container-lowest p-space-md flex flex-col justify-between items-center text-center shadow-md bg-gradient-to-b from-surface-container-lowest to-surface-container-low ring-4 ring-emerald transition-all cursor-pointer relative group" type="button">
+<!-- Active Selection Pill & Star Badge -->
+<div class="absolute -top-3 right-space-md bg-emerald text-on-tertiary px-space-md py-0.5 rounded-full flex items-center gap-space-xs shadow-sm">
+<span class="material-symbols-outlined text-[16px]">grade</span>
+<span class="font-label-sm text-label-sm font-semibold">Pilihan Kenzo</span>
+</div>
+<div class="w-full flex items-center justify-between px-space-xs">
+<span class="font-title-md text-title-md text-emerald font-bold">Menara B</span>
+<span class="w-8 h-8 rounded-full bg-emerald text-on-tertiary flex items-center justify-center font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</span>
+</div>
+<!-- 5 Stacked Blocks + Golden Star Symbol -->
+<div class="w-full flex-1 flex items-end justify-center pb-space-xs">
+<svg class="overflow-visible" fill="none" height="150" viewbox="0 0 120 150" width="120" xmlns="http://www.w3.org/2000/svg">
+<!-- Star Topper on Flag Pole -->
+<path d="M60 4 L63 12 L71 13 L65 19 L67 27 L60 22 L53 27 L55 19 L49 13 L57 12 Z" fill="#d4a747" stroke="#7a5900" stroke-width="1.5"></path>
+<line stroke="#7a5900" stroke-width="2" x1="60" x2="60" y1="24" y2="34"></line>
+<!-- Block 5 (Top) -->
+<rect fill="#d4a747" height="20" rx="4" width="36" x="42" y="34"></rect>
+<!-- Block 4 -->
+<rect fill="#059669" height="20" rx="4" width="48" x="36" y="56"></rect>
+<!-- Block 3 -->
+<rect fill="#ba1a1a" height="20" rx="4" width="60" x="30" y="78"></rect>
+<!-- Block 2 -->
+<rect fill="#3b5e9a" height="20" rx="4" width="72" x="24" y="100"></rect>
+<!-- Block 1 (Base) -->
+<rect fill="#7a5900" height="22" rx="5" width="84" x="18" y="122"></rect>
+<!-- Floor line -->
+<line stroke="#059669" stroke-linecap="round" stroke-width="4" x1="8" x2="112" y1="146" y2="146"></line>
+</svg>
+</div>
+<div class="text-emerald font-title-md text-title-md font-semibold">5 Tingkat Balok (Tertinggi!)</div>
+</button>
+<!-- CARD C: 3 Blocks (Sedang) -->
+<button class="option-card w-full h-[220px] rounded-xl bg-surface-container-lowest p-space-md flex flex-col justify-between items-center text-center shadow-sm hover:shadow-md hover:bg-surface-container-low transition-all cursor-pointer relative group" type="button">
+<div class="w-full flex items-center justify-between px-space-xs">
+<span class="font-title-md text-title-md text-on-surface-variant group-hover:text-primary transition-colors">Menara C</span>
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant font-label-md text-label-md">C</span>
+</div>
+<!-- Block Illustration SVG -->
+<div class="w-full flex-1 flex items-end justify-center pb-space-xs">
+<svg class="overflow-visible" fill="none" height="130" viewbox="0 0 100 130" width="100" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#F59E0B" height="28" rx="5" width="60" x="20" y="96"></rect>
+<rect fill="#efc05d" height="26" rx="5" width="48" x="26" y="66"></rect>
+<rect fill="#d4a747" height="24" rx="4" width="36" x="32" y="38"></rect>
+<line stroke="#d2c5b1" stroke-linecap="round" stroke-width="4" x1="10" x2="90" y1="126" y2="126"></line>
+</svg>
+</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">3 Tingkat Balok</div>
+</button>
+<!-- CARD D: 1 Block (Paling Rendah) -->
+<button class="option-card w-full h-[220px] rounded-xl bg-surface-container-lowest p-space-md flex flex-col justify-between items-center text-center shadow-sm hover:shadow-md hover:bg-surface-container-low transition-all cursor-pointer relative group" type="button">
+<div class="w-full flex items-center justify-between px-space-xs">
+<span class="font-title-md text-title-md text-on-surface-variant group-hover:text-primary transition-colors">Menara D</span>
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant font-label-md text-label-md">D</span>
+</div>
+<!-- Block Illustration SVG -->
+<div class="w-full flex-1 flex items-end justify-center pb-space-xs">
+<svg class="overflow-visible" fill="none" height="130" viewbox="0 0 100 130" width="100" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#8caef0" height="36" rx="6" width="50" x="25" y="88"></rect>
+<rect fill="#ffffff" fill-opacity="0.4" height="6" rx="3" width="40" x="30" y="94"></rect>
+<line stroke="#d2c5b1" stroke-linecap="round" stroke-width="4" x1="12" x2="88" y1="126" y2="126"></line>
+</svg>
+</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">1 Tingkat Saja</div>
+</button>
+</div>
+</section>
+<!-- Bottom Actions Control Bar (iPad Ergonomic Layout: min 48px - 56px touch target) -->
+<footer class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<!-- Previous Question Button -->
+<button class="h-14 px-space-lg rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors flex items-center gap-space-sm font-label-md text-label-md cursor-pointer shrink-0" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+<span>Soal Sebelumnya</span>
+</button>
+<!-- AI Tutor Guidance (Olimpix AI) -->
+<a href="guru-ai-gelap.html" class="h-14 px-space-lg rounded-full bg-secondary-container text-on-secondary-fixed hover:bg-secondary-fixed transition-colors flex items-center gap-space-sm font-label-md text-label-md cursor-pointer"  style="text-decoration:none;">
+<span class="material-symbols-outlined text-[22px] text-tertiary">psychology</span>
+<span>Tanya Olimpix AI</span>
+<span class="w-2 h-2 rounded-full bg-emerald"></span>
+</a>
+<!-- Primary Next CTA Button -->
+<button class="h-14 px-space-xl rounded-xl bg-primary-container text-on-primary-fixed hover:brightness-105 active:scale-95 transition-all flex items-center justify-center gap-space-sm font-title-md text-title-md font-bold shadow-md cursor-pointer shrink-0" type="button">
+<span>Lanjut ke Soal 4</span>
+<span class="material-symbols-outlined text-[22px]">arrow_forward</span>
+</button>
+</footer>
+<!-- Helpful Toddler Hint Drawer -->
+<aside class="w-full bg-surface-container-low rounded-lg p-space-md flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]">lightbulb</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-1">
+<strong class="text-on-surface">Tips untuk Bunda:</strong> Tanyakan pada ananda balok mana yang bertingkat paling banyak hingga ke langit-langit sebelum menekan tombol lanjut!
+      </p>
+</aside>
+</div>
+</div>
+<script>
+  // Simple, accessible interaction for option selection
+  document.querySelectorAll('.option-card').forEach(function(card) {
+    card.addEventListener('click', function() {
+      document.querySelectorAll('.option-card').forEach(function(c) {
+        c.classList.remove('ring-4', 'ring-emerald', 'selected-card');
+        const badge = c.querySelector('.absolute.-top-3');
+        if (badge) badge.remove();
+      });
+
+      this.classList.add('ring-4', 'ring-emerald', 'selected-card');
+    });
+  });
+
+  // Simulated audio read-aloud click micro-interaction
+  const audioBtn = document.getElementById('btn-audio');
+  if (audioBtn) {
+    audioBtn.addEventListener('click', function() {
+      this.classList.add('scale-110');
+      setTimeout(() => this.classList.remove('scale-110'), 250);
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-low border-t border-surface-container-highest py-space-xl"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-gutter"><div class="flex flex-col sm:flex-row items-center gap-space-md text-center sm:text-left"><div class="flex items-center gap-space-sm"><img alt="medalis_logo_transparent.png" class="h-6 w-auto object-contain" src="assets/medalis_logo.svg"/><span class="font-title-md text-title-md tracking-wider text-primary uppercase">MEDALIS</span></div><span class="hidden sm:inline text-outline-variant font-body-sm">|</span><p class="font-body-sm text-body-sm text-on-surface-variant">Platform Persiapan Olimpiade Sains Nasional</p></div><nav class="flex flex-wrap items-center justify-center gap-space-md text-center"><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="pedoman-akademik" href="state-anti-cheat-gelap.html" style="text-decoration:none;">Pedoman Akademik</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="kebijakan-privasi" href="state-anti-cheat-gelap.html" style="text-decoration:none;">Kebijakan Privasi</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="bantuan" href="guru-ai-gelap.html" style="text-decoration:none;">Bantuan</a></nav><div class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-right">© 2026 Medalis Indonesia. Hak Cipta Dilindungi.</div></div></footer>  <script src="assets/medalis_interactive.js"></script>
+</body></html>

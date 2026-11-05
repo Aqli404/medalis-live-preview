@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Medalis - Platform Persiapan Olimpiade Sains Nasional</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary-container":"#4f5f7f","secondary-fixed":"#d6e3ff","on-tertiary-fixed":"#001b3f","emerald":"#059669","surface-container-highest":"#e4e2dc","tertiary":"#3b5e9a","on-tertiary":"#ffffff","background":"#fbf9f2","on-primary-fixed":"#261900","primary":"#7a5900","surface":"#fbf9f2","surface-container-low":"#f6f4ed","surface-bright":"#fbf9f2","tertiary-container":"#8caef0","secondary-container":"#c9daff","inverse-on-surface":"#f3f1ea","error-container":"#ffdad6","outline":"#807665","outline-variant":"#d2c5b1","on-tertiary-fixed-variant":"#1f4681","tertiary-fixed-dim":"#abc7ff","surface-container-lowest":"#ffffff","inverse-primary":"#efc05d","on-error-container":"#93000a","tertiary-fixed":"#d7e2ff","on-primary-fixed-variant":"#5c4200","on-secondary-fixed-variant":"#364765","amber":"#F59E0B","primary-fixed-dim":"#efc05d","on-surface":"#1b1c18","surface-variant":"#e4e2dc","error":"#ba1a1a","primary-container":"#d4a747","on-primary-container":"#563d00","on-secondary":"#ffffff","primary-fixed":"#ffdea2","red":"#DC2626","secondary-fixed-dim":"#b6c7eb","surface-tint":"#7a5900","on-background":"#1b1c18","on-secondary-fixed":"#081b37","on-tertiary-container":"#18407b","surface-container-high":"#eae8e1","surface-container":"#f0eee7","on-primary":"#ffffff","on-error":"#ffffff","surface-dim":"#dcdad3","secondary":"#4e5f7e","inverse-surface":"#30312c","on-surface-variant":"#4e4637"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-xs":"0.25rem","space-lg":"1.5rem","space-xl":"2.5rem",margin:"2rem","space-sm":"0.5rem",gutter:"1.5rem","space-md":"1rem"},fontFamily:{"title-lg":["Poppins"],"body-md":["Poppins"],timer:["JetBrains Mono"],"headline-md":["Poppins"],"label-sm":["Poppins"],"headline-lg-mobile":["Poppins"],"title-md":["Poppins"],"headline-lg":["Poppins"],"body-lg":["Poppins"],"headline-xl":["Poppins"],"body-sm":["Poppins"],"label-md":["Poppins"],"headline-sm":["Poppins"]},fontSize:{"title-lg":["18px",{lineHeight:"24px",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],timer:["16px",{lineHeight:"20px",fontWeight:"600"}],"headline-md":["24px",{lineHeight:"32px",fontWeight:"600"}],"label-sm":["12px",{lineHeight:"16px",fontWeight:"500"}],"headline-lg-mobile":["26px",{lineHeight:"32px",fontWeight:"700"}],"title-md":["16px",{lineHeight:"22px",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"headline-xl":["40px",{lineHeight:"48px",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"label-md":["14px",{lineHeight:"20px",fontWeight:"500"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}]}}}};</script>  <link rel="stylesheet" href="assets/medalis_interactive.css">
+</head><body class="bg-surface font-body-md text-on-surface antialiased"><main class="w-full bg-surface min-h-[calc(100vh-16rem)]"><div class="flex flex-col w-full">
+<div class="w-full bg-[#F7F5EE] text-[#334155] min-h-screen flex flex-col font-['Poppins'] selection:bg-[#D4A747] selection:text-[#0B1E3A]">
+<!-- LIGHT HUD -->
+<header class="w-full h-[72px] bg-white border-b border-[#E2E8F0] px-4 md:px-8 flex items-center justify-between sticky top-0 z-40 backdrop-blur-md shadow-sm">
+<!-- Left: Logo & Exam Meta -->
+<div class="flex items-center gap-3 md:gap-4 min-w-0">
+<img alt="Medalis Official Logo" class="h-9 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChx8vjDbDMKm2hIBv-O8CDDQu5E3FycUrp1sNDVHPxrRbWbfDjCTxdjet0Fex-3uamAIYjA5hxw45S5ncziCimmVx2Up973BVv9ih57yjd-KV6GTLMpyMQ9Ds_bRDqa-dmF5OVcECnqF4B7YvPjBNNPMKoUZ7ng9K2TE97HeEUeyA91MgWudQScugm9Q20q8aNplJKI14U6KXNagliDHFVjw5_m_KNimpBQfbCDPAsbvZh_d1f0B8YIQ"/>
+<div class="flex flex-col min-w-0">
+<h1 class="text-[#0B1E3A] font-semibold text-sm md:text-base leading-tight truncate">Tryout KSNR Matematika SMP</h1>
+<div class="flex items-center gap-2 text-xs text-[#64748B] leading-normal truncate">
+<span class="w-2 h-2 rounded-full bg-[#059669] inline-block shrink-0 animate-pulse"></span>
+<span class="">Sesi Ujian Resmi • Anti-Cheat Aktif</span>
+</div>
+</div>
+</div>
+<!-- Center: High-Precision Exam Timer -->
+<div class="flex items-center justify-center">
+<div class="flex items-center gap-2 bg-[#F1F5F9] border border-[#CBD5E1] px-4 py-1.5 rounded-full shadow-inner">
+<span class="material-symbols-outlined text-[#D4A747] text-[18px]">timer</span>
+<div class="font-['JetBrains_Mono'] font-bold text-sm md:text-base tracking-wider text-[#0B1E3A]">
+            01:26:12
+          </div>
+<span class="text-[11px] font-medium text-[#64748B] uppercase tracking-wider hidden sm:inline ml-1">Sisa Waktu</span>
+</div>
+</div>
+<!-- Right: Controls & User Profile -->
+<div class="flex items-center gap-3 md:gap-6 flex-shrink-0">
+<!-- 3-State Theme Switcher (Active: Terang) -->
+<div class="flex items-center bg-[#F1F5F9] border border-[#E2E8F0] rounded-xl p-1 gap-1">
+<a href="state-offline-terang.html" class="h-8 px-3 rounded-lg bg-white border border-[#E2E8F0] text-[#0B1E3A] flex items-center gap-2 text-[13px] font-semibold shadow-sm whitespace-nowrap cursor-pointer" style="text-decoration:none;">
+<svg class="w-4 h-4 shrink-0 text-[#0B1E3A]" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="4"></circle>
+<path d="M12 2v2"></path>
+<path d="M12 20v2"></path>
+<path d="m4.93 4.93 1.41 1.41"></path>
+<path d="m17.66 17.66 1.41 1.41"></path>
+<path d="M2 12h2"></path>
+<path d="M20 12h2"></path>
+<path d="m6.34 17.66-1.41 1.41"></path>
+<path d="m19.07 4.93-1.41 1.41"></path>
+</svg>
+<span class="">Terang</span>
+</a>
+<a href="state-offline-gelap.html" class="h-8 px-3 rounded-lg text-[#64748B] hover:text-[#0B1E3A] flex items-center gap-2 text-[13px] font-medium whitespace-nowrap cursor-pointer transition-colors" style="text-decoration:none;">
+<svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+</svg>
+<span class="">Gelap</span>
+</a>
+<a href="javascript:void(0)" onclick="handleAutoTheme()" class="h-8 px-3 rounded-lg flex items-center gap-2 text-[13px] font-medium text-[#64748B] hover:text-[#0B1E3A] transition-colors whitespace-nowrap cursor-pointer" style="text-decoration:none; cursor:pointer;" title="Ikuti tema sistem OS">
+<svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<rect height="14" rx="2" width="20" x="2" y="3"></rect>
+<line x1="8" x2="16" y1="21" y2="21"></line>
+<line x1="12" x2="12" y1="17" y2="21"></line>
+</svg>
+<span class="">Sistem</span>
+</a>
+</div>
+<!-- Student Profile -->
+<div class="flex items-center gap-3">
+<div class="hidden sm:flex flex-col text-right">
+<span class="text-[#0B1E3A] text-xs md:text-sm font-semibold leading-tight">Aisyah</span>
+<span class="text-[11px] text-[#64748B] leading-none">Kelas 8 SMP</span>
+</div>
+<div class="w-9 h-9 rounded-full bg-[#D4A747] text-[#0B1E3A] flex items-center justify-center font-bold text-sm shadow-md ring-2 ring-[#CBD5E1]">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+</div>
+</div>
+</header>
+<!-- OFFLINE STATUS NOTIFICATION STRIP -->
+<section class="w-full px-4 md:px-8 pt-4 pb-2">
+<div class="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3 p-3 rounded-xl bg-white border border-[#E2E8F0] shadow-sm">
+<!-- Primary Offline Warning Indicator -->
+<div class="flex items-center gap-2.5 bg-[#FEF3C7] border border-[#F59E0B] px-3.5 py-2 rounded-lg text-[#92400E] text-xs md:text-sm font-semibold"><span class="material-symbols-outlined text-[20px] text-[#D97706] shrink-0">wifi_off</span><span class="text-[14px] leading-normal">Offline, jawaban tersimpan di perangkat</span></div>
+<!-- Automatic Synchronization Notice -->
+<div class="flex items-center gap-2 bg-[#ECFDF5] border border-[#059669] px-3.5 py-2 rounded-lg text-[#065F46] text-xs md:text-sm font-semibold"><span class="material-symbols-outlined text-[18px] text-[#059669] animate-spin shrink-0">sync</span><span class="text-[14px] leading-normal">Akan disinkronkan otomatis saat koneksi kembali</span></div>
+<!-- Persistent Local Storage Badge -->
+<div class="flex items-center gap-2 bg-[#F1F5F9] border border-[#CBD5E1] px-3.5 py-2 rounded-lg text-xs font-mono text-[#0B1E3A]"><span class="material-symbols-outlined text-[18px] text-[#D4A747] shrink-0">cloud_off</span><span class="text-[14px] font-semibold leading-normal text-[#0B1E3A]">10 dari 40 jawaban tersimpan di perangkat</span></div>
+</div>
+</section>
+<!-- MAIN EXAM WORKSPACE: TWO COLUMN (65% / 35%) -->
+<main class="w-full max-w-7xl mx-auto px-4 md:px-8 py-4 flex-1">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+<!-- LEFT COLUMN: QUESTION CONTENT & RESPONSE (65% -> 8 of 12 cols) -->
+<section class="lg:col-span-8 flex flex-col gap-6">
+<article class="bg-white border border-[#E2E8F0] rounded-2xl p-6 md:p-8 flex flex-col shadow-sm">
+<!-- Question Metadata Bar -->
+<div class="flex flex-wrap items-center justify-between gap-3 pb-5 border-b border-[#E2E8F0]">
+<div class="flex items-center gap-2.5 flex-wrap">
+<span class="bg-[#F1F5F9] border border-[#CBD5E1] text-[#0B1E3A] text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+                  KSNR SMP • Aljabar &amp; Barisan Bilangan
+                </span>
+<span class="text-xs text-[#0B1E3A] font-medium flex items-center gap-1.5 bg-[#FEF3C7] border border-[#FDE68A] px-2.5 py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-[#F59E0B]"></span>
+                  Tingkat Kesulitan: Tinggi
+                </span>
+</div>
+<div class="text-[#0B1E3A] font-bold text-base md:text-lg tracking-tight">
+                Soal 14 <span class="text-[#64748B] font-normal text-sm">/ 40</span>
+</div>
+</div>
+<!-- Problem Narrative -->
+<div class="mt-6 text-[#334155] text-[16px] leading-relaxed font-normal">
+<p class="">
+                Diberikan barisan bilangan real positif <span class="font-mono font-semibold text-[#0B1E3A]">(xₙ)</span> dengan rumus rekursif
+                <span class="font-mono font-semibold text-[#0B1E3A]">xₙ₊₁ = xₙ / (1 + n·xₙ)</span> untuk setiap bilangan asli <span class="font-mono font-semibold text-[#0B1E3A]">n ≥ 1</span>.
+                Jika suku pertama <span class="font-mono font-semibold text-[#0B1E3A]">x₁ = 1</span>, tentukan nilai dari deret penjumlahan tak hingga:
+              </p>
+</div>
+<!-- Math Equation Display Canvas -->
+<div class="my-6 bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl py-6 px-4 text-center shadow-inner flex flex-col items-center justify-center relative overflow-hidden">
+<div class="text-[#0B1E3A] text-xl md:text-2xl font-mono font-bold tracking-widest select-all">
+                Σₙ₌₁^∞ (xₙ · xₙ₊₁)
+              </div>
+<span class="text-[11px] font-mono text-[#64748B] mt-2 uppercase tracking-widest font-medium">Formal Notation • KSNR Tingkat Nasional</span>
+</div>
+<!-- Instructional Hint -->
+<p class="text-xs text-[#64748B] italic mb-5 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-[#64748B]">info</span>
+              Pilihlah salah satu jawaban yang paling tepat. Jawaban Anda dicatat langsung ke dalam penyimpanan terenkripsi offline browser.
+            </p>
+<!-- Multiple Choice Option Group (Min 48px touch targets) -->
+<fieldset aria-label="Pilihan Jawaban Soal 14" class="flex flex-col gap-3.5" role="radiogroup">
+<!-- Option A -->
+<label class="group relative flex items-center justify-between p-4 min-h-[56px] rounded-xl bg-white border border-[#E2E8F0] hover:bg-[#F8FAFC] hover:border-[#CBD5E1] cursor-pointer transition-all duration-200">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] group-hover:bg-[#E2E8F0] flex items-center justify-center font-bold text-sm transition-colors">
+                    A
+                  </div>
+<span class="text-base text-[#0B1E3A] font-medium font-mono">1</span>
+</div>
+<input class="sr-only" name="olympiad_ans_14" type="radio" value="A"/>
+<span class="w-5 h-5 rounded-full border border-[#CBD5E1] flex items-center justify-center group-hover:border-[#64748B]"></span>
+</label>
+<!-- Option B (ACTIVE & CACHED IN LOCAL STORAGE) -->
+<label class="relative flex items-center justify-between p-4 min-h-[56px] rounded-xl bg-[#ECFDF5] border-2 border-[#059669] text-[#065F46] cursor-pointer shadow-sm">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-lg bg-[#059669] text-white flex items-center justify-center font-bold text-sm shadow-sm">
+                    B
+                  </div>
+<span class="text-base font-semibold font-mono text-[#065F46]">½</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-[#059669]/10 text-[#059669] text-xs font-semibold border border-[#059669]/30">
+<span class="material-symbols-outlined text-[14px]">save</span>
+                    ½ Tersimpan lokal
+                  </span>
+<input checked="" class="sr-only" name="olympiad_ans_14" type="radio" value="B"/>
+<div class="w-5 h-5 rounded-full bg-[#059669] flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</div>
+</div>
+</label>
+<!-- Option C -->
+<label class="group relative flex items-center justify-between p-4 min-h-[56px] rounded-xl bg-white border border-[#E2E8F0] hover:bg-[#F8FAFC] hover:border-[#CBD5E1] cursor-pointer transition-all duration-200">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] group-hover:bg-[#E2E8F0] flex items-center justify-center font-bold text-sm transition-colors">
+                    C
+                  </div>
+<span class="text-base text-[#0B1E3A] font-medium font-mono">(√5 − 1) / 2</span>
+</div>
+<input class="sr-only" name="olympiad_ans_14" type="radio" value="C"/>
+<span class="w-5 h-5 rounded-full border border-[#CBD5E1] flex items-center justify-center group-hover:border-[#64748B]"></span>
+</label>
+<!-- Option D -->
+<label class="group relative flex items-center justify-between p-4 min-h-[56px] rounded-xl bg-white border border-[#E2E8F0] hover:bg-[#F8FAFC] hover:border-[#CBD5E1] cursor-pointer transition-all duration-200">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] group-hover:bg-[#E2E8F0] flex items-center justify-center font-bold text-sm transition-colors">
+                    D
+                  </div>
+<span class="text-base text-[#0B1E3A] font-medium font-mono">2</span>
+</div>
+<input class="sr-only" name="olympiad_ans_14" type="radio" value="D"/>
+<span class="w-5 h-5 rounded-full border border-[#CBD5E1] flex items-center justify-center group-hover:border-[#64748B]"></span>
+</label>
+</fieldset>
+<!-- Bottom Action Navigation Bar -->
+<div class="mt-8 pt-6 border-t border-[#E2E8F0] flex flex-wrap items-center justify-between gap-3">
+<div class="flex items-center gap-2 flex-wrap">
+<!-- Previous Button -->
+<button class="h-12 px-5 rounded-xl border border-[#E2E8F0] hover:border-[#CBD5E1] text-[#0B1E3A] hover:bg-[#F8FAFC] font-semibold text-sm flex items-center gap-2 bg-white transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span class="">Sebelumnya</span>
+</button>
+<!-- Doubt / Flag Button -->
+<button class="h-12 px-4 rounded-xl bg-[#FEF3C7] border border-[#F59E0B] hover:bg-[#FDE68A] text-[#B45309] font-semibold text-sm flex items-center gap-2 transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+<span class="">Ragu-ragu</span>
+</button>
+<!-- Next Button -->
+<button class="h-12 px-5 rounded-xl bg-[#0B1E3A] hover:bg-[#162E50] text-white font-semibold text-sm flex items-center gap-2 transition-all shadow-sm" type="button">
+<span class="">Selanjutnya</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<div class="flex items-center gap-2.5 flex-wrap">
+<!-- Locked AI Assistant Indicator -->
+<div class="h-12 px-3.5 rounded-xl bg-[#F1F5F9] border border-[#E2E8F0] text-[#94A3B8] text-xs font-medium flex items-center gap-2 select-none" title="Guru AI dinonaktifkan dalam mode ujian resmi &amp; offline">
+<span class="material-symbols-outlined text-[16px] text-[#94A3B8]">lock</span>
+<span class="">Guru AI nonaktif</span>
+</div>
+<!-- Final Submit Button -->
+<a href="hasil-tryout-terang.html" class="h-12 px-6 rounded-xl bg-[#DC2626] hover:bg-red-800 text-white font-bold text-sm tracking-wide shadow-md flex items-center gap-2 transition-all active:scale-[0.98]"  style="text-decoration:none;">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span class="">Selesai Ujian</span>
+</a>
+</div>
+</div>
+</article>
+</section>
+<!-- RIGHT COLUMN: PALETTE & TELEMETRY (35% -> 4 of 12 cols) -->
+<aside class="lg:col-span-4 flex flex-col gap-6">
+<!-- Card 1: Question Palette (40 Numbers) -->
+<div class="bg-white border border-[#E2E8F0] rounded-2xl p-6 shadow-sm flex flex-col">
+<div class="flex items-center justify-between pb-4 border-b border-[#E2E8F0]">
+<h2 class="text-[#0B1E3A] font-semibold text-base">Palet Soal (40 Nomor)</h2>
+<span class="text-xs bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] font-mono px-2.5 py-1 rounded-md font-semibold">Sesi 1</span>
+</div>
+<!-- Legend Status Indicators -->
+<div class="grid grid-cols-2 gap-2 text-xs py-4 border-b border-[#E2E8F0]">
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded bg-[#059669] shrink-0"></span>
+<span class="text-[#334155]">Dijawab (13)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded bg-[#F59E0B] shrink-0"></span>
+<span class="text-[#334155]">Ragu-ragu (1)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded bg-[#F1F5F9] border border-[#CBD5E1] shrink-0"></span>
+<span class="text-[#64748B]">Belum (26)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded bg-[#0B1E3A] ring-2 ring-[#D4A747] shrink-0"></span>
+<span class="text-[#0B1E3A] font-semibold">Aktif (#14)</span>
+</div>
+</div>
+<!-- Palette Number Grid: 8 Columns -->
+<div class="grid grid-cols-8 gap-2 pt-4">
+<!-- 1 to 13: Emerald Answered -->
+<button class="h-9 rounded-lg bg-[#059669] text-white text-xs font-semibold flex items-center justify-center shadow-sm hover:brightness-110" type="button">1</button>
+<button class="h-9 rounded-lg bg-[#059669] text-white text-xs font-semibold flex items-center justify-center shadow-sm hover:brightness-110" type="button">2</button>
+<button class="h-9 rounded-lg bg-[#059669] text-white text-xs font-semibold flex items-center justify-center shadow-sm hover:brightness-110" type="button">3</button>
+<button class="h-9 rounded-lg bg-[#059669] text-white text-xs font-semibold flex items-center justify-center shadow-sm hover:brightness-110" type="button">4</button>
+<button class="h-9 rounded-lg bg-[#059669] text-white text-xs font-semibold flex items-center justify-center shadow-sm hover:brightness-110" type="button">5</button>
+<button class="h-9 rounded-lg bg-[#059669] text-white text-xs font-semibold flex items-center justify-center shadow-sm hover:brightness-110" type="button">6</button>
+<button class="h-9 rounded-lg bg-[#059669] text-white text-xs font-semibold flex items-center justify-center shadow-sm hover:brightness-110" type="button">7</button>
+<button class="h-9 rounded-lg bg-[#059669] text-white text-xs font-semibold flex items-center justify-center shadow-sm hover:brightness-110" type="button">8</button>
+<button class="h-9 rounded-lg bg-[#059669] text-white text-xs font-semibold flex items-center justify-center shadow-sm hover:brightness-110" type="button">9</button>
+<button class="h-9 rounded-lg bg-[#059669] text-white text-xs font-semibold flex items-center justify-center shadow-sm hover:brightness-110" type="button">10</button>
+<button class="h-9 rounded-lg bg-[#059669] text-white text-xs font-semibold flex items-center justify-center shadow-sm hover:brightness-110" type="button">11</button>
+<button class="h-9 rounded-lg bg-[#059669] text-white text-xs font-semibold flex items-center justify-center shadow-sm hover:brightness-110" type="button">12</button>
+<button class="h-9 rounded-lg bg-[#059669] text-white text-xs font-semibold flex items-center justify-center shadow-sm hover:brightness-110" type="button">13</button>
+<!-- 14: ACTIVE with Gold Ring -->
+<button class="h-9 rounded-lg bg-[#0B1E3A] ring-2 ring-[#D4A747] text-white text-xs font-bold flex items-center justify-center shadow-md scale-105 z-10" type="button">14</button>
+<!-- 15: Ragu-Ragu (Amber with Tiny Flag Indicator) -->
+<button class="relative h-9 rounded-lg bg-[#F59E0B] text-white text-xs font-semibold flex items-center justify-center shadow-sm hover:brightness-110" type="button">
+                15
+                <span class="material-symbols-outlined absolute top-0.5 right-0.5 text-[10px] text-[#071324] leading-none">flag</span>
+</button>
+<!-- 16 to 40: Belum Dijawab -->
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">16</button>
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">17</button>
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">18</button>
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">19</button>
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">20</button>
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">21</button>
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">22</button>
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">23</button>
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">24</button>
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">25</button>
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">26</button>
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">27</button>
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">28</button>
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">29</button>
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">30</button>
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">31</button>
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">32</button>
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">33</button>
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">34</button>
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">35</button>
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">36</button>
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">37</button>
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">38</button>
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">39</button>
+<button class="h-9 rounded-lg bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] text-xs font-semibold flex items-center justify-center hover:bg-[#E2E8F0]" type="button">40</button>
+</div>
+</div>
+<!-- Card 2: Integritas & Cache Lokal -->
+<div class="bg-white border border-[#E2E8F0] rounded-2xl p-6 shadow-sm flex flex-col">
+<div class="flex items-center gap-2.5 pb-4 border-b border-[#E2E8F0]">
+<span class="material-symbols-outlined text-[#D4A747] text-[22px]">verified_user</span>
+<h2 class="text-[#0B1E3A] font-semibold text-base">Integritas Ujian</h2>
+</div>
+<div class="flex flex-col divide-y divide-[#E2E8F0] text-xs"><div class="py-3 flex items-center justify-between gap-2"><span class="text-[#64748B]">Status jaringan</span><span class="px-2.5 py-1 rounded-md bg-[#FEF3C7] border border-[#F59E0B] text-[#B45309] font-semibold">● Terputus (Mode Offline)</span></div><div class="py-3 flex items-center justify-between gap-2"><span class="text-[#64748B]">Penyimpanan</span><span class="text-[#059669] font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">check_circle</span>Tersimpan di perangkat</span></div><div class="py-3 flex items-center justify-between gap-2"><span class="text-[#64748B]">Pindah tab</span><div class="flex items-center gap-2"><span class="text-[#0B1E3A] font-semibold">0 dari 3 toleransi</span><div class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-[#CBD5E1]"></span><span class="w-2 h-2 rounded-full bg-[#CBD5E1]"></span><span class="w-2 h-2 rounded-full bg-[#CBD5E1]"></span></div></div></div><div class="py-3 flex items-center justify-between gap-2"><span class="text-[#64748B]">Waktu server</span><span class="text-[#64748B] italic text-[11px] text-right">Sinkronisasi saat online</span></div></div>
+</div>
+</aside>
+</div>
+</main>
+<!-- FOOTER: LIGHT THEME MATCHING DESIGN_v3.md -->
+<footer class="w-full bg-[#F7F5EE] border-t border-[#E2E8F0] mt-12">
+<div class="w-full max-w-7xl mx-auto px-4 md:px-8 py-10"><div class="flex justify-between items-center whitespace-nowrap"><div class="flex items-center gap-6 whitespace-nowrap"><img alt="Medalis Logo" class="h-8 w-auto object-contain flex-shrink-0" src="assets/medalis_logo.svg"/><span class="text-[16px] text-[#0B1E3A] font-bold tracking-wider leading-none whitespace-nowrap">MEDALIS</span><span class="text-[#64748B] text-[14px] leading-none whitespace-nowrap">Platform Persiapan Olimpiade Sains Nasional</span></div><nav class="flex items-center gap-8 whitespace-nowrap"><a class="text-[#334155] hover:text-[#0B1E3A] text-[14px] transition-colors whitespace-nowrap" href="state-anti-cheat-terang.html" style="text-decoration:none;">Pedoman Akademik</a><a class="text-[#334155] hover:text-[#0B1E3A] text-[14px] transition-colors whitespace-nowrap" href="state-anti-cheat-terang.html" style="text-decoration:none;">Kebijakan Privasi</a><a class="text-[#334155] hover:text-[#0B1E3A] text-[14px] transition-colors whitespace-nowrap" href="guru-ai-terang.html" style="text-decoration:none;">Bantuan</a></nav></div><div class="border-t border-[#E2E8F0] mt-6 pt-6"><p class="text-left text-[13px] text-[#64748B] whitespace-nowrap m-0">© 2026 Medalis Indonesia. Hak Cipta Dilindungi Undang-Undang.</p></div></div>
+</footer>
+</div>
+</div></main>
+  <script src="assets/medalis_interactive.js"></script>
+</body></html>

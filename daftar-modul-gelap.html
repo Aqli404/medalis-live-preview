@@ -1,0 +1,416 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"surface-container":"#f0eee7","primary-fixed-dim":"#efc05d","emerald":"#059669","surface-variant":"#e4e2dc","on-tertiary-fixed":"#001b3f","tertiary-fixed":"#d7e2ff","surface-container-highest":"#e4e2dc","surface-container-low":"#f6f4ed","on-primary-fixed-variant":"#5c4200","surface-bright":"#fbf9f2","secondary-fixed":"#d6e3ff","surface-container-lowest":"#ffffff","on-error":"#ffffff","on-surface":"#1b1c18","secondary":"#4e5f7e","on-primary-fixed":"#261900","on-secondary":"#ffffff","primary-container":"#d4a747","red":"#DC2626","tertiary":"#3b5e9a","inverse-on-surface":"#f3f1ea","surface-tint":"#7a5900","on-error-container":"#93000a","primary":"#7a5900","amber":"#F59E0B","tertiary-fixed-dim":"#abc7ff","error":"#ba1a1a","on-secondary-fixed":"#081b37","secondary-fixed-dim":"#b6c7eb","on-tertiary-fixed-variant":"#1f4681","on-primary-container":"#563d00","on-secondary-fixed-variant":"#364765","on-surface-variant":"#4e4637","on-primary":"#ffffff","inverse-primary":"#efc05d","outline-variant":"#d2c5b1","background":"#fbf9f2","on-tertiary-container":"#18407b","tertiary-container":"#8caef0","on-secondary-container":"#4f5f7f","inverse-surface":"#30312c","surface-container-high":"#eae8e1","on-tertiary":"#ffffff","on-background":"#1b1c18","secondary-container":"#c9daff","error-container":"#ffdad6","primary-fixed":"#ffdea2","outline":"#807665","surface":"#fbf9f2","surface-dim":"#dcdad3"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter":"1.5rem","space-lg":"1.5rem","space-md":"1rem","margin":"2rem","space-xl":"2.5rem","space-xs":"0.25rem","space-sm":"0.5rem"},"fontFamily":{"body-lg":["Poppins"],"label-md":["Poppins"],"headline-xl":["Poppins"],"headline-lg":["Poppins"],"headline-sm":["Poppins"],"body-sm":["Poppins"],"label-sm":["Poppins"],"timer":["JetBrains Mono"],"title-lg":["Poppins"],"headline-md":["Poppins"],"headline-lg-mobile":["Poppins"],"title-md":["Poppins"],"body-md":["Poppins"]},"fontSize":{"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-md":["14px",{"lineHeight":"20px","fontWeight":"500"}],"headline-xl":["40px",{"lineHeight":"48px","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"timer":["16px",{"lineHeight":"20px","fontWeight":"600"}],"title-lg":["18px",{"lineHeight":"24px","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-lg-mobile":["26px",{"lineHeight":"32px","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"22px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}]}}}}</script>  <link rel="stylesheet" href="assets/medalis_interactive.css">
+</head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-[72px] w-full px-gutter flex items-center justify-between gap-space-md"><a href="dashboard-gelap.html" style="text-decoration:none;" class="flex items-center shrink-0"><div class="flex items-center gap-space-sm shrink-0"><img alt="Medalis Logo" class="h-8 w-auto object-contain" src="assets/medalis_logo.svg"><span class="font-title-lg text-title-lg tracking-wider text-on-surface font-semibold select-none">MEDALIS</span></div></a><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-secondary-container text-on-secondary-container font-semibold rounded-lg"><a class="px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" data-path="beranda" href="dashboard-gelap.html" style="text-decoration:none;">Beranda</a><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-secondary-container text-on-secondary-container font-semibold rounded-lg" data-path="daftar-modul" href="daftar-modul-gelap.html" style="text-decoration:none;">Modul</a><a class="px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" data-path="tryout" href="lobby-tryout-gelap.html" style="text-decoration:none;">Tryout</a><a class="px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" data-path="guru-ai" href="guru-ai-gelap.html" style="text-decoration:none;">Guru AI</a><a class="px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" data-path="timeline" href="prep-timeline-gelap.html" style="text-decoration:none;">Timeline</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center p-space-xs bg-surface-container rounded-full text-on-surface-variant"><a href="daftar-modul-terang.html" class="flex items-center gap-1 px-space-sm py-1 rounded-full text-label-sm font-label-sm bg-surface-container-lowest text-on-surface shadow-[0_1px_4px_rgba(0,0,0,0.05)] transition-colors" style="text-decoration:none;"><span class="material-symbols-outlined text-[16px]">light_mode</span><span class="hidden xl:inline">Terang</span></a><a href="daftar-modul-gelap.html" class="flex items-center gap-1 px-space-sm py-1 rounded-full text-label-sm font-label-sm hover:text-on-surface transition-colors" style="text-decoration:none;"><span class="material-symbols-outlined text-[16px]">dark_mode</span><span class="hidden xl:inline">Gelap</span></a><a href="javascript:void(0)" onclick="handleAutoTheme()" class="flex items-center gap-1 px-space-sm py-1 rounded-full text-label-sm font-label-sm hover:text-on-surface transition-colors" style="text-decoration:none; cursor:pointer;" title="Ikuti tema sistem OS"><span class="material-symbols-outlined text-[16px]">desktop_windows</span><span class="hidden xl:inline">Sistem</span></a></div><div class="flex items-center gap-space-sm pl-space-xs cursor-pointer select-none group"><div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-title-md text-title-md shadow-sm shrink-0">AP</div><div class="hidden sm:flex flex-col text-left leading-tight"><span class="font-label-md text-label-md text-on-surface font-semibold group-hover:text-primary transition-colors">Aisyah</span><span class="font-body-sm text-body-sm text-on-surface-variant">Kelas 8 SMP</span></div><span class="material-symbols-outlined text-on-surface-variant text-[20px]">expand_more</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-[72px] bg-surface min-h-screen"><div class="flex flex-col w-full text-on-surface">
+<!-- Subtle Ambient Glow Overlay (Containment bounded, Dark Canvas Atmosphere) -->
+<div class="relative w-full overflow-hidden px-gutter py-space-xl">
+<!-- Background Radial Accent for Scholarly Depth -->
+<div class="pointer-events-none absolute -top-40 right-10 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl"></div>
+<div class="pointer-events-none absolute top-1/2 -left-20 w-80 h-80 bg-tertiary-container/10 rounded-full blur-3xl"></div>
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl relative z-10">
+<!-- Breadcrumbs & Headline Section -->
+<header class="flex flex-col gap-space-md">
+<!-- Breadcrumb Nav -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-label-sm font-label-sm text-secondary">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="dashboard-gelap.html" style="text-decoration:none;">
+<span class="material-symbols-outlined text-[16px]">home</span>
+            Beranda
+          </a>
+<span class="text-secondary select-none">/</span>
+<span class="text-secondary">Kurikulum KSNR &amp; OSN</span>
+<span class="text-secondary select-none">/</span>
+<span class="text-primary font-semibold">Modul Belajar</span>
+</nav>
+<!-- Main Title Block with Balanced Alignment -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg pt-space-xs">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container-high w-fit">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-on-surface-variant font-semibold">Kurikulum Standar Puspresnas</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-bold">
+              Silabus &amp; Modul Pembelajaran Olimpiade
+            </h1>
+<p class="font-body-lg text-body-lg text-secondary leading-relaxed">
+              Kurikulum terstruktur berbasis penguasaan Konsep Olimpix AI, trik 10 detik, dan latihan soal adaptif untuk persiapan KSNR, OSN-K, &amp; SASMO.
+            </p>
+</div>
+<!-- Academic Metrics Ticker (Structured Metric Cards) -->
+<div class="grid grid-cols-3 gap-space-sm sm:gap-space-md shrink-0 p-space-sm bg-surface-container-low rounded-xl shadow-sm">
+<!-- Stat 1 -->
+<div class="flex flex-col px-space-md py-space-sm rounded-lg bg-surface-container-lowest">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">12</span>
+<span class="font-label-sm text-label-sm text-secondary whitespace-nowrap">Total Modul</span>
+</div>
+<!-- Stat 2 -->
+<div class="flex flex-col px-space-md py-space-sm rounded-lg bg-surface-container-lowest">
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-headline-sm font-bold text-emerald">4</span>
+<span class="material-symbols-outlined text-emerald text-[16px]">check_circle</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary whitespace-nowrap">Tuntas Dipelajari</span>
+</div>
+<!-- Stat 3 -->
+<div class="flex flex-col px-space-md py-space-sm rounded-lg bg-surface-container-lowest">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">84.5%</span>
+<span class="font-label-sm text-label-sm text-secondary whitespace-nowrap">Akurasi Latihan</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Search, Taxonomy Filters & Level Segmentation -->
+<section class="flex flex-col gap-space-md bg-surface-container-low p-space-md sm:p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Search Field -->
+<div class="relative flex-1 min-w-0">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-secondary pointer-events-none text-[22px]">search</span>
+<input aria-label="Cari bab, rumus, atau konsep olimpiade" class="w-full h-12 pl-12 pr-space-md rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-secondary focus:outline-none focus:ring-2 focus:ring-primary shadow-sm transition-all" placeholder="Cari bab, rumus, atau konsep olimpiade..." type="text">
+</div>
+<!-- Academic Division / Tier Switch -->
+<div class="flex items-center bg-surface-container p-1 rounded-xl shrink-0 self-start lg:self-auto">
+<button class="px-space-md py-2 rounded-lg font-label-md text-label-md text-secondary hover:text-on-surface transition-colors" type="button">
+              Semua Jenjang
+            </button>
+<button class="px-space-md py-2 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-primary font-semibold shadow-sm transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[18px]">school</span>
+              Madya (Kelas 7–9 SMP)
+            </button>
+</div>
+</div>
+<!-- Filter Chips with Horizontal Scroll Capability -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 sm:pb-0 scrollbar-none">
+<button class="h-8 px-space-md py-1 rounded-full font-label-sm text-label-sm bg-primary text-on-primary font-semibold flex items-center gap-1 shrink-0 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[14px]">auto_stories</span>
+            Semua Mata Pelajaran
+          </button>
+<button class="h-8 px-space-md py-1 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-secondary hover:text-on-surface hover:bg-surface-container transition-colors shrink-0" type="button">
+            Matematika SMP
+          </button>
+<button class="h-8 px-space-md py-1 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-secondary hover:text-on-surface hover:bg-surface-container transition-colors shrink-0" type="button">
+            Fisika Dasar
+          </button>
+<button class="h-8 px-space-md py-1 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-secondary hover:text-on-surface hover:bg-surface-container transition-colors shrink-0" type="button">
+            Biologi Sains
+          </button>
+<button class="h-8 px-space-md py-1 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-secondary hover:text-on-surface hover:bg-surface-container transition-colors shrink-0" type="button">
+            Kombinatorika &amp; Logika
+          </button>
+<button class="h-8 px-space-md py-1 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-secondary hover:text-on-surface hover:bg-surface-container transition-colors shrink-0" type="button">
+            Geometri Lanjut
+          </button>
+</div>
+</section>
+<!-- Pedagogical Module Grid (3-Column Academic Layout) -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg items-stretch">
+<!-- CARD 1: Aljabar (Gratis / 100% Complete) -->
+<article class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<!-- Top Badge Bar -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-emerald/10 text-emerald font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                GRATIS
+              </div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">BAB 01</span>
+</div>
+<!-- Header and Description -->
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface font-semibold group-hover:text-primary transition-colors">
+                Aljabar &amp; Manipulasi Bentuk Aljabar
+              </h2>
+<p class="font-body-sm text-body-sm text-secondary mt-1 line-clamp-2">
+                Faktorisasi tingkat lanjut, persamaan simetris, dan metode substitusi tak tentu untuk OSN-K.
+              </p>
+</div>
+<!-- Mathematical Typography Preview Surface -->
+<div class="p-space-sm bg-surface-container-low rounded-lg font-timer text-body-sm text-on-surface flex items-center justify-center text-center select-all">
+              xₙ₊₁ = xₙ / (1 + n·xₙ), a² − b² = (a+b)(a−b)
+            </div>
+</div>
+<!-- Progress Block & Action -->
+<div class="flex flex-col gap-space-md pt-space-lg">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-secondary font-medium">12 / 12 Sub-bab Selesai</span>
+<span class="text-emerald font-semibold">100%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-emerald rounded-full w-full"></div>
+</div>
+</div>
+<a href="ebook-reader-gelap.html" class="w-full h-12 px-space-md rounded-xl bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-space-xs shadow-sm"  style="text-decoration:none;">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+              Buka Modul (Review)
+            </a>
+</div>
+</article>
+<!-- CARD 2: Teori Bilangan (Gratis / 65% In-Progress) -->
+<article class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<!-- Top Badge Bar -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-emerald/10 text-emerald font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">lock_open</span>
+                GRATIS
+              </div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">BAB 02</span>
+</div>
+<!-- Header and Description -->
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface font-semibold group-hover:text-primary transition-colors">
+                Teori Bilangan &amp; Keterbagian Sisa (Modulo)
+              </h2>
+<p class="font-body-sm text-body-sm text-secondary mt-1 line-clamp-2">
+                Sifat bilangan prima, FPB &amp; KPK aljabar, dan aplikasi modulo pada sisa pembagian bilangan pangkat besar.
+              </p>
+</div>
+<!-- Mathematical Typography Preview Surface -->
+<div class="p-space-sm bg-surface-container-low rounded-lg font-timer text-body-sm text-on-surface flex items-center justify-center text-center select-all">
+              a ≡ b (mod m), Teorema Sisa Fermat &amp; Wilson
+            </div>
+</div>
+<!-- Progress Block & Action -->
+<div class="flex flex-col gap-space-md pt-space-lg">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-secondary font-medium">8 / 12 Sub-bab</span>
+<span class="text-primary font-semibold">65%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full w-[65%]"></div>
+</div>
+</div>
+<a href="daftar-modul-gelap.html" class="w-full h-12 px-space-md rounded-xl bg-primary text-on-primary hover:bg-on-primary-container font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-space-xs shadow-sm"  style="text-decoration:none;">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+              Lanjutkan Belajar
+            </a>
+</div>
+</article>
+<!-- CARD 3: Geometri Bidang (Premium) -->
+<article class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<!-- Top Badge Bar -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+                PREMIUM
+              </div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">BAB 03</span>
+</div>
+<!-- Header and Description -->
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface font-semibold group-hover:text-primary transition-colors">
+                Geometri Bidang Datar &amp; Dalil Menelaus
+              </h2>
+<p class="font-body-sm text-body-sm text-secondary mt-1 line-clamp-2">
+                Sudut bertolak belakang, kesebangunan segitiga olimpiade, dan lingkaran singgung dalam/luar.
+              </p>
+</div>
+<!-- Mathematical Typography Preview Surface -->
+<div class="p-space-sm bg-surface-container-low rounded-lg font-timer text-body-sm text-on-surface flex items-center justify-center text-center select-all">
+              ΔABC ~ ΔDEF, Ceva &amp; Menelaus, Luas ½·ab·sin(θ)
+            </div>
+</div>
+<!-- Locked Notice & Action -->
+<div class="flex flex-col gap-space-md pt-space-lg">
+<div class="flex items-start gap-space-xs p-space-xs px-space-sm rounded-lg bg-surface-container-low text-secondary text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">info</span>
+<span class="">Terkunci · Akses 14 video Konsep Olimpix AI &amp; latihan interaktif.</span>
+</div>
+<a href="pricing-gelap.html" class="w-full h-12 px-space-md rounded-xl bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-space-xs shadow-sm"  style="text-decoration:none;">
+<span class="material-symbols-outlined text-[18px] text-primary">lock</span>
+              Buka Akses Premium
+            </a>
+</div>
+</article>
+<!-- CARD 4: Kombinatorika (Premium) -->
+<article class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<!-- Top Badge Bar -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+                PREMIUM
+              </div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">BAB 04</span>
+</div>
+<!-- Header and Description -->
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface font-semibold group-hover:text-primary transition-colors">
+                Kombinatorika &amp; Prinsip Sarang Burung (Pigeonhole)
+              </h2>
+<p class="font-body-sm text-body-sm text-secondary mt-1 line-clamp-2">
+                Permutasi siklis, pembagian kelompok partisi, dan pembuktian keberadaan elemen unik.
+              </p>
+</div>
+<!-- Mathematical Typography Preview Surface -->
+<div class="p-space-sm bg-surface-container-low rounded-lg font-timer text-body-sm text-on-surface flex items-center justify-center text-center select-all">
+              C(n, r) = n! / (r!(n−r)!), Inklusi-Eksklusi
+            </div>
+</div>
+<!-- Locked Notice & Action -->
+<div class="flex flex-col gap-space-md pt-space-lg">
+<div class="flex items-start gap-space-xs p-space-xs px-space-sm rounded-lg bg-surface-container-low text-secondary text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">bolt</span>
+<span class="">Terkunci · Termasuk 50 bank soal KSNR &amp; speed-hack 10 detik.</span>
+</div>
+<a href="pricing-gelap.html" class="w-full h-12 px-space-md rounded-xl bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-space-xs shadow-sm"  style="text-decoration:none;">
+<span class="material-symbols-outlined text-[18px] text-primary">lock</span>
+              Buka Akses Premium
+            </a>
+</div>
+</article>
+<!-- CARD 5: Pertidaksamaan (Premium) -->
+<article class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<!-- Top Badge Bar -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+                PREMIUM
+              </div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">BAB 05</span>
+</div>
+<!-- Header and Description -->
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface font-semibold group-hover:text-primary transition-colors">
+                Pertidaksamaan Cauchy-Schwarz &amp; AM-GM
+              </h2>
+<p class="font-body-sm text-body-sm text-secondary mt-1 line-clamp-2">
+                Trik pembuktian nilai minimum dan maksimum aljabar tanpa kalkulus tingkat madya.
+              </p>
+</div>
+<!-- Mathematical Typography Preview Surface -->
+<div class="p-space-sm bg-surface-container-low rounded-lg font-timer text-body-sm text-on-surface flex items-center justify-center text-center select-all">
+              (a₁+a₂)/2 ≥ √(a₁a₂), (Σ aᵢ²)(Σ bᵢ²) ≥ (Σ aᵢbᵢ)²
+            </div>
+</div>
+<!-- Locked Notice & Action -->
+<div class="flex flex-col gap-space-md pt-space-lg">
+<div class="flex items-start gap-space-xs p-space-xs px-space-sm rounded-lg bg-surface-container-low text-secondary text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">workspace_premium</span>
+<span class="">Terkunci · Akses penalaran ketaksamaan aljabar lanjut.</span>
+</div>
+<a href="pricing-gelap.html" class="w-full h-12 px-space-md rounded-xl bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-space-xs shadow-sm"  style="text-decoration:none;">
+<span class="material-symbols-outlined text-[18px] text-primary">lock</span>
+              Buka Akses Premium
+            </a>
+</div>
+</article>
+<!-- CARD 6: Vieta & Polinomial (Premium) -->
+<article class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<!-- Top Badge Bar -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+                PREMIUM
+              </div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">BAB 06</span>
+</div>
+<!-- Header and Description -->
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface font-semibold group-hover:text-primary transition-colors">
+                Fungsi, Polinomial &amp; Teorema Vieta
+              </h2>
+<p class="font-body-sm text-body-sm text-secondary mt-1 line-clamp-2">
+                Akar-akar persamaan suku banyak, faktorisasi Horner, dan persamaan fungsi f(x+y).
+              </p>
+</div>
+<!-- Mathematical Typography Preview Surface -->
+<div class="p-space-sm bg-surface-container-low rounded-lg font-timer text-body-sm text-on-surface flex items-center justify-center text-center select-all">
+              P(x) = aₙxⁿ+...+a₀, x₁+x₂ = −b/a, x₁x₂ = c/a
+            </div>
+</div>
+<!-- Locked Notice & Action -->
+<div class="flex flex-col gap-space-md pt-space-lg">
+<div class="flex items-start gap-space-xs p-space-xs px-space-sm rounded-lg bg-surface-container-low text-secondary text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">psychology</span>
+<span class="">Terkunci · Akses bedah rumus vieta dan persamaan Cauchy.</span>
+</div>
+<a href="pricing-gelap.html" class="w-full h-12 px-space-md rounded-xl bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-space-xs shadow-sm"  style="text-decoration:none;">
+<span class="material-symbols-outlined text-[18px] text-primary">lock</span>
+              Buka Akses Premium
+            </a>
+</div>
+</article>
+</section>
+<!-- Pedagogical Feature Spotlight / Visual Anchor Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center bg-surface-container-low p-space-lg rounded-xl shadow-sm overflow-hidden">
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="flex items-center gap-2 text-primary font-semibold font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px]">smart_toy</span>
+            Pedagogi Adaptif Olimpix AI
+          </div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">
+            Belajar Bukan Menghafal, Tapi Membongkar Pola Berpikir
+          </h2>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+            Setiap modul dirancang tidak hanya untuk menyelesaikan soal bertipe sama, melainkan menumbuhkan intuisi logika tingkat tinggi. Olimpix AI siap menginterogasi langkah penyelesaianmu secara langsung tanpa memberikan contekan jawaban langsung.
+          </p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald text-[20px]">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface">50 Bank Soal per Bab</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald text-[20px]">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface">Validasi Notasi Math Real-Time</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald text-[20px]">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface">Simulasi Timer Ujian CBT</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 relative flex items-center justify-center">
+<div class="w-full h-64 rounded-xl overflow-hidden shadow-md relative group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="An Indonesian middle school student focused intently on studying advanced mathematics at a clean wooden study desk. In the background, a neat blackboard with geometric sketches and gold medal trophies bathed in warm cinematic study lamp illumination, editorial documentary aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcCvpy9XV7NmzJtVrYajc4ZCJyp1Rusw3ufvD19JZC5Kp6JiK2tWpK2zsIf6vIQhVfkNhM6_FoXlck7LIMs_hB03-1OsueOZYp3O-yX76wS0LqAFFNYJNacer8tIE_MYDzSRXqZNYsczuV8cL43-oVSvVOG-vdMsTarPMJyeGvJsTASJoehpowY8GaSwXaZ4QZyoWXUIAW8M7-ZT5CCcNAPsw6GVoY4y_sMX-F25yz">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent flex items-end p-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">workspace_premium</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Dipandu Berbasis Standar Silabus OSN Nasional</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Banner / High-Conversion Upgrade CTA -->
+<section class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg sm:p-space-xl shadow-md">
+<!-- Prestige Decorative Backdrop Accent -->
+<div class="pointer-events-none absolute -right-20 -bottom-20 w-80 h-80 bg-primary/10 rounded-full blur-2xl"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg">
+<!-- Text Content -->
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-primary/10 text-primary w-fit font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">military_tech</span>
+              AKSES LENGKAP TANPA BATAS
+            </div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">
+              Tingkatkan ke Paket Juara Olimpiade
+            </h2>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+              Dapatkan akses tanpa batas ke seluruh 12 Modul Silabus Nasional, Olimpix AI 50 tanya/hari, dan Tryout CBT terstandar Puspresnas.
+            </p>
+</div>
+<!-- Price & Action Stack -->
+<div class="flex flex-col sm:flex-row lg:flex-col items-start sm:items-center lg:items-end gap-space-md shrink-0 w-full lg:w-auto">
+<div class="flex flex-col lg:text-right">
+<span class="font-label-sm text-label-sm text-secondary line-through">Rp 350.000 / bulan</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">Rp 199.000</span>
+<span class="font-label-md text-label-md text-secondary">/ bulan</span>
+</div>
+</div>
+<button class="w-full sm:w-auto h-12 px-space-xl rounded-xl bg-primary text-on-primary hover:bg-on-primary-container font-label-md text-label-md font-bold transition-all shadow-md flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[20px]">stars</span>
+              Aktifkan Paket Juara Sekarang
+            </button>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl shadow-[0_-1px_6px_rgba(0,0,0,0.02)]"><div class="w-full px-gutter py-space-xl"><div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg pb-space-lg"><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="Medalis Logo" class="h-8 w-auto object-contain" src="assets/medalis_logo.svg"><span class="font-title-lg text-title-lg tracking-wider text-on-surface font-semibold">MEDALIS</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">Platform Persiapan Olimpiade Sains Nasional</p></div><div class="flex flex-wrap items-center gap-space-lg"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="pedoman-akademik" href="state-anti-cheat-gelap.html" style="text-decoration:none;">Pedoman Akademik</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="kebijakan-privasi" href="state-anti-cheat-gelap.html" style="text-decoration:none;">Kebijakan Privasi</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="bantuan" href="guru-ai-gelap.html" style="text-decoration:none;">Bantuan</a></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2026 Medalis Indonesia. Hak Cipta Dilindungi Undang-Undang.</p><span class="font-label-sm text-label-sm text-on-surface-variant">Sains • Prestasi • Integritas</span></div></div></footer>
+
+  <script src="assets/medalis_interactive.js"></script>
+</body></html>

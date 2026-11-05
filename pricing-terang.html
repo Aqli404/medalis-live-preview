@@ -1,0 +1,401 @@
+<!DOCTYPE html><html class="light" lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>Medalis - Platform Persiapan Olimpiade Sains Nasional</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary":"#4e5f7e","outline-variant":"#d2c5b1","on-secondary-container":"#4f5f7f","on-primary-fixed":"#261900","on-tertiary-fixed":"#001b3f","inverse-primary":"#efc05d","error-container":"#ffdad6","surface-tint":"#7a5900","on-primary":"#ffffff","tertiary-fixed-dim":"#abc7ff","on-secondary-fixed-variant":"#364765","surface-container":"#f0eee7","surface":"#fbf9f2","tertiary-container":"#8caef0","on-tertiary-container":"#18407b","primary-fixed":"#ffdea2","inverse-on-surface":"#f3f1ea","on-surface":"#1b1c18","on-background":"#1b1c18","secondary-fixed":"#d6e3ff","primary-container":"#d4a747","primary":"#7a5900","primary-fixed-dim":"#efc05d","surface-container-lowest":"#ffffff","tertiary-fixed":"#d7e2ff","secondary-container":"#c9daff","surface-variant":"#e4e2dc","error":"#ba1a1a","surface-container-highest":"#e4e2dc","on-tertiary-fixed-variant":"#1f4681","red":"#DC2626","on-secondary-fixed":"#081b37","amber":"#F59E0B","surface-container-high":"#eae8e1","surface-dim":"#dcdad3","on-tertiary":"#ffffff","surface-container-low":"#f6f4ed","secondary-fixed-dim":"#b6c7eb","surface-bright":"#fbf9f2","on-primary-fixed-variant":"#5c4200","tertiary":"#3b5e9a","emerald":"#059669","on-error":"#ffffff","on-surface-variant":"#4e4637","inverse-surface":"#30312c","on-secondary":"#ffffff","background":"#fbf9f2","on-primary-container":"#563d00","outline":"#807665","on-error-container":"#93000a"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xl":"2.5rem","gutter":"1.5rem","space-md":"1rem","margin":"2rem","space-xs":"0.25rem","space-sm":"0.5rem","space-lg":"1.5rem"},"fontFamily":{"timer":["JetBrains Mono"],"headline-sm":["Poppins"],"headline-md":["Poppins"],"label-md":["Poppins"],"title-md":["Poppins"],"headline-lg-mobile":["Poppins"],"title-lg":["Poppins"],"body-lg":["Poppins"],"headline-lg":["Poppins"],"body-md":["Poppins"],"body-sm":["Poppins"],"label-sm":["Poppins"],"headline-xl":["Poppins"]},"fontSize":{"timer":["16px",{"lineHeight":"20px","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"label-md":["14px",{"lineHeight":"20px","fontWeight":"500"}],"title-md":["16px",{"lineHeight":"22px","fontWeight":"600"}],"headline-lg-mobile":["26px",{"lineHeight":"32px","fontWeight":"700"}],"title-lg":["18px",{"lineHeight":"24px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"headline-xl":["40px",{"lineHeight":"48px","fontWeight":"700"}]}}}}</script>  <link rel="stylesheet" href="assets/medalis_interactive.css">
+</head><body class="min-h-screen flex flex-col bg-surface font-body-md text-body-md text-on-surface"><header class="fixed top-0 left-0 right-0 z-50 h-[72px] bg-surface-container-lowest border-b border-surface-variant"><div class="w-full h-full px-gutter flex items-center justify-between gap-space-md"><a href="dashboard-terang.html" style="text-decoration:none;" class="flex items-center shrink-0"><div class="flex items-center gap-space-sm shrink-0"><img alt="medalis_logo_transparent.png" class="h-8 w-auto object-contain" src="assets/medalis_logo.svg"><span class="font-title-lg text-title-lg tracking-wider text-on-tertiary-fixed">MEDALIS</span></div></a><nav class="hidden lg:flex items-center gap-space-lg h-full" data-active-classes="text-primary font-title-md font-semibold border-b-2 border-primary"><a aria-current="page" class="flex items-center h-full px-space-xs transition-colors text-primary font-title-md font-semibold border-b-2 border-primary" data-path="beranda" href="dashboard-terang.html" style="text-decoration:none;">Beranda</a><a class="flex items-center h-full px-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="modul" href="daftar-modul-terang.html" style="text-decoration:none;">Modul</a><a class="flex items-center h-full px-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="tryout" href="lobby-tryout-terang.html" style="text-decoration:none;">Tryout</a><a class="flex items-center h-full px-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="guru-ai" href="guru-ai-terang.html" style="text-decoration:none;">Guru AI</a><a class="flex items-center h-full px-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="timeline" href="prep-timeline-terang.html" style="text-decoration:none;">Timeline</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center p-1 bg-surface-container rounded-full"><a href="pricing-terang.html" class="flex items-center gap-1 px-3 py-1 bg-surface-container-lowest text-on-tertiary-fixed rounded-full shadow-sm font-label-sm text-label-sm" style="text-decoration:none;"><span class="material-symbols-outlined text-[16px]">light_mode</span><span class="">Terang</span></a><a href="pricing-gelap.html" class="flex items-center gap-1 px-3 py-1 text-on-surface-variant hover:text-on-surface rounded-full font-label-sm text-label-sm" style="text-decoration:none;"><span class="material-symbols-outlined text-[16px]">dark_mode</span><span class="">Gelap</span></a><a href="javascript:void(0)" onclick="handleAutoTheme()" class="flex items-center gap-1 px-3 py-1 text-on-surface-variant hover:text-on-surface rounded-full font-label-sm text-label-sm" style="text-decoration:none; cursor:pointer;" title="Ikuti tema sistem OS"><span class="material-symbols-outlined text-[16px]">desktop_windows</span><span class="">Sistem</span></a></div><div class="h-6 w-px bg-surface-variant"></div><div class="flex items-center gap-space-sm cursor-pointer select-none"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Aisyah</span><span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">Kelas 8 SMP</span></div><span class="material-symbols-outlined text-on-surface-variant text-[20px]">expand_more</span></div></div></div></header><main class="w-full flex-1 pt-[72px] bg-surface"><div class="flex flex-col w-full bg-surface text-on-surface">
+<!-- Hero Section -->
+<section class="relative w-full pt-space-xl pb-space-lg px-gutter max-w-7xl mx-auto text-center flex flex-col items-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container border border-surface-variant text-primary font-label-sm text-label-sm mb-4">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="">Investasi Prestasi Sains Nasional</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-tertiary-fixed tracking-tight max-w-3xl mb-4">
+      Akses Terbimbing Menuju Podium Juara OSN
+    </h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl mb-8">
+      Pilih paket kurikulum berstandar Puspresnas dengan bimbingan Olimpix AI, bank soal adaptif, dan simulasi tryout berbatas waktu.
+    </p>
+<!-- Plan Frequency Toggle (Visual Only) -->
+<div class="inline-flex items-center p-1 bg-surface-container rounded-full border border-surface-variant mb-12">
+<a href="pricing-terang.html" class="px-5 py-2 rounded-full bg-surface-container-lowest text-on-tertiary-fixed shadow-sm font-label-md text-label-md"  style="text-decoration:none;">
+        Langganan Mandiri
+      </a>
+<button class="px-5 py-2 rounded-full text-secondary hover:text-on-surface transition-colors font-label-md text-label-md flex items-center gap-1.5" type="button">
+        Kemitraan Sekolah
+        <span class="px-2 py-0.5 text-[10px] bg-primary-fixed text-on-primary-fixed rounded-full font-label-sm uppercase tracking-wide">Institusi</span>
+</button>
+</div>
+<!-- Pricing Cards Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full text-left items-stretch">
+<!-- Card 1: Paket Bulanan -->
+<div class="flex flex-col justify-between bg-surface-container-lowest rounded-xl border border-surface-variant p-6 shadow-sm hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-title-lg text-title-lg text-on-tertiary-fixed">Paket Bulanan</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm">Fleksibel</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary min-h-[36px] mb-6">
+            Mulai eksplorasi materi kompetisi sains dengan modul esensial bulanan.
+          </p>
+<div class="mb-6">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg text-headline-lg text-on-tertiary-fixed">Rp 199.000</span>
+<span class="font-body-sm text-body-sm text-secondary">/bulan</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary block mt-1">Dapat dibatalkan sewaktu-waktu</span>
+</div>
+<div class="h-px bg-surface-variant w-full mb-6"></div>
+<div class="space-y-3 mb-8">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-emerald text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-secondary">Akses 1 bidang OSN pilihan</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-emerald text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-secondary">Akses 1.500+ latihan soal bertingkat</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-emerald text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-secondary">2x simulasi tryout berkala/bulan</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-emerald text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-secondary">Konsultasi dasar Olimpix AI</span>
+</div>
+<div class="flex items-start gap-3 opacity-40">
+<span class="material-symbols-outlined text-outline text-[18px] shrink-0 mt-0.5">cancel</span>
+<span class="font-body-sm text-body-sm text-secondary">Analisis komparatif nasional</span>
+</div>
+</div>
+</div>
+<a href="dashboard-terang.html" class="w-full py-3 rounded-full border border-outline-variant hover:border-on-tertiary-fixed text-on-tertiary-fixed font-title-md text-title-md transition-all text-center"  style="text-decoration:none;">
+          Pilih Paket Bulanan
+        </a>
+</div>
+<!-- Card 2: Paket 3 Bulan (Featured) -->
+<div class="relative flex flex-col justify-between bg-surface-container-lowest rounded-xl border-2 border-primary-container p-6 shadow-lg lg:-translate-y-2">
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary-container text-on-tertiary-fixed font-label-sm text-label-sm font-semibold px-4 py-1 rounded-full shadow-sm whitespace-nowrap">
+          Paling Populer · Hemat 20%
+        </div>
+<div>
+<div class="flex items-center justify-between mb-4 mt-2">
+<span class="font-title-lg text-title-lg text-on-tertiary-fixed font-bold">Paket 3 Bulan</span>
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">Intensif</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary min-h-[36px] mb-6">
+            Program persiapan matang menuju seleksi OSN tingkat Kabupaten/Kota &amp; Provinsi.
+          </p>
+<div class="mb-6">
+<div class="flex items-center gap-2 mb-1">
+<span class="line-through text-outline font-body-sm text-body-sm">Rp 597.000</span>
+<span class="px-2 py-0.5 rounded bg-emerald/10 text-emerald font-label-sm text-label-sm font-semibold">Setara Rp 166.000/bln</span>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg text-headline-lg text-on-tertiary-fixed font-bold">Rp 499.000</span>
+<span class="font-body-sm text-body-sm text-secondary">/3 bulan</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary block mt-1">Pembayaran satu kali di muka</span>
+</div>
+<div class="h-px bg-surface-variant w-full mb-6"></div>
+<div class="space-y-3 mb-8">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-emerald text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Akses seluruh bidang sains jenjang Anda</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-emerald text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Bank soal 4.500+ dengan bedah metode</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-emerald text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Simulasi tryout mingguan tak terbatas</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-emerald text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Interaksi Olimpix AI tanpa kuota</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-emerald text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Peta kelemahan analitis &amp; rekam jejak progres</span>
+</div>
+</div>
+</div>
+<a href="dashboard-terang.html" class="w-full py-3 rounded-full bg-primary-container hover:bg-primary-fixed-dim text-on-tertiary-fixed font-title-md text-title-md font-bold transition-all text-center shadow"  style="text-decoration:none;">
+          Pilih Paket 3 Bulan
+        </a>
+</div>
+<!-- Card 3: Paket 1 Tahun -->
+<div class="flex flex-col justify-between bg-surface-container-lowest rounded-xl border border-surface-variant p-6 shadow-sm hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-title-lg text-title-lg text-on-tertiary-fixed">Paket 1 Tahun</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm">Paripurna</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary min-h-[36px] mb-6">
+            Rangkaian komprehensif pendampingan berjenjang hingga seleksi OSN Nasional.
+          </p>
+<div class="mb-6">
+<div class="flex items-center gap-2 mb-1">
+<span class="line-through text-outline font-body-sm text-body-sm">Rp 2.388.000</span>
+<span class="px-2 py-0.5 rounded bg-emerald/10 text-emerald font-label-sm text-label-sm font-semibold">Hemat 45%</span>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg text-headline-lg text-on-tertiary-fixed">Rp 1.299.000</span>
+<span class="font-body-sm text-body-sm text-secondary">/tahun</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary block mt-1">Setara Rp 108.250/bulan</span>
+</div>
+<div class="h-px bg-surface-variant w-full mb-6"></div>
+<div class="space-y-3 mb-8">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-emerald text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-secondary">Seluruh keuntungan Paket 3 Bulan</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-emerald text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-secondary">Arsip komplit OSN 10 tahun terakhir</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-emerald text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-secondary">Prediksi bobot skor per bab materi</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-emerald text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-secondary">Laporan berkala performa ke orang tua</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-emerald text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-secondary">Sertifikasi tryout berkala resmi Medalis</span>
+</div>
+</div>
+</div>
+<a href="dashboard-terang.html" class="w-full py-3 rounded-full border border-outline-variant hover:border-on-tertiary-fixed text-on-tertiary-fixed font-title-md text-title-md transition-all text-center"  style="text-decoration:none;">
+          Pilih Paket 1 Tahun
+        </a>
+</div>
+</div>
+</section>
+<!-- Feature Comparison Table -->
+<section class="w-full py-space-xl px-gutter max-w-7xl mx-auto">
+<div class="text-center mb-10">
+<h2 class="font-headline-lg text-headline-lg text-on-tertiary-fixed mb-3">Komparasi Fitur Lengkap</h2>
+<p class="font-body-md text-body-md text-secondary">Perincian spesifikasi kurikulum dan modul untuk memastikan kesiapan terbaik Anda.</p>
+</div>
+<div class="w-full overflow-x-auto bg-surface-container-lowest rounded-xl border border-surface-variant shadow-sm">
+<table class="w-full text-left border-collapse min-w-[700px]">
+<thead>
+<tr class="bg-surface-container border-b border-surface-variant">
+<th class="py-4 px-6 font-title-md text-title-md text-on-tertiary-fixed w-2/5">Fitur Platform</th>
+<th class="py-4 px-4 font-title-md text-title-md text-on-tertiary-fixed text-center w-1/5">Paket Bulanan</th>
+<th class="py-4 px-4 font-title-md text-title-md text-on-tertiary-fixed text-center w-1/5 bg-primary-fixed/20 border-x border-surface-variant">Paket 3 Bulan</th>
+<th class="py-4 px-4 font-title-md text-title-md text-on-tertiary-fixed text-center w-1/5">Paket 1 Tahun</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-variant">
+<!-- Row 1 -->
+<tr>
+<td class="py-4 px-6 font-body-sm text-body-sm text-on-surface">
+<span class="font-medium text-on-tertiary-fixed block">Cakupan Bidang Kompetisi</span>
+<span class="text-secondary text-xs">Matematika, IPA, IPS, Fisika, Kimia, Biologi, Informatika</span>
+</td>
+<td class="py-4 px-4 text-center font-body-sm text-body-sm text-secondary">1 Bidang Pilihan</td>
+<td class="py-4 px-4 text-center font-body-sm text-body-sm text-emerald font-semibold bg-primary-fixed/10 border-x border-surface-variant">Semua Bidang</td>
+<td class="py-4 px-4 text-center font-body-sm text-body-sm text-emerald font-semibold">Semua Bidang</td>
+</tr>
+<!-- Row 2 -->
+<tr>
+<td class="py-4 px-6 font-body-sm text-body-sm text-on-surface">
+<span class="font-medium text-on-tertiary-fixed block">Olimpix AI</span>
+<span class="text-secondary text-xs">Metode bimbingan Olimpix AI tanpa memberi contekan langsung</span>
+</td>
+<td class="py-4 px-4 text-center font-body-sm text-body-sm text-secondary">30 Pertanyaan / Hari</td>
+<td class="py-4 px-4 text-center font-body-sm text-body-sm text-emerald font-semibold bg-primary-fixed/10 border-x border-surface-variant">Tanpa Batas</td>
+<td class="py-4 px-4 text-center font-body-sm text-body-sm text-emerald font-semibold">Tanpa Batas</td>
+</tr>
+<!-- Row 3 -->
+<tr>
+<td class="py-4 px-6 font-body-sm text-body-sm text-on-surface">
+<span class="font-medium text-on-tertiary-fixed block">Server-Side Exam Engine</span>
+<span class="text-secondary text-xs">Simulasi timer JetBrains Mono &amp; deteksi tab-switch anti-curang</span>
+</td>
+<td class="py-4 px-4 text-center font-body-sm text-body-sm text-secondary">2x Simulasi/Bulan</td>
+<td class="py-4 px-4 text-center font-body-sm text-body-sm text-emerald font-semibold bg-primary-fixed/10 border-x border-surface-variant">Akses Penuh</td>
+<td class="py-4 px-4 text-center font-body-sm text-body-sm text-emerald font-semibold">Akses Penuh</td>
+</tr>
+<!-- Row 4 -->
+<tr>
+<td class="py-4 px-6 font-body-sm text-body-sm text-on-surface">
+<span class="font-medium text-on-tertiary-fixed block">Bank Arsip OSN Terdahulu</span>
+<span class="text-secondary text-xs">Kumpulan naskah asli OSN-K, OSN-P, dan Nasional beserta solusi</span>
+</td>
+<td class="py-4 px-4 text-center font-body-sm text-body-sm text-secondary">3 Tahun Terakhir</td>
+<td class="py-4 px-4 text-center font-body-sm text-body-sm text-emerald font-semibold bg-primary-fixed/10 border-x border-surface-variant">5 Tahun Terakhir</td>
+<td class="py-4 px-4 text-center font-body-sm text-body-sm text-emerald font-semibold">10 Tahun Terakhir</td>
+</tr>
+<!-- Row 5 -->
+<tr>
+<td class="py-4 px-6 font-body-sm text-body-sm text-on-surface">
+<span class="font-medium text-on-tertiary-fixed block">Peringkat Nasional Berbasis AI</span>
+<span class="text-secondary text-xs">Perbandingan persentil capaian dengan rata-rata kandidat nasional</span>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="material-symbols-outlined text-outline text-[18px]">remove</span>
+</td>
+<td class="py-4 px-4 text-center bg-primary-fixed/10 border-x border-surface-variant">
+<span class="material-symbols-outlined text-emerald text-[20px]">check_circle</span>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="material-symbols-outlined text-emerald text-[20px]">check_circle</span>
+</td>
+</tr>
+<!-- Row 6 -->
+<tr>
+<td class="py-4 px-6 font-body-sm text-body-sm text-on-surface">
+<span class="font-medium text-on-tertiary-fixed block">Ringkasan Otomatis untuk Orang Tua</span>
+<span class="text-secondary text-xs">Kirim perkembangan mingguan dan area butuh bimbingan via email</span>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="material-symbols-outlined text-outline text-[18px]">remove</span>
+</td>
+<td class="py-4 px-4 text-center bg-primary-fixed/10 border-x border-surface-variant">
+<span class="material-symbols-outlined text-outline text-[18px]">remove</span>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="material-symbols-outlined text-emerald text-[20px]">check_circle</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- 3 Steps Activation Section -->
+<section class="w-full py-space-lg px-gutter max-w-7xl mx-auto">
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant p-8 md:p-12 shadow-sm">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<h2 class="font-headline-md text-headline-md text-on-tertiary-fixed mb-2">3 Langkah Mudah Menuju Persiapan Juara</h2>
+<p class="font-body-md text-body-md text-secondary">Aktivasi akun instan dan mulailah perjalanan akademis terarah Anda hari ini.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-headline-sm text-headline-sm mb-4">
+            1
+          </div>
+<h3 class="font-title-lg text-title-lg text-on-tertiary-fixed mb-2">Tentukan Paket Belajar</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+            Sesuaikan dengan target jenjang kompetisi (OSN-K, OSN-P, atau Pelatnas) serta durasi latihan yang diinginkan.
+          </p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-headline-sm text-headline-sm mb-4">
+            2
+          </div>
+<h3 class="font-title-lg text-title-lg text-on-tertiary-fixed mb-2">Pembayaran Terverifikasi</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+            Gunakan QRIS, Virtual Account bank nasional, atau kartu debit. Verifikasi instan tanpa perlu konfirmasi manual.
+          </p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-headline-sm text-headline-sm mb-4">
+            3
+          </div>
+<h3 class="font-title-lg text-title-lg text-on-tertiary-fixed mb-2">Mulai Diagnosis Awal</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+            Olimpix AI akan memetakan kompetensi awal dan merancang jalur rekomendasi modul personal Anda.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Lock Modal Preview / Inline Banner -->
+<section class="w-full py-space-lg px-gutter max-w-7xl mx-auto">
+<div class="bg-surface-container-lowest rounded-xl border-[1.5px] border-primary-container p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[24px]">lock</span>
+</div>
+<div>
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-primary-fixed/30 text-primary font-label-sm text-label-sm font-semibold mb-1">
+            Pratinjau Fitur Premium
+          </div>
+<h3 class="font-title-lg text-title-lg text-on-tertiary-fixed font-semibold mb-1">Fitur Premium Terkunci</h3>
+<p class="font-body-sm text-body-sm text-secondary max-w-xl">
+            Akses pembahasan video interaktif tingkat provinsi, arsip naskah komprehensif, dan analisis performa detail hanya tersedia untuk anggota aktif Medalis.
+          </p>
+</div>
+</div>
+<button class="shrink-0 px-6 py-3 rounded-full bg-primary-container hover:bg-primary-fixed-dim text-on-tertiary-fixed font-title-md text-title-md font-bold transition-all shadow" type="button">
+        Tingkatkan Sekarang
+      </button>
+</div>
+</section>
+<!-- FAQ Accordion Section -->
+<section class="w-full py-space-xl px-gutter max-w-4xl mx-auto">
+<div class="text-center mb-10">
+<h2 class="font-headline-lg text-headline-lg text-on-tertiary-fixed mb-2">Pertanyaan yang Sering Diajukan</h2>
+<p class="font-body-md text-body-md text-secondary">Jawaban atas pertanyaan seputar aktivasi, kurikulum, dan jaminan belajar.</p>
+</div>
+<div class="space-y-4" id="faq-container">
+<!-- FAQ 1 -->
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant overflow-hidden">
+<button class="w-full p-5 flex items-center justify-between text-left focus:outline-none" onclick="toggleFaq(1)" type="button">
+<span class="font-title-md text-title-md text-on-tertiary-fixed">Apakah kurikulum Medalis sesuai dengan silabus resmi OSN?</span>
+<span class="material-symbols-outlined text-secondary transition-transform" id="faq-icon-1">expand_more</span>
+</button>
+<div class="px-5 pb-5 text-secondary font-body-sm text-body-sm hidden" id="faq-body-1">
+          Ya, seluruh bank soal, silabus modul, dan simulasi tryout disusun secara ketat berdasarkan pedoman kurikulum Balai Pengembangan Talenta Indonesia (BPTI) dan Pusat Prestasi Nasional (Puspresnas) Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi.
+        </div>
+</div>
+<!-- FAQ 2 -->
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant overflow-hidden">
+<a href="guru-ai-terang.html" class="w-full p-5 flex items-center justify-between text-left focus:outline-none" onclick="toggleFaq(2)"  style="text-decoration:none;">
+<span class="font-title-md text-title-md text-on-tertiary-fixed">Bagaimana sistem bimbingan Olimpix AI bekerja?</span>
+<span class="material-symbols-outlined text-secondary transition-transform" id="faq-icon-2">expand_more</span>
+</a>
+<div class="px-5 pb-5 text-secondary font-body-sm text-body-sm hidden" id="faq-body-2">
+          Olimpix AI menerapkan metode dialektika Olimpix AI murni. Alih-alih memberikan jawaban akhir secara instan, ia menuntun siswa menemukan kekeliruan logika, mengajukan pertanyaan pemicu analitis, dan mengasah penalaran deduktif yang krusial untuk soal-soal tingkat olimpiade.
+        </div>
+</div>
+<!-- FAQ 3 -->
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant overflow-hidden">
+<a href="pricing-terang.html" class="w-full p-5 flex items-center justify-between text-left focus:outline-none" onclick="toggleFaq(3)"  style="text-decoration:none;">
+<span class="font-title-md text-title-md text-on-tertiary-fixed">Dapatkah saya mengganti bidang sains setelah berlangganan?</span>
+<span class="material-symbols-outlined text-secondary transition-transform" id="faq-icon-3">expand_more</span>
+</a>
+<div class="px-5 pb-5 text-secondary font-body-sm text-body-sm hidden" id="faq-body-3">
+          Untuk Paket 3 Bulan dan Paket 1 Tahun, seluruh bidang sains pada jenjang pendidikan Anda terbuka secara penuh tanpa biaya tambahan. Anda bebas berpindah mata pelajaran kapan pun sesuai jadwal belajar.
+        </div>
+</div>
+<!-- FAQ 4 -->
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant overflow-hidden">
+<button class="w-full p-5 flex items-center justify-between text-left focus:outline-none" onclick="toggleFaq(4)" type="button">
+<span class="font-title-md text-title-md text-on-tertiary-fixed">Apakah akun dapat diakses melalui tablet atau ponsel pintar?</span>
+<span class="material-symbols-outlined text-secondary transition-transform" id="faq-icon-4">expand_more</span>
+</button>
+<div class="px-5 pb-5 text-secondary font-body-sm text-body-sm hidden" id="faq-body-4">
+          Tentu. Medalis didesain dengan tata letak adaptif penuh yang nyaman digunakan pada layar tablet (iPad/Android) maupun laptop desktop. Untuk simulasi tryout berbatas waktu, kami sangat menyarankan perangkat laptop guna merefleksikan kondisi ujian sesungguhnya.
+        </div>
+</div>
+</div>
+</section>
+<!-- Client-Side Micro-interactions -->
+<script>
+    function toggleFaq(id) {
+      const body = document.getElementById(`faq-body-${id}`);
+      const icon = document.getElementById(`faq-icon-${id}`);
+      if (!body || !icon) return;
+      
+      const isHidden = body.classList.contains('hidden');
+      if (isHidden) {
+        body.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      } else {
+        body.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low border-t border-surface-variant py-space-lg"><div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="medalis_logo_transparent.png" class="h-8 w-auto object-contain" src="assets/medalis_logo.svg"><span class="font-title-md text-title-md tracking-wider text-on-tertiary-fixed">MEDALIS</span><span class="hidden md:inline font-body-sm text-body-sm text-outline">|</span><span class="font-body-sm text-body-sm text-on-surface-variant">Platform Persiapan Olimpiade Sains Nasional</span></div><div class="flex flex-wrap items-center justify-center gap-space-md"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="pedoman-akademik" href="state-anti-cheat-terang.html" style="text-decoration:none;">Pedoman Akademik</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="kebijakan-privasi" href="state-anti-cheat-terang.html" style="text-decoration:none;">Kebijakan Privasi</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="bantuan" href="guru-ai-terang.html" style="text-decoration:none;">Bantuan</a></div><div class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-right">© 2026 Medalis Indonesia. Hak Cipta Dilindungi.</div></div></footer>
+
+  <script src="assets/medalis_interactive.js"></script>
+</body></html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tryout KSNR Matematika SMP — Gelap</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #071324;
+      color: #CBD5E1;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    .font-mono-timer {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .math-text {
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic;
+      color: #FFFFFF;
+    }
+  </style>
+  <link rel="stylesheet" href="assets/medalis_interactive.css">
+</head>
+<body class="min-h-screen bg-[#071324] text-[#CBD5E1] flex flex-col justify-between antialiased selection:bg-[#D4A747] selection:text-[#0B1E3A]">
+
+  <!-- TOP HUD (Exact 72px Height, Dark Mode) -->
+  <header class="h-[72px] bg-[#071324] border-b border-[#1E3A5F] px-6 md:px-8 sticky top-0 z-40 flex items-center justify-between">
+    <!-- Left: Logo + Exam Info -->
+    <div class="flex items-center space-x-4">
+      <div class="flex items-center space-x-3 pr-4 border-r border-[#1E3A5F]">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvelc7adJ-QyXVmaQX7w7hU2_SaDYimSVozFcQQ-4lxJGTH2h2OWkRmkpOni1_LAe6UM7yep0G9KwSxvExcWvID8Vs_NY8ZPdv5rYkPcdvd5yuqxvsCKnybtgSpmB7VQnVEylszuiJdsYqNUQNUXY2KvrEGsrSIGDNb8rgd0NEecn_C5j_VK1wtWAPGTbfKToteYky40GSp9CUVTiBEMzyLLsjvAx5Y_4ZRpx83SfmQemmeSjOhXbwYw" alt="Medalis Logo" class="h-9 w-auto object-contain" onerror="this.style.display='none'">
+        <span class="text-white font-semibold text-lg tracking-wider">MEDALIS</span>
+      </div>
+      <div>
+        <div class="flex items-center space-x-2">
+          <span class="text-white font-semibold text-base">Tryout KSNR Matematika SMP</span>
+          <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-[#1E3A5F] text-[#7DD3FC]">
+            Babak Penyisihan
+          </span>
+        </div>
+        <p class="text-xs text-[#94A3B8]">Tingkat Nasional · Kelas 7–9</p>
+      </div>
+    </div>
+
+    <!-- Center: Timer & Cloud Sync Status -->
+    <div class="flex items-center space-x-3">
+      <!-- Monospace Countdown Timer -->
+      <div class="flex items-center space-x-2 bg-[#0F2444] border border-[#1E3A5F] px-3.5 py-1.5 rounded-xl shadow-inner">
+        <svg class="w-4 h-4 text-[#D4A747]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        <span class="text-xs text-[#94A3B8] font-medium">Sisa Waktu:</span>
+        <span class="font-mono-timer text-lg font-bold text-white tracking-wide">01:26:12</span>
+      </div>
+
+      <!-- Autosave Badge -->
+      <div class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl text-xs font-medium bg-[#059669]/20 border border-[#059669]/50 text-[#6EE7B7]">
+        <span class="w-2 h-2 rounded-full bg-[#059669] animate-pulse"></span>
+        <span>Tersimpan</span>
+      </div>
+    </div>
+
+    <!-- Right: Theme Switcher & Profile AP -->
+    <div class="flex items-center space-x-4">
+      <!-- Segmented 3-State Theme Switcher -->
+      <div class="flex items-center bg-[#0F2444] p-1 rounded-xl border border-[#1E3A5F]">
+        <a href="lembar-tryout-terang.html" class="flex items-center space-x-1.5 px-3 py-1 text-xs font-medium text-[#94A3B8] rounded-lg hover:text-white transition" style="text-decoration:none;">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <span>Terang</span>
+        </a>
+        <a href="lembar-tryout-gelap.html" class="flex items-center space-x-1.5 px-3 py-1 text-xs font-semibold bg-[#D4A747] text-[#0B1E3A] rounded-lg shadow-sm" style="text-decoration:none;">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <span>Gelap</span>
+        </a>
+        <a href="javascript:void(0)" onclick="handleAutoTheme()" class="flex items-center space-x-1.5 px-3 py-1 text-xs font-medium text-[#94A3B8] rounded-lg hover:text-white transition" style="text-decoration:none; cursor:pointer;" title="Ikuti tema sistem OS">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+            <line x1="8" y1="21" x2="16" y2="21"></line>
+            <line x1="12" y1="17" x2="12" y2="21"></line>
+          </svg>
+          <span>Sistem</span>
+        </a>
+      </div>
+
+      <!-- Profile Avatar AP -->
+      <div class="flex items-center space-x-3 pl-3 border-l border-[#1E3A5F]">
+        <div class="text-right">
+          <p class="text-xs font-semibold text-white leading-tight">Aisyah</p>
+          <p class="text-[11px] text-[#94A3B8]">Kelas 8 SMP</p>
+        </div>
+        <div class="w-10 h-10 rounded-full bg-[#0F2444] border border-[#1E3A5F] flex items-center justify-center text-[#D4A747] font-semibold text-sm shadow">
+          AP
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN HUD / CBT BODY CONTENT -->
+  <main class="flex-1 max-w-[1400px] w-full mx-auto p-6 md:p-8 grid grid-cols-12 gap-6">
+
+    <!-- LEFT COLUMN: Soal 14 & Pilihan Jawaban (65% width -> 8 cols) -->
+    <div class="col-span-12 lg:col-span-8 flex flex-col space-y-6">
+      
+      <!-- Kartu Soal Utama -->
+      <div class="bg-[#0F2444] border border-[#1E3A5F] rounded-2xl p-6 shadow-sm flex flex-col justify-between">
+        
+        <!-- Header Soal & Indikator -->
+        <div class="flex items-center justify-between pb-4 border-b border-[#1E3A5F] mb-6">
+          <div class="flex items-center space-x-3">
+            <span class="inline-flex items-center justify-center bg-[#D4A747] text-[#0B1E3A] font-bold text-sm px-3 py-1 rounded-lg">
+              Soal 14
+            </span>
+            <span class="text-sm text-[#94A3B8]">dari 40 Soal</span>
+          </div>
+
+          <!-- Guru AI Disabled Chip (Guardrail) -->
+          <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-xl bg-[#071324] border border-[#1E3A5F] text-[#94A3B8] text-xs">
+            <svg class="w-3.5 h-3.5 text-[#94A3B8]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+            <span>Guru AI nonaktif selama tryout</span>
+          </div>
+        </div>
+
+        <!-- Teks Soal dengan Rumus Matematika Unicode Murni -->
+        <div class="text-white text-base md:text-lg leading-relaxed space-y-4 mb-8">
+          <p>
+            Diberikan barisan bilangan real positif <span class="math-text">(xₙ)</span> dengan relasi rekursif:
+          </p>
+          <div class="p-4 bg-[#071324] border border-[#1E3A5F] rounded-xl text-center text-lg md:text-xl text-white font-medium my-2">
+            <span class="math-text">xₙ₊₁ = xₙ / (1 + n · xₙ)</span> &nbsp;&nbsp;untuk setiap&nbsp;&nbsp; <span class="math-text">n ≥ 1</span>
+          </div>
+          <p>
+            Jika diketahui nilai suku awal <span class="math-text">x₁ = 1</span>, maka tentukanlah nilai dari deret tak hingga:
+          </p>
+          <div class="p-3 bg-[#071324]/60 border border-[#1E3A5F] rounded-xl text-center text-lg text-white font-medium">
+            <span class="math-text">Σ xₙ · xₙ₊₁</span> &nbsp;&nbsp;untuk&nbsp;&nbsp; <span class="math-text">n = 1</span> sampai <span class="math-text">∞</span>
+          </div>
+        </div>
+
+        <!-- Pilihan Jawaban (A, B, C, D) - Touch Target Min 48px -->
+        <div class="space-y-3">
+          <!-- Opsi A (Default) -->
+          <button class="w-full text-left min-h-[52px] p-4 rounded-xl bg-[#071324] border border-[#1E3A5F] hover:border-[#D4A747]/60 transition flex items-center justify-between group">
+            <div class="flex items-center space-x-4">
+              <span class="w-8 h-8 rounded-lg bg-[#0F2444] border border-[#1E3A5F] text-[#CBD5E1] group-hover:text-white font-semibold flex items-center justify-center text-sm">
+                A
+              </span>
+              <span class="text-white text-base font-medium">1</span>
+            </div>
+            <div class="w-5 h-5 rounded-full border border-[#1E3A5F]"></div>
+          </button>
+
+          <!-- Opsi B (Selected Emerald Tint + 2px Border) -->
+          <button class="w-full text-left min-h-[52px] p-4 rounded-xl bg-[#059669]/15 border-2 border-[#059669] transition flex items-center justify-between shadow-sm">
+            <div class="flex items-center space-x-4">
+              <span class="w-8 h-8 rounded-lg bg-[#059669] text-white font-bold flex items-center justify-center text-sm shadow">
+                B
+              </span>
+              <span class="text-white text-base font-semibold">½</span>
+            </div>
+            <div class="w-5 h-5 rounded-full bg-[#059669] flex items-center justify-center text-white">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+          </button>
+
+          <!-- Opsi C (Default) -->
+          <button class="w-full text-left min-h-[52px] p-4 rounded-xl bg-[#071324] border border-[#1E3A5F] hover:border-[#D4A747]/60 transition flex items-center justify-between group">
+            <div class="flex items-center space-x-4">
+              <span class="w-8 h-8 rounded-lg bg-[#0F2444] border border-[#1E3A5F] text-[#CBD5E1] group-hover:text-white font-semibold flex items-center justify-center text-sm">
+                C
+              </span>
+              <span class="text-white text-base font-medium">(√5 − 1) / 2</span>
+            </div>
+            <div class="w-5 h-5 rounded-full border border-[#1E3A5F]"></div>
+          </button>
+
+          <!-- Opsi D (Default) -->
+          <button class="w-full text-left min-h-[52px] p-4 rounded-xl bg-[#071324] border border-[#1E3A5F] hover:border-[#D4A747]/60 transition flex items-center justify-between group">
+            <div class="flex items-center space-x-4">
+              <span class="w-8 h-8 rounded-lg bg-[#0F2444] border border-[#1E3A5F] text-[#CBD5E1] group-hover:text-white font-semibold flex items-center justify-center text-sm">
+                D
+              </span>
+              <span class="text-white text-base font-medium">2</span>
+            </div>
+            <div class="w-5 h-5 rounded-full border border-[#1E3A5F]"></div>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Action Navigasi Bawah (Sebelumnya | Ragu-ragu | Selanjutnya | Selesai Ujian) -->
+      <div class="bg-[#0F2444] border border-[#1E3A5F] rounded-2xl p-4 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+          <button class="h-12 px-6 rounded-xl border border-[#1E3A5F] bg-[#071324] text-[#CBD5E1] hover:text-white hover:border-[#CBD5E1] font-medium text-sm flex items-center space-x-2 transition">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            <span>Sebelumnya</span>
+          </button>
+
+          <!-- Flag Ragu-ragu Button -->
+          <button class="h-12 px-5 rounded-xl border border-[#F59E0B]/60 bg-[#F59E0B]/15 text-[#FCD34D] hover:bg-[#F59E0B]/25 font-semibold text-sm flex items-center space-x-2 transition">
+            <svg class="w-4 h-4 text-[#F59E0B]" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clip-rule="evenodd"></path>
+            </svg>
+            <span>Ragu-Ragu</span>
+          </button>
+        </div>
+
+        <div class="flex items-center space-x-3">
+          <button class="h-12 px-6 rounded-xl bg-[#D4A747] text-[#0B1E3A] hover:bg-[#C29535] font-semibold text-sm flex items-center space-x-2 shadow transition">
+            <span>Selanjutnya</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+
+          <!-- Destructive Final Submit Button (WCAG Rule: #7F1D1D bg with bold white text) -->
+          <a href="hasil-tryout-gelap.html" class="h-12 px-6 rounded-xl bg-[#7F1D1D] hover:bg-[#991B1B] text-white font-bold text-sm border border-red-700/60 shadow transition" style="text-decoration:none;">
+            Selesai Ujian
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN: 40-Number Matrix & Integrity Card (35% width -> 4 cols) -->
+    <div class="col-span-12 lg:col-span-4 flex flex-col space-y-6">
+
+      <!-- Palet 40 Nomor Soal -->
+      <div class="bg-[#0F2444] border border-[#1E3A5F] rounded-2xl p-6 shadow-sm">
+        <div class="flex items-center justify-between pb-3 border-b border-[#1E3A5F] mb-4">
+          <h2 class="text-white font-semibold text-base">Palet Nomor Soal</h2>
+          <span class="text-xs text-[#7DD3FC] font-medium bg-[#071324] px-2.5 py-1 rounded-lg border border-[#1E3A5F]">
+            13 Terjawab
+          </span>
+        </div>
+
+        <!-- Legend (Dijawab, Ragu-ragu, Belum, Sedang dibuka) -->
+        <div class="grid grid-cols-2 gap-2 pb-4 border-b border-[#1E3A5F] mb-4 text-xs">
+          <div class="flex items-center space-x-2">
+            <span class="w-3.5 h-3.5 rounded bg-[#059669]"></span>
+            <span class="text-[#CBD5E1]">Dijawab (13)</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="w-3.5 h-3.5 rounded bg-[#F59E0B] flex items-center justify-center text-[9px] text-[#0B1E3A] font-bold">⚑</span>
+            <span class="text-[#CBD5E1]">Ragu-ragu (2)</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="w-3.5 h-3.5 rounded bg-[#162E50] border border-[#1E3A5F]"></span>
+            <span class="text-[#94A3B8]">Belum (24)</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="w-3.5 h-3.5 rounded bg-[#0B1E3A] ring-2 ring-[#D4A747]"></span>
+            <span class="text-white font-medium">Sedang Dibuka</span>
+          </div>
+        </div>
+
+        <!-- 40-Number Grid (8 Kolom x 5 Baris) -->
+        <div class="grid grid-cols-8 gap-2">
+          <!-- 1 - 10 -->
+          <div class="h-9 rounded-lg bg-[#059669] text-white font-bold text-xs flex items-center justify-center cursor-pointer">1</div>
+          <div class="h-9 rounded-lg bg-[#059669] text-white font-bold text-xs flex items-center justify-center cursor-pointer">2</div>
+          <div class="h-9 rounded-lg bg-[#059669] text-white font-bold text-xs flex items-center justify-center cursor-pointer">3</div>
+          <div class="h-9 rounded-lg bg-[#059669] text-white font-bold text-xs flex items-center justify-center cursor-pointer">4</div>
+          <div class="h-9 rounded-lg bg-[#F59E0B] text-[#0B1E3A] font-bold text-xs flex items-center justify-center cursor-pointer">5⚑</div>
+          <div class="h-9 rounded-lg bg-[#059669] text-white font-bold text-xs flex items-center justify-center cursor-pointer">6</div>
+          <div class="h-9 rounded-lg bg-[#059669] text-white font-bold text-xs flex items-center justify-center cursor-pointer">7</div>
+          <div class="h-9 rounded-lg bg-[#059669] text-white font-bold text-xs flex items-center justify-center cursor-pointer">8</div>
+
+          <!-- 11 - 18 -->
+          <div class="h-9 rounded-lg bg-[#059669] text-white font-bold text-xs flex items-center justify-center cursor-pointer">9</div>
+          <div class="h-9 rounded-lg bg-[#059669] text-white font-bold text-xs flex items-center justify-center cursor-pointer">10</div>
+          <div class="h-9 rounded-lg bg-[#059669] text-white font-bold text-xs flex items-center justify-center cursor-pointer">11</div>
+          <div class="h-9 rounded-lg bg-[#F59E0B] text-[#0B1E3A] font-bold text-xs flex items-center justify-center cursor-pointer">12⚑</div>
+          <div class="h-9 rounded-lg bg-[#059669] text-white font-bold text-xs flex items-center justify-center cursor-pointer">13</div>
+          <!-- No 14: Sedang Dibuka (Navy with Gold Ring) -->
+          <div class="h-9 rounded-lg bg-[#0B1E3A] ring-2 ring-[#D4A747] text-white font-bold text-xs flex items-center justify-center cursor-pointer shadow-md">14</div>
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">15</div>
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">16</div>
+
+          <!-- 19 - 26 -->
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">17</div>
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">18</div>
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">19</div>
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">20</div>
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">21</div>
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">22</div>
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">23</div>
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">24</div>
+
+          <!-- 27 - 34 -->
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">25</div>
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">26</div>
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">27</div>
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">28</div>
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">29</div>
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">30</div>
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">31</div>
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">32</div>
+
+          <!-- 35 - 40 -->
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">33</div>
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">34</div>
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">35</div>
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">36</div>
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">37</div>
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">38</div>
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">39</div>
+          <div class="h-9 rounded-lg bg-[#162E50] border border-[#1E3A5F] text-[#94A3B8] font-medium text-xs flex items-center justify-center cursor-pointer">40</div>
+        </div>
+      </div>
+
+      <!-- Kartu Integritas Ujian (Anti-Cheat & Telemetry) -->
+      <div class="bg-[#0F2444] border border-[#1E3A5F] rounded-2xl p-6 shadow-sm space-y-4">
+        <div class="flex items-center justify-between pb-3 border-b border-[#1E3A5F]">
+          <div class="flex items-center space-x-2">
+            <svg class="w-4 h-4 text-[#D4A747]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <h3 class="text-white font-semibold text-sm">Integritas Ujian</h3>
+          </div>
+          <span class="text-xs text-[#6EE7B7] font-medium bg-[#059669]/15 border border-[#059669]/40 px-2 py-0.5 rounded">
+            Sistem Aktif
+          </span>
+        </div>
+
+        <div class="space-y-3 text-xs">
+          <!-- Pindah Tab Status -->
+          <div class="flex items-center justify-between p-3 rounded-xl bg-[#071324] border border-[#1E3A5F]">
+            <span class="text-[#CBD5E1]">Pindah tab:</span>
+            <span class="font-semibold text-white px-2 py-0.5 rounded bg-[#162E50]">0 dari 3</span>
+          </div>
+
+          <!-- Autosave Status -->
+          <div class="flex items-center justify-between p-3 rounded-xl bg-[#071324] border border-[#1E3A5F]">
+            <span class="text-[#CBD5E1]">Autosave:</span>
+            <span class="font-semibold text-[#6EE7B7] flex items-center space-x-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#059669]"></span>
+              <span>Tersimpan (IndexedDB)</span>
+            </span>
+          </div>
+
+          <!-- Waktu Server Status -->
+          <div class="flex items-center justify-between p-3 rounded-xl bg-[#071324] border border-[#1E3A5F]">
+            <span class="text-[#CBD5E1]">Waktu server:</span>
+            <span class="font-semibold text-[#7DD3FC] flex items-center space-x-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#38BDF8]"></span>
+              <span>Sinkron (WIB)</span>
+            </span>
+          </div>
+        </div>
+
+        <p class="text-[11px] text-[#94A3B8] leading-normal pt-1">
+          Integritas diawasi secara otomatis melalui validasi fokus jendela peramban & enkripsi IndexedDB lokal.
+        </p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- OFFICIAL FOOTER (Exact Medalis Standard, Dark Mode) -->
+  <footer class="bg-[#071324] border-t border-[#1E3A5F] py-6 px-8 mt-6">
+    <div class="max-w-[1400px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#CBD5E1]">
+      <div class="flex items-center space-x-3">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvelc7adJ-QyXVmaQX7w7hU2_SaDYimSVozFcQQ-4lxJGTH2h2OWkRmkpOni1_LAe6UM7yep0G9KwSxvExcWvID8Vs_NY8ZPdv5rYkPcdvd5yuqxvsCKnybtgSpmB7VQnVEylszuiJdsYqNUQNUXY2KvrEGsrSIGDNb8rgd0NEecn_C5j_VK1wtWAPGTbfKToteYky40GSp9CUVTiBEMzyLLsjvAx5Y_4ZRpx83SfmQemmeSjOhXbwYw" alt="Medalis Logo" class="h-8 w-auto object-contain" onerror="this.style.display='none'">
+        <span class="text-white font-semibold text-sm tracking-wider">MEDALIS</span>
+        <span class="text-[#94A3B8] pl-2 border-l border-[#1E3A5F] hidden sm:inline">
+          Platform Persiapan Olimpiade Sains Nasional
+        </span>
+      </div>
+
+      <div class="flex items-center space-x-6 text-[#CBD5E1]">
+        <a href="state-anti-cheat-gelap.html" class="hover:text-white transition" style="text-decoration:none;">Pedoman Akademik</a>
+        <a href="state-anti-cheat-gelap.html" class="hover:text-white transition" style="text-decoration:none;">Kebijakan Privasi</a>
+        <a href="guru-ai-gelap.html" class="hover:text-white transition" style="text-decoration:none;">Bantuan</a>
+      </div>
+
+      <p class="text-[#94A3B8]">
+        © 2026 Medalis Indonesia. Hak Cipta Dilindungi Undang-Undang.
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/medalis_interactive.js"></script>
+</body>
+</html>

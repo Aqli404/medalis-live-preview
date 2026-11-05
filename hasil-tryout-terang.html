@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed-variant":"#364765","on-primary-container":"#563d00","inverse-surface":"#30312c","on-surface":"#1b1c18","tertiary-fixed-dim":"#abc7ff","red":"#DC2626","surface-container-highest":"#e4e2dc","on-tertiary":"#ffffff","surface-tint":"#7a5900","on-surface-variant":"#4e4637","surface-container-lowest":"#ffffff","secondary-fixed":"#d6e3ff","on-error-container":"#93000a","surface-container-low":"#f6f4ed","secondary-container":"#c9daff","on-secondary":"#ffffff","on-background":"#1b1c18","primary-container":"#d4a747","outline":"#807665","primary-fixed-dim":"#efc05d","on-secondary-container":"#4f5f7f","on-secondary-fixed":"#081b37","primary-fixed":"#ffdea2","primary":"#7a5900","tertiary-fixed":"#d7e2ff","surface-variant":"#e4e2dc","secondary":"#4e5f7e","on-error":"#ffffff","inverse-primary":"#efc05d","secondary-fixed-dim":"#b6c7eb","surface-container-high":"#eae8e1","on-tertiary-fixed":"#001b3f","tertiary-container":"#8caef0","error-container":"#ffdad6","surface":"#fbf9f2","on-primary":"#ffffff","inverse-on-surface":"#f3f1ea","on-primary-fixed":"#261900","on-tertiary-fixed-variant":"#1f4681","emerald":"#059669","error":"#ba1a1a","surface-dim":"#dcdad3","on-tertiary-container":"#18407b","amber":"#F59E0B","surface-container":"#f0eee7","outline-variant":"#d2c5b1","background":"#fbf9f2","tertiary":"#3b5e9a","on-primary-fixed-variant":"#5c4200","surface-bright":"#fbf9f2"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xl":"2.5rem","space-xs":"0.25rem","gutter":"1.5rem","space-md":"1rem","space-lg":"1.5rem","margin":"2rem","space-sm":"0.5rem"},"fontFamily":{"title-md":["Poppins"],"headline-sm":["Poppins"],"label-md":["Poppins"],"headline-lg-mobile":["Poppins"],"headline-lg":["Poppins"],"body-lg":["Poppins"],"headline-md":["Poppins"],"label-sm":["Poppins"],"timer":["JetBrains Mono"],"body-md":["Poppins"],"headline-xl":["Poppins"],"body-sm":["Poppins"],"title-lg":["Poppins"]},"fontSize":{"title-md":["16px",{"lineHeight":"22px","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-md":["14px",{"lineHeight":"20px","fontWeight":"500"}],"headline-lg-mobile":["26px",{"lineHeight":"32px","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"timer":["16px",{"lineHeight":"20px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-xl":["40px",{"lineHeight":"48px","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"title-lg":["18px",{"lineHeight":"24px","fontWeight":"600"}]}}}};</script>  <link rel="stylesheet" href="assets/medalis_interactive.css">
+</head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-[72px] w-full px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="medalis_logo_transparent.png" class="h-8 w-auto object-contain" src="assets/medalis_logo.svg"/><span class="font-title-md text-title-md tracking-wider uppercase text-primary">MEDALIS</span></div><nav class="flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-label-md text-label-md rounded-xl shadow-sm"><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md rounded-xl transition-colors" data-path="beranda" href="dashboard-terang.html" style="text-decoration:none;">Beranda</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md rounded-xl transition-colors" data-path="modul" href="daftar-modul-terang.html" style="text-decoration:none;">Modul</a><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-label-md text-label-md rounded-xl shadow-sm" data-path="tryout" href="lobby-tryout-terang.html" style="text-decoration:none;">Tryout</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md rounded-xl transition-colors" data-path="guru-ai" href="guru-ai-terang.html" style="text-decoration:none;">Guru AI</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md rounded-xl transition-colors" data-path="timeline" href="prep-timeline-terang.html" style="text-decoration:none;">Timeline</a></nav><div class="flex items-center gap-space-lg"><div class="flex items-center p-space-xs bg-surface-container rounded-full"><a href="hasil-tryout-terang.html" class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface text-primary shadow-sm font-label-sm text-label-sm" style="text-decoration:none;"><span class="material-symbols-outlined text-[16px]">light_mode</span><span>Terang</span></a><a href="hasil-tryout-gelap.html" class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" style="text-decoration:none;"><span class="material-symbols-outlined text-[16px]">dark_mode</span><span>Gelap</span></a><a href="javascript:void(0)" onclick="handleAutoTheme()" class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" style="text-decoration:none; cursor:pointer;" title="Ikuti tema sistem OS"><span class="material-symbols-outlined text-[16px]">desktop_windows</span><span>Sistem</span></a></div><div class="flex items-center gap-space-sm pl-space-sm cursor-pointer"><div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-title-md text-title-md font-semibold">AP</div><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Aisyah</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Kelas 8 SMP</span></div><span class="material-symbols-outlined text-on-surface-variant text-[20px]">keyboard_arrow_down</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-[72px] bg-background flex-1"><div class="w-full px-gutter py-margin max-w-7xl mx-auto"><div class="flex flex-col w-full gap-space-lg">
+<!-- 1. Breadcrumb & Title Header -->
+<header class="flex flex-col gap-space-xs">
+<nav class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary">
+<a class="hover:text-primary transition-colors" href="lobby-tryout-terang.html" style="text-decoration:none;">Tryout</a>
+<span class="text-outline-variant font-label-sm text-label-sm">›</span>
+<a class="hover:text-primary transition-colors" href="#">Simulasi Mandiri KSNR Matematika SMP 2025</a>
+<span class="text-outline-variant font-label-sm text-label-sm">›</span>
+<span class="text-on-surface font-label-md text-label-md">Hasil &amp; Evaluasi</span>
+</nav>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm pt-space-xs">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Evaluasi Hasil Tryout: KSNR Matematika SMP</h1>
+<div class="flex items-center gap-space-sm mt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">schedule</span>
+<span>Diselesaikan pada 15 April 2025, 09:44 WIB</span>
+<span class="text-outline-variant">•</span>
+<span class="font-timer text-timer text-on-surface font-semibold bg-surface-container px-space-sm py-0.5 rounded-lg">ID Sesi: #KSNR-2025-SMP-094</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-secondary-container/50 text-on-secondary-container">
+<span class="w-2 h-2 rounded-full bg-emerald"></span>
+<span class="font-label-sm text-label-sm font-semibold tracking-wide uppercase">Hasil Terverifikasi Sistem</span>
+</div>
+</div>
+</header>
+<!-- 2. Hero Result Banner Card -->
+<section class="bg-surface-container-lowest rounded-full p-space-xl shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Column: Metrics & Actions -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div>
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-emerald/10 text-emerald mb-space-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider">PREDIKAT: LOLOS TAHAP NASIONAL (AMBANG BATAS SKOR KOTA 110)</span>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-xl text-[56px] leading-[64px] font-bold text-on-surface">128</span>
+<span class="font-headline-md text-headline-md text-secondary">/ 160</span>
+</div>
+<p class="font-title-md text-title-md text-secondary mt-1 flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">military_tech</span>
+<span>Peringkat <strong class="text-on-surface">#14</strong> dari 1.420 Peserta Nasional (Top 1%)</span>
+</p>
+</div>
+<!-- 4 Metric Pills -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Akurasi</span>
+<span class="font-title-lg text-title-lg text-on-surface">80%</span>
+<span class="font-body-sm text-body-sm text-emerald">32 Benar • 8 Salah</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Waktu Kerja</span>
+<span class="font-title-lg text-title-lg text-on-surface">74 Menit</span>
+<span class="font-body-sm text-body-sm text-secondary">dari batas 90m</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kecepatan Rata²</span>
+<span class="font-title-lg text-title-lg text-on-surface font-timer">1m 51d</span>
+<span class="font-body-sm text-body-sm text-secondary">per butir soal</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Integritas</span>
+<span class="font-title-lg text-title-lg text-emerald">100% Bersih</span>
+<span class="font-body-sm text-body-sm text-secondary">0 Tab-switch</span>
+</div>
+</div>
+<!-- Action Buttons Group -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a href="pembahasan-terang.html" class="h-12 px-6 rounded-xl bg-primary-container text-on-primary-container font-title-md text-title-md font-semibold hover:bg-primary hover:text-on-primary transition-all flex items-center gap-space-sm shadow-sm"  style="text-decoration:none;">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+<span>Lihat Pembahasan &amp; Kunci Jawaban</span>
+</a>
+<a href="lobby-tryout-terang.html" class="h-12 px-6 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-medium transition-colors flex items-center gap-space-sm"  style="text-decoration:none;">
+<span class="material-symbols-outlined text-[20px]">replay</span>
+<span>Ulangi Tryout Mandiri</span>
+</a>
+<a class="font-label-md text-label-md text-secondary hover:text-on-surface transition-colors flex items-center gap-space-xs underline underline-offset-4 decoration-outline-variant" href="#">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Unduh Lembar Hasil Resmi (PDF)</span>
+</a>
+</div>
+</div>
+<!-- Right Column: Medal Presentation -->
+<div class="lg:col-span-5 bg-surface-container-low p-space-lg rounded-full flex flex-col items-center text-center">
+<!-- Indonesia Red-White Ribbon Graphic -->
+<div class="flex items-center justify-center -mb-3 z-10">
+<div class="w-8 h-10 bg-red rounded-t-sm shadow-sm rotate-[-8deg] origin-bottom-right"></div>
+<div class="w-8 h-10 bg-surface-container-lowest rounded-t-sm shadow-sm rotate-[8deg] origin-bottom-left"></div>
+</div>
+<!-- Geometric Silver Medal SVG -->
+<div class="relative w-36 h-36 flex items-center justify-center drop-shadow-md">
+<svg class="w-full h-full" fill="none" viewbox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient gradientunits="userSpaceOnUse" id="silverSheen" x1="15" x2="105" y1="15" y2="105">
+<stop offset="0%" stop-color="#FFFFFF"></stop>
+<stop offset="25%" stop-color="#E2E8F0"></stop>
+<stop offset="50%" stop-color="#CBD5E1"></stop>
+<stop offset="75%" stop-color="#94A3B8"></stop>
+<stop offset="100%" stop-color="#64748B"></stop>
+</lineargradient>
+<lineargradient gradientunits="userSpaceOnUse" id="facetRing" x1="0" x2="120" y1="0" y2="120">
+<stop offset="0%" stop-color="#F8FAFC"></stop>
+<stop offset="100%" stop-color="#94A3B8"></stop>
+</lineargradient>
+</defs>
+<!-- 30-degree Faceted Outer Star/Polygon -->
+<polygon fill="url(#silverSheen)" points="60,6 74,18 92,14 100,30 114,40 110,58 118,74 106,88 104,106 86,108 74,118 58,114 42,118 30,108 12,106 14,88 2,74 10,58 6,40 20,30 28,14 46,18"></polygon>
+<!-- Inner Disc -->
+<circle cx="60" cy="60" fill="#E2E8F0" r="42"></circle>
+<circle cx="60" cy="60" fill="url(#silverSheen)" r="38"></circle>
+<!-- Faceted Prism Cuts -->
+<polygon fill="#FFFFFF" fill-opacity="0.6" points="60,28 72,50 60,60"></polygon>
+<polygon fill="#64748B" fill-opacity="0.3" points="60,28 48,50 60,60"></polygon>
+<polygon fill="#CBD5E1" fill-opacity="0.5" points="92,60 70,50 60,60"></polygon>
+<polygon fill="#94A3B8" fill-opacity="0.5" points="92,60 70,70 60,60"></polygon>
+<polygon fill="#475569" fill-opacity="0.4" points="60,92 72,70 60,60"></polygon>
+<polygon fill="#F1F5F9" fill-opacity="0.7" points="60,92 48,70 60,60"></polygon>
+<polygon fill="#64748B" fill-opacity="0.4" points="28,60 50,70 60,60"></polygon>
+<polygon fill="#FFFFFF" fill-opacity="0.5" points="28,60 50,50 60,60"></polygon>
+<!-- Central Laurel / Emblem Core -->
+<circle cx="60" cy="60" fill="#F8FAFC" r="16"></circle>
+<path d="M60 48L63 56L71 57L65 62L67 70L60 65L53 70L55 62L49 57L57 56Z" fill="#7A5900"></path>
+</svg>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-space-sm uppercase tracking-wide">MEDALI PERAK NASIONAL</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">(SILVER MEDALIST • KSNR SMP)</span>
+<!-- Progress to Gold Medal -->
+<div class="w-full mt-space-md bg-surface-container-lowest p-space-sm rounded-xl">
+<div class="flex justify-between items-center font-label-sm text-label-sm mb-1.5">
+<span class="text-on-surface-variant">Ambang Medali Emas</span>
+<span class="font-semibold text-primary">≥ 136 XP (+8 Poin Lagi)</span>
+</div>
+<div class="w-full h-3 bg-surface-container-high rounded-full overflow-hidden p-0.5">
+<div class="h-full bg-gradient-to-r from-secondary-fixed-dim via-primary-fixed-dim to-primary rounded-full" style="width: 94%;"></div>
+</div>
+<div class="flex justify-between items-center font-timer text-[11px] text-on-surface-variant mt-1">
+<span>Capaian: 128 XP</span>
+<span>Target Emas: 136 XP</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Detailed Diagnostics & Analytics Section (2-Column Grid) -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- Left Card: Radar Chart & Chapter Breakdown -->
+<article class="bg-surface-container-lowest rounded-full p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">insights</span>
+<h2 class="font-title-lg text-title-lg text-on-surface">Analisis Kekuatan Topik &amp; Radar Kemampuan</h2>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 bg-surface-container text-secondary rounded-lg font-medium">6 Domain Uji</span>
+</div>
+<!-- Inline SVG Radar Chart -->
+<div class="w-full flex items-center justify-center py-space-sm">
+<svg class="w-full max-w-[320px] h-[210px]" viewbox="0 0 320 250" xmlns="http://www.w3.org/2000/svg">
+<!-- Background Polygons (Rings) -->
+<polygon fill="none" points="160,30 250,75 250,175 160,220 70,175 70,75" stroke="#E2E8F0" stroke-width="1.5"></polygon>
+<polygon fill="none" points="160,55 225,87 225,163 160,195 95,163 95,87" stroke="#E2E8F0" stroke-dasharray="3 3" stroke-width="1"></polygon>
+<polygon fill="none" points="160,80 200,100 200,150 160,170 120,150 120,100" stroke="#E2E8F0" stroke-width="1"></polygon>
+<!-- Axis lines -->
+<line stroke="#CBD5E1" stroke-width="1" x1="160" x2="160" y1="125" y2="30"></line>
+<line stroke="#CBD5E1" stroke-width="1" x1="160" x2="250" y1="125" y2="75"></line>
+<line stroke="#CBD5E1" stroke-width="1" x1="160" x2="250" y1="125" y2="175"></line>
+<line stroke="#CBD5E1" stroke-width="1" x1="160" x2="160" y1="125" y2="220"></line>
+<line stroke="#CBD5E1" stroke-width="1" x1="160" x2="70" y1="125" y2="175"></line>
+<line stroke="#CBD5E1" stroke-width="1" x1="160" x2="70" y1="125" y2="75"></line>
+<!-- User Performance Data Polygon -->
+<!-- Aljabar (88%), Bil. Bulat (90%), Geometri Sudut (50%), Kombinatorika (86%), Teori Bilangan (100%), Peluang (75%) -->
+<polygon fill="#D4A747" fill-opacity="0.25" points="160,42 240,80 205,150 160,207 85,162 82,88" stroke="#D4A747" stroke-width="2.5"></polygon>
+<!-- Data Points -->
+<circle cx="160" cy="42" fill="#7A5900" r="3.5"></circle>
+<circle cx="240" cy="80" fill="#7A5900" r="3.5"></circle>
+<circle cx="205" cy="150" fill="#DC2626" r="3.5"></circle>
+<circle cx="160" cy="207" fill="#7A5900" r="3.5"></circle>
+<circle cx="85" cy="162" fill="#059669" r="3.5"></circle>
+<circle cx="82" cy="88" fill="#7A5900" r="3.5"></circle>
+<!-- Axis Labels -->
+<text class="font-body-sm text-[10px]" fill="#1B1C18" font-weight="600" text-anchor="middle" x="160" y="20">Aljabar (88%)</text>
+<text class="font-body-sm text-[10px]" fill="#4E4637" text-anchor="start" x="256" y="74">Bil. Bulat (90%)</text>
+<text class="font-body-sm text-[10px]" fill="#DC2626" font-weight="600" text-anchor="start" x="256" y="180">Geometri (50%)</text>
+<text class="font-body-sm text-[10px]" fill="#4E4637" text-anchor="middle" x="160" y="236">Kombinatorika (86%)</text>
+<text class="font-body-sm text-[10px]" fill="#059669" font-weight="600" text-anchor="end" x="64" y="180">Teori Bilangan (100%)</text>
+<text class="font-body-sm text-[10px]" fill="#4E4637" text-anchor="end" x="64" y="74">Peluang (75%)</text>
+</svg>
+</div>
+<!-- Strongest & Weakest Chapters Lists -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-sm">
+<!-- 3 Strongest Chapters -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm font-semibold text-emerald flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">thumb_up</span>
+<span>Kekuatan Utama (Kuasai)</span>
+</span>
+<div class="space-y-1.5">
+<div class="p-space-xs px-space-sm bg-surface-container-low rounded-lg flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface font-medium truncate">1. Teori Bilangan</span>
+<span class="font-label-sm text-label-sm font-semibold text-emerald bg-emerald/10 px-1.5 py-0.5 rounded">100% (8/8)</span>
+</div>
+<div class="p-space-xs px-space-sm bg-surface-container-low rounded-lg flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface font-medium truncate">2. Aljabar Linier &amp; Modulo</span>
+<span class="font-label-sm text-label-sm font-semibold text-emerald bg-emerald/10 px-1.5 py-0.5 rounded">88% (7/8)</span>
+</div>
+<div class="p-space-xs px-space-sm bg-surface-container-low rounded-lg flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface font-medium truncate">3. Kombinatorika Dasar</span>
+<span class="font-label-sm text-label-sm font-semibold text-emerald bg-emerald/10 px-1.5 py-0.5 rounded">86% (6/7)</span>
+</div>
+</div>
+</div>
+<!-- 3 Weakest Chapters -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm font-semibold text-amber flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+<span>Perlu Ditingkatkan (Fokus)</span>
+</span>
+<div class="space-y-1.5">
+<div class="p-space-xs px-space-sm bg-surface-container-low rounded-lg flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface font-medium truncate">1. Geometri Sudut &amp; Poligon</span>
+<span class="font-label-sm text-label-sm font-semibold text-amber bg-amber/15 px-1.5 py-0.5 rounded">50% (3/6)</span>
+</div>
+<div class="p-space-xs px-space-sm bg-surface-container-low rounded-lg flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface font-medium truncate">2. Barisan Rekursif xₙ₊₁</span>
+<span class="font-label-sm text-label-sm font-semibold text-amber bg-amber/15 px-1.5 py-0.5 rounded">60% (3/5)</span>
+</div>
+<div class="p-space-xs px-space-sm bg-surface-container-low rounded-lg flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface font-medium truncate">3. Prinsip Sangkar Burung</span>
+<span class="font-label-sm text-label-sm font-semibold text-amber bg-amber/15 px-1.5 py-0.5 rounded">67% (4/6)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Right Card: Olimpix AI Guidance & Locked Premium Feature -->
+<article class="bg-surface-container-lowest rounded-full p-space-lg shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-md">
+<!-- AI Advisor Header -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+</div>
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface">Rekomendasi Pemantapan Olimpix AI</h2>
+<span class="font-label-sm text-label-sm text-secondary">Tutor Analisis Adaptif Berbasis Silabus OSN</span>
+</div>
+</div>
+<span class="px-space-sm py-0.5 bg-emerald/10 text-emerald font-label-sm text-label-sm rounded-lg font-medium">Aktif</span>
+</div>
+<!-- AI Diagnostic Prose -->
+<div class="bg-surface-container-low p-space-md rounded-xl text-on-surface-variant font-body-md text-body-md leading-relaxed">
+<p>
+            Berdasarkan analisis algoritma Olimpix AI, kelemahan utama Aisyah terpusat pada pembuktian kesebangunan geometri dan eliminasi modulo deret 
+            <span class="font-timer font-semibold text-on-surface bg-surface px-1.5 py-0.5 rounded">xₙ₊₁ = ½(xₙ + √5)</span>. 
+            Kami telah menyusun 5 paket latihan kilat 10-detik untuk menajamkan intuisi pemotongan segitiga siku-siku.
+          </p>
+<div class="mt-space-md flex items-center gap-space-sm">
+<a href="guru-ai-terang.html" class="h-10 px-space-md rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center gap-space-xs"  style="text-decoration:none;">
+<span class="material-symbols-outlined text-primary text-[18px]">chat</span>
+<span>Tanya Olimpix AI Tentang Soal Salah</span>
+</a>
+</div>
+</div>
+<!-- Locked Premium Diagnosis Card -->
+<div class="bg-surface p-space-md rounded-xl shadow-inner relative overflow-hidden">
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-primary-fixed text-on-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm font-bold text-primary uppercase tracking-wider">DIAGNOSTIK MENDALAM TINGKAT PUSPRESNAS</span>
+<span class="font-timer text-[10px] bg-primary-container text-on-primary-container px-1 rounded uppercase font-semibold">Fitur Premium</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-normal">
+                Buka analisis per-detik pacing soal, prediksi percentile akurat seleksi OSN-K 2025, perbandingan statistik dengan juara bertahan tahun lalu, dan rekomendasi Speed-Hack Bab Geometri Sudut.
+              </p>
+<div class="mt-space-xs flex items-center justify-between flex-wrap gap-space-sm pt-space-xs">
+<a href="pricing-terang.html" class="h-11 px-5 rounded-xl bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm flex items-center gap-space-xs"  style="text-decoration:none;">
+<span class="material-symbols-outlined text-[18px]">workspace_premium</span>
+<span>Buka Analisis Premium (Rp 199.000/bln)</span>
+</a>
+<span class="font-body-sm text-body-sm text-secondary">Garansi uang kembali 7 hari</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+<!-- 4. Grid 40 Nomor Ringkasan Jawaban -->
+<section class="bg-surface-container-lowest rounded-full p-space-lg shadow-sm">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm mb-space-md">
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface">Matriks 40 Butir Soal Tryout</h2>
+<p class="font-body-sm text-body-sm text-secondary">Peta navigasi evaluasi menyeluruh lembar lembar jawaban simulasi</p>
+</div>
+<!-- Legend bar -->
+<div class="flex items-center gap-space-md bg-surface-container-low px-space-md py-space-xs rounded-xl">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-emerald"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Benar (32)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-red"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Salah (8)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Kosong (0)</span>
+</div>
+</div>
+</div>
+<!-- 8x5 Matrix (40 buttons) -->
+<!-- Correct (32): 1..8, 10..12, 14, 16..24, 26..30, 33..38, 40 -->
+<!-- Incorrect (8): 9, 13, 15, 25, 31, 32, 39 -->
+<div class="grid grid-cols-5 sm:grid-cols-8 md:grid-cols-10 gap-space-sm">
+<!-- 1 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">01</button>
+<!-- 2 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">02</button>
+<!-- 3 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">03</button>
+<!-- 4 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">04</button>
+<!-- 5 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">05</button>
+<!-- 6 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">06</button>
+<!-- 7 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">07</button>
+<!-- 8 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">08</button>
+<!-- 9 (Wrong) -->
+<button class="h-11 rounded-xl bg-red/15 text-red font-timer text-timer font-semibold flex items-center justify-center hover:bg-red hover:text-surface-container-lowest transition-colors" type="button">09</button>
+<!-- 10 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">10</button>
+<!-- 11 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">11</button>
+<!-- 12 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">12</button>
+<!-- 13 (Wrong) -->
+<button class="h-11 rounded-xl bg-red/15 text-red font-timer text-timer font-semibold flex items-center justify-center hover:bg-red hover:text-surface-container-lowest transition-colors" type="button">13</button>
+<!-- 14 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">14</button>
+<!-- 15 (Wrong) -->
+<button class="h-11 rounded-xl bg-red/15 text-red font-timer text-timer font-semibold flex items-center justify-center hover:bg-red hover:text-surface-container-lowest transition-colors" type="button">15</button>
+<!-- 16 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">16</button>
+<!-- 17 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">17</button>
+<!-- 18 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">18</button>
+<!-- 19 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">19</button>
+<!-- 20 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">20</button>
+<!-- 21 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">21</button>
+<!-- 22 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">22</button>
+<!-- 23 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">23</button>
+<!-- 24 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">24</button>
+<!-- 25 (Wrong) -->
+<button class="h-11 rounded-xl bg-red/15 text-red font-timer text-timer font-semibold flex items-center justify-center hover:bg-red hover:text-surface-container-lowest transition-colors" type="button">25</button>
+<!-- 26 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">26</button>
+<!-- 27 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">27</button>
+<!-- 28 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">28</button>
+<!-- 29 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">29</button>
+<!-- 30 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">30</button>
+<!-- 31 (Wrong) -->
+<button class="h-11 rounded-xl bg-red/15 text-red font-timer text-timer font-semibold flex items-center justify-center hover:bg-red hover:text-surface-container-lowest transition-colors" type="button">31</button>
+<!-- 32 (Wrong) -->
+<button class="h-11 rounded-xl bg-red/15 text-red font-timer text-timer font-semibold flex items-center justify-center hover:bg-red hover:text-surface-container-lowest transition-colors" type="button">32</button>
+<!-- 33 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">33</button>
+<!-- 34 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">34</button>
+<!-- 35 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">35</button>
+<!-- 36 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">36</button>
+<!-- 37 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">37</button>
+<!-- 38 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">38</button>
+<!-- 39 (Wrong) -->
+<button class="h-11 rounded-xl bg-red/15 text-red font-timer text-timer font-semibold flex items-center justify-center hover:bg-red hover:text-surface-container-lowest transition-colors" type="button">39</button>
+<!-- 40 -->
+<button class="h-11 rounded-xl bg-emerald/15 text-emerald font-timer text-timer font-semibold flex items-center justify-center hover:bg-emerald hover:text-surface-container-lowest transition-colors" type="button">40</button>
+</div>
+</section>
+<!-- 5. Laporan WhatsApp Bunda Sync Strip -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-emerald/15 text-emerald flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">check_circle</span>
+</div>
+<div class="flex flex-col">
+<p class="font-body-md text-body-md text-on-surface">
+          Notifikasi otomatis hasil tryout (Skor <strong class="text-on-surface">128 / 160</strong>) telah dikirimkan ke WhatsApp Bunda (<strong class="font-timer">+62 812-••••-8819</strong>) pada 09:45 WIB
+        </p>
+<span class="font-label-sm text-label-sm text-secondary">Tersinkronisasi dengan Portal Wali Murid Medalis Care</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 px-space-md py-1 bg-surface-container-low rounded-full">
+<span class="material-symbols-outlined text-[16px] text-emerald">sync</span>
+<span class="font-label-sm text-label-sm font-semibold text-emerald">Auto-Sync Sukses</span>
+</div>
+</section>
+</div></div></main><footer class="w-full bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] mt-auto"><div class="w-full px-gutter py-space-xl max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg"><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="medalis_logo_transparent.png" class="h-8 w-auto object-contain" src="assets/medalis_logo.svg"/><span class="font-title-md text-title-md tracking-wider uppercase text-primary">MEDALIS</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Platform Persiapan Olimpiade Sains Nasional</p></div><div class="flex flex-wrap items-center gap-space-md"><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="state-anti-cheat-terang.html" style="text-decoration:none;">Pedoman Akademik</a><span class="text-outline-variant text-[12px]">•</span><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="state-anti-cheat-terang.html" style="text-decoration:none;">Pakta Integritas</a><span class="text-outline-variant text-[12px]">•</span><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="state-anti-cheat-terang.html" style="text-decoration:none;">Kebijakan Privasi</a><span class="text-outline-variant text-[12px]">•</span><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="guru-ai-terang.html" style="text-decoration:none;">Bantuan</a></div></div><div class="w-full bg-surface-container-high py-space-md px-gutter text-center"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2026 Medalis Indonesia. Hak Cipta Dilindungi Undang-Undang.</p></div></footer>  <script src="assets/medalis_interactive.js"></script>
+</body></html>

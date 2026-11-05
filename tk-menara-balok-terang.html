@@ -1,0 +1,242 @@
+<!DOCTYPE html><html lang="id" style="width: 1280px; height: 1024px; overflow: hidden; position: relative;"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1194, initial-scale=1.0">
+  <title>Early Learner TK: Menara Balok — Terang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #F7F5EE;
+      color: #334155;
+      -webkit-font-smoothing: antialiased;
+    }
+  </style>
+  <link rel="stylesheet" href="assets/medalis_interactive.css">
+</head>
+<body class="flex flex-col justify-between bg-[#F7F5EE] select-none box-border w-full">
+
+  <!-- 1. Top bar: 64px tall -->
+  <header class="h-[64px] min-h-[64px] bg-[#FFFFFF] border-b border-[#E2E8F0] px-12 flex items-center justify-between w-full">
+    <!-- Brand on the left -->
+    <div class="flex items-center space-x-3">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIXOgFcI2koOmLl-DvyvuMfNPvXzMm2y9f6aPKZ7E8RdKpkJgkJmFmP1l7D659vF1e0jO8NeJpQNs0Fhg1YnNKutomW7NDb-s42FxLkqBMj7ZB4KZvsvFd8YoTEoCoVne3pC1WxJaK7Opp_HDG93r7S0YLApAK0SC7xOph0j8adbiJ4vN5YS7y2FEEYqN8p8-fKXaIyiWDlHVEjMBcobxfFjvo1eXMfkClPr83OtvpH4d2vmerS9PJ-A" alt="Logo Medalis" class="h-8 w-auto object-contain">
+      <span class="text-xl font-bold tracking-wider text-[#0B1E3A]">MEDALIS</span>
+    </div>
+
+    <!-- Center Chip -->
+    <div class="flex items-center space-x-2 px-5 py-1.5 rounded-full bg-[#F7F5EE] border border-[#E2E8F0] shadow-sm">
+      <span class="w-2.5 h-2.5 rounded-full bg-[#059669]"></span>
+      <span class="text-sm font-semibold text-[#0B1E3A]">Mode Bunda: soal 3 dari 10</span>
+    </div>
+
+    <!-- Right: Theme Switcher & Profile Avatar -->
+    <div class="flex items-center space-x-5">
+      <!-- Theme Switcher [Terang | Gelap | Sistem] -->
+      <div class="bg-[#F1F5F9] p-1 rounded-xl flex items-center border border-[#E2E8F0] text-xs font-semibold">
+        <a href="tk-menara-balok-terang.html" class="bg-[#FFFFFF] text-[#0B1E3A] px-3 py-1 rounded-lg shadow-sm flex items-center space-x-1" style="text-decoration:none;">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+          </svg>
+          <span class="">Terang</span>
+        </a>
+        <a href="tk-menara-balok-gelap.html" class="text-[#64748B] hover:text-[#0B1E3A] px-3 py-1 rounded-lg flex items-center space-x-1" style="text-decoration:none;">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+          </svg>
+          <span class="">Gelap</span>
+        </a>
+        <a href="javascript:void(0)" onclick="handleAutoTheme()" class="text-[#64748B] hover:text-[#0B1E3A] px-3 py-1 rounded-lg flex items-center space-x-1" style="text-decoration:none; cursor:pointer;" title="Ikuti tema sistem OS">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+          </svg>
+          <span class="">Sistem</span>
+        </a>
+      </div>
+
+      <!-- User Profile (Bunda Putri) -->
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-full bg-[#0B1E3A] text-white flex items-center justify-center font-bold text-sm tracking-wide shadow-sm">
+          BP
+        </div>
+        <div class="flex flex-col text-left leading-tight">
+          <span class="text-xs font-bold text-[#0B1E3A]">Bunda Putri</span>
+          <span class="text-[11px] text-[#64748B]">Pendamping TK</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. Main area: 600px tall, 48px side padding -->
+  <main class="h-[600px] min-h-[600px] px-12 py-3 flex gap-6 items-stretch w-full">
+    <!-- Left column (30% width) -->
+    <div class="w-[30%] bg-[#FFFFFF] rounded-[24px] border border-[#E2E8F0] p-5 flex flex-col justify-between items-center shadow-sm">
+      <!-- Speech bubble -->
+      <div class="relative bg-[#F7F5EE] border-2 border-[#D4A747] rounded-2xl text-center shadow-xs w-full p-4">
+        <p class="text-[28px] font-bold text-[#0B1E3A] leading-tight">“Ayo cari menara yang paling tinggi!”</p>
+        <div class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-4 h-4 bg-[#F7F5EE] border-b-2 border-r-2 border-[#D4A747] transform rotate-45"></div>
+      </div>
+
+      <!-- Lion Mascot (about 260px tall) -->
+      <div class="my-auto flex items-center justify-center">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgGnz4Ais0KNTV_Aysd9KAY8q8qZ973Nubh4gt87NJUFWV6DjJxcZF-nRpXX_wiZeJbHM1JqxJw1KPxskLxUmAOYEQ9d8XYWgSS84CVgshCQQqJA140MPfHj_1HxQmtjDh06zBBMu64-h9GT9QjMAgw9nkWdmInUE0XFlPZUWkGjhgoAEP-dM1ndcD_YOucqn-DWwdXyhG_yYYMn1idMld16SWFv8vr6Hc17nmNOSLvYhQ9refeWqRag" alt="Maskot Singa Medalis Berpikir" class="h-[250px] w-auto object-contain drop-shadow-sm">
+      </div>
+
+      <!-- Round Speaker Button (72px tall) -->
+      <button class="w-full h-[72px] bg-[#D4A747] hover:bg-[#c69a3b] text-[#0B1E3A] font-bold text-lg rounded-2xl flex items-center justify-center gap-3 transition-colors shadow-sm">
+        <div class="w-10 h-10 rounded-full bg-[#0B1E3A]/10 flex items-center justify-center">
+          <svg class="w-6 h-6 text-[#0B1E3A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path>
+          </svg>
+        </div>
+        <span class="">Bacakan Soal</span>
+      </button>
+    </div>
+
+    <!-- Right column (70% width) -->
+    <div class="w-[70%] flex flex-col justify-between">
+      <!-- Progress row: 10 star dots -->
+      <div class="bg-[#FFFFFF] border border-[#E2E8F0] rounded-2xl px-6 py-2.5 flex items-center justify-between shadow-xs">
+        <div class="flex items-center space-x-3">
+          <span class="text-sm font-semibold text-[#0B1E3A]">Kemajuan Soal:</span>
+          <div class="flex items-center space-x-2">
+            <!-- Star 1 (filled gold) -->
+            <svg class="w-5 h-5 text-[#D4A747] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <!-- Star 2 (filled gold) -->
+            <svg class="w-5 h-5 text-[#D4A747] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <!-- Star 3 (filled gold) -->
+            <svg class="w-5 h-5 text-[#D4A747] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <!-- Stars 4 to 10 (muted gray) -->
+            <svg class="w-5 h-5 text-[#CBD5E1] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5 text-[#CBD5E1] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5 text-[#CBD5E1] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5 text-[#CBD5E1] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5 text-[#CBD5E1] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5 text-[#CBD5E1] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5 text-[#CBD5E1] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+          </div>
+        </div>
+        <span class="text-sm font-bold text-[#059669]">3 / 10 Selesai</span>
+      </div>
+
+      <!-- 2x2 grid of white answer cards (~225px tall each) -->
+      <div class="grid grid-cols-2 gap-4 mt-3 flex-1">
+        <!-- Card 1: 2 blocks (gold, navy) -->
+        <div class="bg-[#FFFFFF] rounded-[24px] border border-[#E2E8F0] p-4 flex flex-col justify-end items-center shadow-xs cursor-pointer hover:border-[#CBD5E1] transition-all relative">
+          <!-- 2 Blocks -->
+          <div class="flex flex-col items-center gap-1.5 w-full">
+            <div class="w-[84px] h-[34px] rounded-xl bg-[#D4A747] shadow-inner"></div>
+            <div class="w-[84px] h-[34px] rounded-xl bg-[#0B1E3A] shadow-inner"></div>
+            <!-- Thin ground line -->
+            <div class="w-[104px] h-[4px] bg-[#E2E8F0] rounded-full mt-1"></div>
+          </div>
+        </div>
+
+        <!-- Card 2: 5 blocks (SELECTED STATE: soft emerald tint, 2px emerald border, gold star badge) -->
+        <div class="bg-[#ECFDF5] rounded-[24px] border-2 border-[#059669] p-4 flex flex-col justify-end items-center shadow-sm cursor-pointer relative">
+          <!-- Gold Star Badge in Top-Right Corner -->
+          <div class="absolute top-3.5 right-3.5 w-8 h-8 rounded-full bg-[#D4A747] flex items-center justify-center shadow-sm">
+            <svg class="w-5 h-5 text-[#0B1E3A] fill-current" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+          </div>
+          <!-- 5 Blocks (Fills ~85% height: orange, sky-blue, gold, emerald, navy) -->
+          <div class="flex flex-col items-center gap-1.5 w-full">
+            <div class="w-[84px] h-[34px] rounded-xl bg-[#F59E0B] shadow-inner"></div>
+            <div class="w-[84px] h-[34px] rounded-xl bg-[#38BDF8] shadow-inner"></div>
+            <div class="w-[84px] h-[34px] rounded-xl bg-[#D4A747] shadow-inner"></div>
+            <div class="w-[84px] h-[34px] rounded-xl bg-[#059669] shadow-inner"></div>
+            <div class="w-[84px] h-[34px] rounded-xl bg-[#0B1E3A] shadow-inner"></div>
+            <!-- Thin ground line -->
+            <div class="w-[104px] h-[4px] bg-[#A7F3D0] rounded-full mt-1"></div>
+          </div>
+        </div>
+
+        <!-- Card 3: 3 blocks (gold, sky-blue, emerald) -->
+        <div class="bg-[#FFFFFF] rounded-[24px] border border-[#E2E8F0] p-4 flex flex-col justify-end items-center shadow-xs cursor-pointer hover:border-[#CBD5E1] transition-all relative">
+          <!-- 3 Blocks -->
+          <div class="flex flex-col items-center gap-1.5 w-full">
+            <div class="w-[84px] h-[34px] rounded-xl bg-[#D4A747] shadow-inner"></div>
+            <div class="w-[84px] h-[34px] rounded-xl bg-[#38BDF8] shadow-inner"></div>
+            <div class="w-[84px] h-[34px] rounded-xl bg-[#059669] shadow-inner"></div>
+            <!-- Thin ground line -->
+            <div class="w-[104px] h-[4px] bg-[#E2E8F0] rounded-full mt-1"></div>
+          </div>
+        </div>
+
+        <!-- Card 4: 1 navy block with a gold star -->
+        <div class="bg-[#FFFFFF] rounded-[24px] border border-[#E2E8F0] p-4 flex flex-col justify-end items-center shadow-xs cursor-pointer hover:border-[#CBD5E1] transition-all relative">
+          <!-- 1 Block with a gold star inside -->
+          <div class="flex flex-col items-center gap-1.5 w-full">
+            <div class="w-[84px] h-[34px] rounded-xl bg-[#0B1E3A] shadow-inner flex items-center justify-center">
+              <svg class="w-4 h-4 text-[#D4A747] fill-current" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+            </div>
+            <!-- Thin ground line -->
+            <div class="w-[104px] h-[4px] bg-[#E2E8F0] rounded-full mt-1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- 3. Button row: 112px tall -->
+  <section class="h-[112px] min-h-[112px] px-12 flex items-center justify-between w-full">
+    <!-- Back button (72px tall outline) -->
+    <button class="h-[72px] px-8 rounded-2xl border-2 border-[#CBD5E1] bg-[#FFFFFF] hover:bg-[#F8FAFC] text-[#334155] font-bold text-lg flex items-center space-x-3 transition-colors shadow-xs">
+      <svg class="w-6 h-6 text-[#334155]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+      </svg>
+      <span class="">Sebelumnya</span>
+    </button>
+
+    <!-- Next button (72px tall gold) -->
+    <button class="h-[72px] px-10 rounded-2xl bg-[#D4A747] hover:bg-[#c69a3b] text-[#0B1E3A] font-bold text-lg flex items-center space-x-3 transition-colors shadow-md">
+      <span class="">Lanjut</span>
+      <svg class="w-6 h-6 text-[#0B1E3A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+      </svg>
+    </button>
+  </section>
+
+  <!-- 4. Footer: 160px tall, white with 1px #E2E8F0 top border and 24px padding -->
+  <footer class="h-[160px] min-h-[160px] bg-[#FFFFFF] border-t border-[#E2E8F0] p-6 flex flex-col justify-between box-border w-full mb-0">
+    <!-- Upper Row: Brand & Tagline + Legal Links -->
+    <div class="flex items-center justify-between px-6">
+      <div class="flex items-center space-x-4">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIXOgFcI2koOmLl-DvyvuMfNPvXzMm2y9f6aPKZ7E8RdKpkJgkJmFmP1l7D659vF1e0jO8NeJpQNs0Fhg1YnNKutomW7NDb-s42FxLkqBMj7ZB4KZvsvFd8YoTEoCoVne3pC1WxJaK7Opp_HDG93r7S0YLApAK0SC7xOph0j8adbiJ4vN5YS7y2FEEYqN8p8-fKXaIyiWDlHVEjMBcobxfFjvo1eXMfkClPr83OtvpH4d2vmerS9PJ-A" alt="Logo Medalis" class="h-8 w-auto object-contain">
+        <div>
+          <span class="text-base font-bold tracking-wider text-[#0B1E3A]">MEDALIS</span>
+          <p class="text-xs text-[#5B6B82] font-normal leading-normal">Platform Persiapan Olimpiade Sains Nasional</p>
+        </div>
+      </div>
+
+      <div class="flex items-center space-x-8 text-sm font-medium text-[#334155]"><a href="state-anti-cheat-terang.html" class="text-[#334155] no-underline hover:text-[#0B1E3A] transition-colors" style="color: rgb(51, 65, 85); text-decoration: none;" style="text-decoration:none;">Pedoman Akademik</a>
+        <a href="state-anti-cheat-terang.html" class="text-[#334155] no-underline hover:text-[#0B1E3A] transition-colors" style="color: rgb(51, 65, 85); text-decoration: none;" style="text-decoration:none;">Kebijakan Privasi</a>
+        <a href="guru-ai-terang.html" class="text-[#334155] no-underline hover:text-[#0B1E3A] transition-colors" style="color: rgb(51, 65, 85); text-decoration: none;" style="text-decoration:none;">Bantuan</a></div>
+    </div>
+
+    <!-- Thin Divider Line -->
+    <div class="w-full h-px bg-[#E2E8F0] my-1"></div>
+
+    <!-- Lower Row: Copyright strip -->
+    <div class="text-center text-xs text-[#5B6B82] font-normal">© 2026 Medalis Indonesia. Hak Cipta Dilindungi Undang-Undang.</div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+<div id="snapdom-sandbox" data-snapdom-sandbox="true" aria-hidden="true" style="position: absolute; left: -9999px; top: -9999px; width: 0px; height: 0px; overflow: hidden;"></div>  <script src="assets/medalis_interactive.js"></script>
+</body></html>
