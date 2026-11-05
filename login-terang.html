@@ -49,46 +49,94 @@
   </style>
   <link rel="stylesheet" href="assets/medalis_interactive.css">
 </head>
-<body class="min-h-screen flex flex-col bg-[#F7F5EE] text-[#334155] antialiased selection:bg-[#D4A747] selection:text-[#0B1E3A]">
+<body class="min-h-screen flex flex-col bg-[#F7F5EE] text-[#334155] antialiased selection:bg-[#D4A747] selection:text-[#0B1E3A] overflow-x-hidden">
 
   <!-- Top Minimal Utility Bar (No full navbar: Logo left, Theme switcher right) -->
-  <header class="w-full px-8 py-5 flex items-center justify-between border-b border-[#E2E8F0] bg-white z-20">
-    <div class="flex items-center gap-3">
-      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLFsGO_NGe0nAqMzy26xmhP9pfaDy2ww9G7y1itFPrCGzZ6XhSa9NrBBr6mH2bjK4VRi2LNfNHjB7hkjnLvjYInimgRrA10gQvdMAFJYxF1axPGw4623ksoGAW5CHWl-BYxIkhb1lhWHk-MZRLv5H55YlrhyZguP2WuKObNe3XRpDbBBDqeeR6cEqiAAd60u3yKuefm4EU5N2bzwuDcrJKJJJeMtj_7bN0KtGxzIwvAn-UikrEdrJEaw" alt="Logo Medalis" class="h-9 w-auto object-contain">
-      <span class="text-xl font-semibold tracking-wider text-[#0B1E3A]">MEDALIS</span>
+  <!-- NAVBAR PUBLIK TERSTANDARISASI (TIPE A) -->
+<header class="fixed top-0 left-0 w-full z-50 bg-white/95 border-[#E2E8F0] backdrop-blur-md shadow-sm border-b">
+  <div class="max-w-7xl mx-auto h-[72px] px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+    <!-- Logo -->
+    <a href="landing-terang.html" style="text-decoration:none;" class="flex items-center gap-3 shrink-0">
+      <img alt="Medalis Logo" class="h-8 sm:h-9 w-auto object-contain" src="assets/medalis_logo.svg">
+      <div class="flex flex-col">
+        <span class="font-bold text-lg sm:text-xl tracking-wider text-[#0B1E3A] leading-none">MEDALIS</span>
+        <span class="text-[10px] tracking-widest uppercase font-semibold text-[#D4A747]">Olympiad Academy</span>
+      </div>
+    </a>
+
+    <!-- Menu Desktop (Bersih Tanpa Avatar) -->
+    <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
+      <a href="landing-terang.html#fitur" class="px-3 py-2 rounded-lg text-sm font-medium text-[#475569] hover:text-[#0B1E3A] transition-colors">Fitur Unggulan</a>
+      <a href="daftar-modul-terang.html" class="px-3 py-2 rounded-lg text-sm font-medium text-[#475569] hover:text-[#0B1E3A] transition-colors">Kurikulum & Past Papers</a>
+      <a href="prep-timeline-terang.html" class="px-3 py-2 rounded-lg text-sm font-medium text-[#475569] hover:text-[#0B1E3A] transition-colors">Kalender Lomba</a>
+      <a href="pricing-terang.html" class="px-3 py-2 rounded-lg text-sm font-medium text-[#475569] hover:text-[#0B1E3A] transition-colors">Biaya Bimbingan</a>
+      <a href="landing-terang.html#faq" class="px-3 py-2 rounded-lg text-sm font-medium text-[#475569] hover:text-[#0B1E3A] transition-colors">FAQ</a>
+    </nav>
+
+    <!-- Right Actions -->
+    <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+      <!-- Theme Switcher -->
+      <div class="flex items-center bg-black/5 dark:bg-white/10 p-1 rounded-full text-xs font-medium">
+        <a href="landing-terang.html" class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-white text-[#0B1E3A] shadow-sm font-semibold">
+          <span class="material-symbols-outlined text-[15px]">light_mode</span>
+          <span class="hidden sm:inline">Terang</span>
+        </a>
+        <a href="landing-gelap.html" class="flex items-center gap-1 px-2.5 py-1 rounded-full text-[#64748B] hover:text-[#0B1E3A]">
+          <span class="material-symbols-outlined text-[15px]">dark_mode</span>
+          <span class="hidden sm:inline">Gelap</span>
+        </a>
+      </div>
+
+      <!-- Auth CTAs -->
+      <a href="login-terang.html" class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-xl text-sm font-semibold border border-[#CBD5E1] dark:border-[#334155] text-[#0B1E3A] hover:bg-black/5 dark:hover:bg-white/5 transition-all">
+        Masuk
+      </a>
+      <a href="login-terang.html" class="inline-flex items-center justify-center px-4 py-2 rounded-xl text-sm font-semibold bg-[#D4A747] text-[#0B1E3A] hover:bg-[#c4973b] shadow-sm transition-all">
+        Coba Gratis
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button type="button" onclick="toggleMobileDrawer()" class="lg:hidden p-2 rounded-lg text-[#64748B] dark:text-[#94A3B8] hover:text-[#0B1E3A] dark:hover:text-white" aria-label="Buka Menu">
+        <span class="material-symbols-outlined text-[26px]">menu</span>
+      </button>
     </div>
+  </div>
 
-    <!-- Segmented Theme Switcher [ Terang | Gelap | Sistem ] -->
-    <div class="flex items-center p-1 bg-[#F1F5F9] border border-[#E2E8F0] rounded-xl text-xs font-medium">
-      <!-- Active: Terang -->
-      <a href="login-terang.html" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white text-[#0B1E3A] font-semibold shadow-sm transition" style="text-decoration:none;">
-        <svg class="w-3.5 h-3.5 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <circle cx="12" cy="12" r="4"></circle>
-          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
-        </svg>
-        <span>Terang</span>
-      </a>
-
-      <a href="login-gelap.html" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[#64748B] hover:text-[#0B1E3A] transition" style="text-decoration:none;">
-        <svg class="w-3.5 h-3.5 stroke-[1.75]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-        </svg>
-        <span>Gelap</span>
-      </a>
-
-      <a href="javascript:void(0)" onclick="handleAutoTheme()" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[#64748B] hover:text-[#0B1E3A] transition" style="text-decoration:none; cursor:pointer;" title="Ikuti tema sistem OS">
-        <svg class="w-3.5 h-3.5 stroke-[1.75]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-          <line x1="8" y1="21" x2="16" y2="21"></line>
-          <line x1="12" y1="17" x2="12" y2="21"></line>
-        </svg>
-        <span>Sistem</span>
-      </a>
+  <!-- Mobile Slide Drawer -->
+  <div id="mobile-public-drawer" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden lg:hidden" onclick="toggleMobileDrawer()">
+    <div class="fixed top-0 right-0 w-[280px] h-full bg-white/95 border-[#E2E8F0] shadow-2xl p-6 flex flex-col gap-6" onclick="event.stopPropagation()">
+      <div class="flex items-center justify-between pb-4 border-b border-black/10 dark:border-white/10">
+        <span class="font-bold text-lg text-[#0B1E3A]">Menu Navigasi</span>
+        <button type="button" onclick="toggleMobileDrawer()" class="p-1 rounded-lg text-gray-500 hover:text-gray-800 dark:hover:text-white">
+          <span class="material-symbols-outlined text-[24px]">close</span>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-3 font-medium text-base">
+        <a href="landing-terang.html#fitur" onclick="toggleMobileDrawer()" class="text-[#475569] hover:text-[#0B1E3A] py-2">Fitur Unggulan</a>
+        <a href="daftar-modul-terang.html" class="text-[#475569] hover:text-[#0B1E3A] py-2">Kurikulum & Past Papers</a>
+        <a href="prep-timeline-terang.html" class="text-[#475569] hover:text-[#0B1E3A] py-2">Kalender Lomba</a>
+        <a href="pricing-terang.html" class="text-[#475569] hover:text-[#0B1E3A] py-2">Biaya Bimbingan</a>
+        <a href="landing-terang.html#faq" onclick="toggleMobileDrawer()" class="text-[#475569] hover:text-[#0B1E3A] py-2">FAQ</a>
+      </nav>
+      <div class="mt-auto flex flex-col gap-3 pt-6 border-t border-black/10 dark:border-white/10">
+        <a href="login-terang.html" class="w-full py-2.5 text-center rounded-xl font-semibold border border-[#CBD5E1] dark:border-[#334155] text-[#0B1E3A]">Masuk</a>
+        <a href="login-terang.html" class="w-full py-2.5 text-center rounded-xl font-semibold bg-[#D4A747] text-[#0B1E3A]">Daftar Akun Gratis</a>
+      </div>
     </div>
-  </header>
+  </div>
+</header>
+<script>
+function toggleMobileDrawer() {
+  var d = document.getElementById('mobile-public-drawer');
+  if (d) {
+    d.classList.toggle('hidden');
+  }
+}
+</script>
+
 
   <!-- Main Content: Split Layout (Left Navy Panel, Right Form Canvas) -->
-  <main class="flex-1 flex flex-col lg:flex-row w-full max-w-[1440px] mx-auto min-h-[calc(100vh-144px)]">
+  <main class="flex-1 flex flex-col lg:flex-row w-full max-w-[1440px] mx-auto min-h-[calc(100vh-144px)] pb-24 lg:pb-8">
     
     <!-- Left Panel: Deep Navy (#0B1E3A) with Trust & Philosophy in both themes -->
     <section class="lg:w-1/2 bg-[#0B1E3A] border-r border-[#1E3A5F] p-8 lg:p-16 flex flex-col justify-between relative overflow-hidden facet-pattern">
@@ -181,7 +229,7 @@
           </div>
           <h2 class="text-2xl font-bold text-[#0B1E3A] mb-2">Masuk ke Medalis</h2>
           <p class="text-sm text-[#334155]">
-            Akses dashboard tryout, materi bimbingan Guru AI, dan rekap portofolio medali.
+            Akses dashboard tryout, materi bimbingan Tutor Olimpix, dan rekap portofolio medali.
           </p>
         </div>
 
@@ -232,7 +280,7 @@
             <svg class="w-4 h-4 text-[#059669]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
             </svg>
-            <span>Bimbingan logika interaktif Olimpix AI</span>
+            <span>Bimbingan logika interaktif Olimpix Engine</span>
           </div>
           <div class="flex items-center gap-2">
             <svg class="w-4 h-4 text-[#059669]" fill="none" stroke="currentColor" viewBox="0 0 24 24">

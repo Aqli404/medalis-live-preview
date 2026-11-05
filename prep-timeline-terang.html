@@ -1,453 +1,261 @@
 <!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary":"#ffffff","on-error-container":"#93000a","on-secondary-fixed-variant":"#364765","outline":"#807665","on-tertiary-fixed-variant":"#1f4681","on-primary":"#ffffff","on-tertiary-fixed":"#001b3f","on-secondary":"#ffffff","on-primary-fixed-variant":"#5c4200","primary":"#7a5900","secondary":"#4e5f7e","on-surface":"#1b1c18","tertiary":"#3b5e9a","surface-container-low":"#f6f4ed","emerald":"#059669","surface-container":"#f0eee7","surface-bright":"#fbf9f2","on-tertiary-container":"#18407b","inverse-surface":"#30312c","tertiary-container":"#8caef0","red":"#DC2626","secondary-container":"#c9daff","on-surface-variant":"#4e4637","inverse-on-surface":"#f3f1ea","error":"#ba1a1a","outline-variant":"#d2c5b1","surface-tint":"#7a5900","surface-container-high":"#eae8e1","amber":"#F59E0B","on-background":"#1b1c18","surface-dim":"#dcdad3","primary-fixed-dim":"#efc05d","secondary-fixed":"#d6e3ff","surface-container-lowest":"#ffffff","surface-container-highest":"#e4e2dc","on-secondary-fixed":"#081b37","inverse-primary":"#efc05d","primary-container":"#d4a747","on-error":"#ffffff","tertiary-fixed":"#d7e2ff","background":"#fbf9f2","on-primary-container":"#563d00","secondary-fixed-dim":"#b6c7eb","on-secondary-container":"#4f5f7f","on-primary-fixed":"#261900","surface":"#fbf9f2","tertiary-fixed-dim":"#abc7ff","error-container":"#ffdad6","surface-variant":"#e4e2dc","primary-fixed":"#ffdea2"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-xl":"2.5rem",gutter:"1.5rem","space-md":"1rem","space-lg":"1.5rem",margin:"2rem","space-sm":"0.5rem","space-xs":"0.25rem"},fontFamily:{"label-md":["Poppins"],"headline-sm":["Poppins"],"headline-xl":["Poppins"],"title-lg":["Poppins"],"headline-lg":["Poppins"],"headline-md":["Poppins"],"body-md":["Poppins"],"headline-lg-mobile":["Poppins"],"title-md":["Poppins"],"body-lg":["Poppins"],"body-sm":["Poppins"],"label-sm":["Poppins"],timer:["JetBrains Mono"]},fontSize:{"label-md":["14px",{lineHeight:"20px",fontWeight:"500"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"headline-xl":["40px",{lineHeight:"48px",fontWeight:"700"}],"title-lg":["18px",{lineHeight:"24px",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"32px",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-lg-mobile":["26px",{lineHeight:"32px",fontWeight:"700"}],"title-md":["16px",{lineHeight:"22px",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"label-sm":["12px",{lineHeight:"16px",fontWeight:"500"}],timer:["16px",{lineHeight:"20px",fontWeight:"600"}]}}}}</script>  <link rel="stylesheet" href="assets/medalis_interactive.css">
-</head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-[72px] w-full px-gutter flex items-center justify-between gap-space-lg"><a href="dashboard-terang.html" style="text-decoration:none;" class="flex items-center shrink-0"><div class="flex items-center gap-space-md shrink-0"><img alt="medalis_logo_transparent.png" class="h-8 w-auto object-contain" src="assets/medalis_logo.svg"><span class="font-headline-sm text-headline-sm text-primary tracking-wider">MEDALIS</span></div></a><nav class="hidden lg:flex items-center gap-space-xs p-space-xs bg-surface-container-low rounded-xl" data-active-classes="bg-primary-container text-on-primary-container font-label-md text-label-md rounded-xl shadow-sm"><a class="inline-flex items-center gap-1.5 px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="beranda" href="dashboard-terang.html" style="text-decoration:none;"><span class="material-symbols-outlined text-[18px]">home</span><span class="">Beranda</span></a><a class="inline-flex items-center gap-1.5 px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="modul" href="daftar-modul-terang.html" style="text-decoration:none;"><span class="material-symbols-outlined text-[18px]">menu_book</span><span class="">Modul</span></a><a class="inline-flex items-center gap-1.5 px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="tryout" href="lobby-tryout-terang.html" style="text-decoration:none;"><span class="material-symbols-outlined text-[18px]">fact_check</span><span class="">Tryout</span></a><a class="inline-flex items-center gap-1.5 px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="guru-ai" href="guru-ai-terang.html" style="text-decoration:none;"><span class="material-symbols-outlined text-[18px]">smart_toy</span><span class="">Guru AI</span></a><a aria-current="page" class="inline-flex items-center gap-1.5 px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-label-md text-label-md rounded-xl shadow-sm" data-path="timeline" href="prep-timeline-terang.html"><span class="material-symbols-outlined text-[18px]">event_note</span><span class="">Timeline</span></a></nav><div class="flex items-center gap-space-md shrink-0"><div class="inline-flex items-center p-space-xs bg-surface-container rounded-xl gap-space-xs"><a href="prep-timeline-terang.html" class="inline-flex items-center gap-1 px-space-sm py-space-xs font-label-sm text-label-sm rounded-lg bg-surface-container-lowest text-on-surface shadow-sm transition-all" style="text-decoration:none;"><span class="material-symbols-outlined text-[16px]">light_mode</span><span class="">Terang</span></a><a href="prep-timeline-gelap.html" class="inline-flex items-center gap-1 px-space-sm py-space-xs font-label-sm text-label-sm rounded-lg text-on-surface-variant hover:text-on-surface transition-all" style="text-decoration:none;"><span class="material-symbols-outlined text-[16px]">dark_mode</span><span class="">Gelap</span></a><a href="javascript:void(0)" onclick="handleAutoTheme()" class="inline-flex items-center gap-1 px-space-sm py-space-xs font-label-sm text-label-sm rounded-lg text-on-surface-variant hover:text-on-surface transition-all" style="text-decoration:none; cursor:pointer;" title="Ikuti tema sistem OS"><span class="material-symbols-outlined text-[16px]">desktop_windows</span><span class="">Sistem</span></a></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="text-right hidden sm:block"><span class="block font-label-md text-label-md text-on-surface font-semibold leading-tight">Aisyah</span><span class="block font-body-sm text-body-sm text-on-surface-variant">Kelas 8 SMP</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-[72px] bg-background flex-1"><div class="flex flex-col w-full">
-<section class="w-full px-gutter py-space-xl max-w-7xl mx-auto flex flex-col gap-space-xl">
-<!-- Top Hero Section / Preparation Roadmap Header -->
-<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-lg md:p-space-xl flex flex-col gap-space-lg relative overflow-hidden">
-<!-- Ambient Decorative Geometry -->
-<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-primary-container/10 pointer-events-none blur-3xl"></div>
-<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg relative z-10">
-<div class="flex flex-col gap-space-xs max-w-3xl">
-<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
-<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
-<span class="">Roadmap Persiapan Menuju Juara • Olimpiade Sains Nasional</span>
-</div>
-<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
-            Prep Timeline H-30 Menuju OSN-K Matematika SMP
-          </h1>
-<p class="font-body-md text-body-md text-on-surface-variant">
-            Rencana belajar akseleratif berstruktur AI untuk Aisyah (Kelas 8 SMP). Optimasi kesiapan olimpiade berstandar Puspresnas.
-          </p>
-</div>
-<!-- Competition Dropdown Selector & Sync Action -->
-<div class="flex flex-wrap sm:flex-nowrap items-center gap-space-md shrink-0">
-<div class="relative min-w-[240px]">
-<label class="sr-only" for="competition-select">Pilih Kompetisi</label>
-<div class="flex items-center justify-between px-space-md py-space-sm bg-surface-container-low rounded-xl cursor-pointer hover:bg-surface-container transition-colors">
-<div class="flex items-center gap-space-sm">
-<span class="material-symbols-outlined text-primary text-[20px]">emoji_events</span>
-<select class="bg-transparent font-title-md text-title-md text-on-surface font-semibold focus:outline-none cursor-pointer pr-space-md" id="competition-select">
-<option selected="" value="osn-k">OSN-K Matematika SMP 2026</option>
-<option value="ksnr">KSNR Matematika SMP</option>
-<option value="sasmo">SASMO SMP</option>
-<option value="fiso">FISO Math</option>
-</select>
-</div>
-</div>
-</div>
-<button class="h-12 px-space-lg inline-flex items-center justify-center gap-space-sm rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container hover:shadow-sm active:scale-[0.98] transition-all" type="button">
-<span class="material-symbols-outlined text-[20px] text-primary">calendar_month</span>
-<span class="">Sinkronkan ke Google Calendar</span>
-</button>
-</div>
-</div>
-<!-- Countdown Highlight Banner & Progress Ring Strip -->
-<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md pt-space-md">
-<!-- Big Countdown Widget -->
-<div class="md:col-span-4 bg-surface-container-low rounded-xl p-space-lg flex items-center justify-between gap-space-md">
-<div class="flex flex-col">
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Hitung Mundur</span>
-<div class="flex items-baseline gap-space-xs my-space-xs">
-<span class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">H-18</span>
-<span class="font-label-md text-label-md text-on-surface-variant font-medium">Hari</span>
-</div>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Menuju Babak Penyisihan (14 Mei 2026)</span>
-</div>
-<!-- Circular Metric SVGs -->
-<div class="relative w-20 h-20 shrink-0 flex items-center justify-center">
-<svg class="w-full h-full -rotate-90" viewBox="0 0 36 36">
-<path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
-<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="40, 100" stroke-linecap="round" stroke-width="3.5"></path>
-</svg>
-<div class="absolute inset-0 flex flex-col items-center justify-center">
-<span class="font-timer text-timer text-on-surface font-semibold text-xs leading-none">40%</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant text-[10px]">Waktu</span>
-</div>
-</div>
-</div>
-<!-- Metric 1: Target Bab -->
-<div class="md:col-span-2 bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between">
-<div class="flex items-center justify-between text-on-surface-variant">
-<span class="font-label-sm text-label-sm">Target Bab</span>
-<span class="material-symbols-outlined text-[18px]">menu_book</span>
-</div>
-<div>
-<span class="font-headline-sm text-headline-sm font-bold text-on-surface block">12 / 20</span>
-<span class="font-body-sm text-body-sm text-emerald font-medium">60% Tuntas</span>
-</div>
-<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
-<div class="bg-emerald h-1.5 rounded-full" style="width: 60%"></div>
-</div>
-</div>
-<!-- Metric 2: Simulasi CBT -->
-<div class="md:col-span-3 bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between">
-<div class="flex items-center justify-between text-on-surface-variant">
-<span class="font-label-sm text-label-sm">Simulasi CBT Puspresnas</span>
-<span class="material-symbols-outlined text-[18px]">timer</span>
-</div>
-<div>
-<span class="font-headline-sm text-headline-sm font-bold text-on-surface block">3 dari 6 Sesi</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Rata-rata Skor: 83.5</span>
-</div>
-<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
-<div class="bg-primary-container h-1.5 rounded-full" style="width: 50%"></div>
-</div>
-</div>
-<!-- Metric 3: Tingkat Kesiapan -->
-<div class="md:col-span-3 bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between">
-<div class="flex items-center justify-between text-on-surface-variant">
-<span class="font-label-sm text-label-sm">Status Kesiapan</span>
-<span class="material-symbols-outlined text-primary text-[18px]">military_tech</span>
-</div>
-<div>
-<div class="flex items-baseline gap-space-xs">
-<span class="font-headline-sm text-headline-sm font-bold text-primary">78%</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">Prediksi AI</span>
-</div>
-<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Level: Siap Medali Perak</span>
-</div>
-<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
-<div class="bg-primary h-1.5 rounded-full" style="width: 78%"></div>
-</div>
-</div>
-</div>
-</div>
-<!-- Main Content Area: 2-Column Split (Milestones Roadmap + Weekly Directives) -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
-<!-- Left Column: The 5 Milestones (Roadmap Track) -->
-<div class="lg:col-span-8 flex flex-col gap-space-lg">
-<div class="flex items-center justify-between px-space-xs">
-<div>
-<h2 class="font-title-lg text-title-lg text-on-surface font-bold tracking-tight">Milestone Perjalanan H-30</h2>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Tahapan penguasaan materi diadaptasi khusus dari silabus olimpiade.</p>
-</div>
-<span class="font-timer text-timer text-on-surface-variant text-xs">Pekan 2 dari 4</span>
-</div>
-<!-- Roadmap Spine and Nodes -->
-<div class="relative flex flex-col gap-space-lg pl-6 sm:pl-10">
-<!-- Continuous Facet Connecting Line -->
-<div class="absolute left-6 sm:left-10 top-6 bottom-6 w-1 bg-surface-container-high -translate-x-1/2"></div>
-<!-- Active Segment Progress Fill -->
-<div class="absolute left-6 sm:left-10 top-6 h-[46%] w-1 bg-gradient-to-b from-emerald via-emerald to-primary -translate-x-1/2"></div>
-<!-- MILESTONE 1 (H-30) - COMPLETED -->
-<div class="relative flex flex-col sm:flex-row sm:items-start gap-space-md">
-<!-- Node Emblem -->
-<div class="absolute -left-6 sm:-left-10 -translate-x-1/2 w-8 h-8 rounded-full bg-emerald text-on-primary flex items-center justify-center shadow-sm">
-<span class="material-symbols-outlined text-[18px]">check</span>
-</div>
-<!-- Milestone Card -->
-<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-sm">
-<div class="flex flex-wrap items-center justify-between gap-space-xs">
-<div class="flex items-center gap-space-sm">
-<span class="px-space-sm py-space-xs rounded-md bg-surface-container text-on-surface font-timer text-timer text-xs">H-30</span>
-<span class="font-title-md text-title-md font-bold text-on-surface">Fondasi Aljabar &amp; Teori Bilangan</span>
-</div>
-<span class="inline-flex items-center gap-1 px-space-sm py-space-xs rounded-full bg-emerald/10 text-emerald font-label-sm text-label-sm font-semibold">
-<span class="material-symbols-outlined text-[14px]">check_circle</span> Selesai
-                </span>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                Target: Kuasai Faktorisasi, Sifat Keterbagian, dan Deret Teleskopik dengan pembuktian analitis.
-              </p>
-<div class="flex flex-wrap items-center gap-space-md pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined text-[16px] text-emerald">assessment</span>
-<span class="">Diagnostic Test: <strong class="text-on-surface font-semibold">82/100</strong></span>
-</div>
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined text-[16px]">task_alt</span>
-<span class="">14 Pembahasan Terkunci</span>
-</div>
-</div>
-</div>
-</div>
-<!-- MILESTONE 2 (H-21) - COMPLETED -->
-<div class="relative flex flex-col sm:flex-row sm:items-start gap-space-md">
-<!-- Node Emblem -->
-<div class="absolute -left-6 sm:-left-10 -translate-x-1/2 w-8 h-8 rounded-full bg-emerald text-on-primary flex items-center justify-center shadow-sm">
-<span class="material-symbols-outlined text-[18px]">check</span>
-</div>
-<!-- Milestone Card -->
-<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-sm">
-<div class="flex flex-wrap items-center justify-between gap-space-xs">
-<div class="flex items-center gap-space-sm">
-<span class="px-space-sm py-space-xs rounded-md bg-surface-container text-on-surface font-timer text-timer text-xs">H-21</span>
-<span class="font-title-md text-title-md font-bold text-on-surface">Eksplorasi Kombinatorika &amp; Geometri Sudut</span>
-</div>
-<span class="inline-flex items-center gap-1 px-space-sm py-space-xs rounded-full bg-emerald/10 text-emerald font-label-sm text-label-sm font-semibold">
-<span class="material-symbols-outlined text-[14px]">check_circle</span> Selesai
-                </span>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                Target: Prinsip Sarang Burung (Pigeonhole Principle), Kombinasi Kompleks, dan Garis Singgung Persekutuan Lingkaran.
-              </p>
-<div class="flex flex-wrap items-center gap-space-md pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined text-[16px] text-emerald">assessment</span>
-<span class="">Quiz Bab: <strong class="text-on-surface font-semibold">85/100</strong></span>
-</div>
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined text-[16px]">verified</span>
-<span class="">Metode Visual Segitiga Disetujui AI</span>
-</div>
-</div>
-</div>
-</div>
-<!-- MILESTONE 3 (H-14) - ACTIVE NOW -->
-<div class="relative flex flex-col sm:flex-row sm:items-start gap-space-md">
-<!-- Node Emblem with pulsing indicator -->
-<div class="absolute -left-6 sm:-left-10 -translate-x-1/2 w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-md">
-<span class="material-symbols-outlined text-[18px]">play_arrow</span>
-</div>
-<!-- Milestone Card with Gold Active Accent -->
-<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg shadow-md flex flex-col gap-space-md relative overflow-hidden">
-<!-- Subdued gold accent bar inside card -->
-<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
-<div class="flex flex-wrap items-center justify-between gap-space-xs pl-2">
-<div class="flex items-center gap-space-sm">
-<span class="px-space-sm py-space-xs rounded-md bg-primary-container/20 text-on-primary-container font-timer text-timer text-xs font-bold">H-14</span>
-<span class="font-title-md text-title-md font-bold text-on-surface">Intensif Tryout Mandiri &amp; Trik Kilat</span>
-</div>
-<div class="flex items-center gap-space-xs">
-<span class="inline-flex items-center gap-1 px-space-sm py-space-xs rounded-full bg-amber/15 text-primary font-label-sm text-label-sm font-semibold">
-<span class="w-2 h-2 rounded-full bg-amber animate-pulse"></span> Sedang Berjalan
-                  </span>
-<span class="text-on-surface-variant font-label-sm text-label-sm">Tersisa 4 Hari</span>
-</div>
-</div>
-<div class="pl-2 flex flex-col gap-space-sm">
-<p class="font-body-md text-body-md text-on-surface font-medium">
-                  Target: 2 Sesi CBT KSNR 40 Soal + Bedah Speed-Hack 10 Detik bersama Olimpix AI.
-                </p>
-<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
-<div class="flex items-center gap-space-sm">
-<span class="material-symbols-outlined text-primary text-[20px]">flag</span>
-<span class="font-body-sm text-body-sm text-on-surface">Target Pekan Ini: <strong>Tuntaskan Tryout Paket B</strong></span>
-</div>
-<span class="font-timer text-timer text-xs text-on-surface-variant">Progress: 1/2 Selesai</span>
-</div>
-</div>
-<div class="pl-2 flex flex-wrap items-center justify-between gap-space-md pt-space-xs">
-<div class="flex items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm">
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined text-[16px] text-primary">lightbulb</span>
-<span class="">Modul Speed-Hack Aktif</span>
-</div>
-</div>
-<a class="h-10 px-space-md inline-flex items-center gap-space-xs rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold hover:shadow transition-all" data-path="tryout" href="lobby-tryout-terang.html">
-<span class="">Lanjutkan Tryout Paket B</span>
-<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-</a>
-</div>
-</div>
-</div>
-<!-- MILESTONE 4 (H-7) - LOCKED -->
-<div class="relative flex flex-col sm:flex-row sm:items-start gap-space-md opacity-75 hover:opacity-100 transition-opacity">
-<!-- Node Emblem Locked -->
-<div class="absolute -left-6 sm:-left-10 -translate-x-1/2 w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center shadow-sm">
-<span class="material-symbols-outlined text-[18px]">lock</span>
-</div>
-<!-- Milestone Card Locked -->
-<div class="w-full bg-surface-container-low rounded-xl p-space-lg flex flex-col gap-space-sm">
-<div class="flex flex-wrap items-center justify-between gap-space-xs">
-<div class="flex items-center gap-space-sm">
-<span class="px-space-sm py-space-xs rounded-md bg-surface-container text-on-surface-variant font-timer text-timer text-xs">H-7</span>
-<span class="font-title-md text-title-md font-semibold text-on-surface-variant">Simulasi Maraton Ujian Puspresnas</span>
-</div>
-<span class="inline-flex items-center gap-1 px-space-sm py-space-xs rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
-<span class="material-symbols-outlined text-[14px]">lock_clock</span> Terkunci
-                </span>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                Target: Uji coba CBT tanpa jeda 90 Menit, eliminasi minus skor, optimasi manajemen waktu per butir soal.
-              </p>
-<div class="pt-space-xs text-on-surface-variant font-body-sm text-body-sm flex items-center gap-1">
-<span class="material-symbols-outlined text-[16px]">info</span>
-<span class="">Terbuka otomatis saat Tryout Paket B tuntas (Minimal skor 75).</span>
-</div>
-</div>
-</div>
-<!-- MILESTONE 5 (HARI-H) - PINNACLE / TROPHY -->
-<div class="relative flex flex-col sm:flex-row sm:items-start gap-space-md opacity-75 hover:opacity-100 transition-opacity">
-<!-- Node Emblem Trophy -->
-<div class="absolute -left-6 sm:-left-10 -translate-x-1/2 w-8 h-8 rounded-full bg-surface-container-highest text-primary flex items-center justify-center shadow-sm">
-<span class="material-symbols-outlined text-[18px]">military_tech</span>
-</div>
-<!-- Milestone Card Pinnacle -->
-<div class="w-full bg-surface-container-low rounded-xl p-space-lg flex flex-col gap-space-sm">
-<div class="flex flex-wrap items-center justify-between gap-space-xs">
-<div class="flex items-center gap-space-sm">
-<span class="px-space-sm py-space-xs rounded-md bg-surface-container text-primary font-timer text-timer text-xs font-bold">Hari-H</span>
-<span class="font-title-md text-title-md font-bold text-on-surface">Puncak Kompetisi OSN-K 2026</span>
-</div>
-<span class="inline-flex items-center gap-1 px-space-sm py-space-xs rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold">
-<span class="material-symbols-outlined text-[14px]">stars</span> Target Medali Emas
-                </span>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                Target: Pengerjaan 40 butir soal dengan stamina fokus puncak, eliminasi jawaban distraktor, dan amankan tiket ke babak OSN-P (Tingkat Provinsi).
-              </p>
-<div class="pt-space-xs text-on-surface-variant font-body-sm text-body-sm flex items-center gap-1">
-<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
-<span class="">Jadwal Resmi: 14 Mei 2026 • Sesi Pagi 08:30 WIB</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Right Column: Sidebar Action & Directives -->
-<div class="lg:col-span-4 flex flex-col gap-space-lg sticky top-[92px]">
-<!-- Fokus Pekan Ini Widget -->
-<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
-<div class="flex items-center justify-between">
-<div class="flex items-center gap-space-xs">
-<span class="material-symbols-outlined text-primary text-[20px]">checklist</span>
-<h3 class="font-title-md text-title-md font-bold text-on-surface">Fokus Pekan Ini</h3>
-</div>
-<span class="font-timer text-timer text-on-surface-variant text-xs">H-18 s.d H-14</span>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-            Target harian terarah untuk mencapai ritme kecepatan 2.2 menit per soal pilihan ganda.
-          </p>
-<!-- Interactive Checklist -->
-<div class="flex flex-col gap-space-sm" id="timeline-checklist">
-<label class="flex items-start gap-space-sm p-space-xs rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer">
-<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox">
-<span class="font-body-sm text-body-sm text-on-surface-variant line-through select-none">
-                Selesaikan 20 soal latihan teleskopik
-              </span>
-</label>
-<label class="flex items-start gap-space-sm p-space-xs rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer">
-<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox">
-<span class="font-body-sm text-body-sm text-on-surface-variant line-through select-none">
-                Review pembahasan nomor 14 salah (Geometri)
-              </span>
-</label>
-<label class="flex items-start gap-space-sm p-space-xs rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer">
-<input class="mt-1 w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox">
-<span class="font-body-sm text-body-sm text-on-surface font-medium select-none">
-                Ikuti Simulasi Tryout Akbar 2 (Sabtu 09:00 WIB)
-              </span>
-</label>
-<label class="flex items-start gap-space-sm p-space-xs rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer">
-<input class="mt-1 w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox">
-<span class="font-body-sm text-body-sm text-on-surface font-medium select-none">
-                Diskusi strategi eliminasi bersama Olimpix AI
-              </span>
-</label>
-</div>
-<!-- AI Olimpix AI Strategy CTA -->
-<a class="mt-space-xs h-12 w-full px-space-md inline-flex items-center justify-center gap-space-sm rounded-xl bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold hover:shadow-md active:scale-[0.98] transition-all" data-path="guru-ai" href="guru-ai-terang.html" style="text-decoration:none;">
-<span class="material-symbols-outlined text-[20px]">smart_toy</span>
-<span class="">Tanya Olimpix AI untuk Strategi H-18</span>
-</a>
-</div>
-<!-- Laporan Otomatis Bunda Card -->
-<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-sm">
-<div class="flex items-center gap-space-sm">
-<div class="w-9 h-9 rounded-full bg-emerald/15 flex items-center justify-center text-emerald">
-<span class="material-symbols-outlined text-[20px]">chat</span>
-</div>
-<div>
-<h4 class="font-title-md text-title-md font-semibold text-on-surface">Laporan Otomatis Bunda</h4>
-<span class="font-body-sm text-body-sm text-emerald font-medium">Sinkronisasi Aktif</span>
-</div>
-</div>
-<div class="p-space-md bg-surface-container-low rounded-lg mt-space-xs">
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-              Jadwal dan capaian milestone H-30 otomatis disinkronkan ke WhatsApp Bunda setiap <strong class="text-on-surface">Minggu pukul 19:00 WIB</strong>.
-            </p>
-</div>
-<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-space-xs">
-<span class="">Nomor terdaftar: +62 812-****-8821</span>
-<span class="material-symbols-outlined text-[16px] text-emerald">check_circle</span>
-</div>
-</div>
-<!-- Weekly Performance Sparkline Summary Card -->
-<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-sm">
-<div class="flex items-center justify-between">
-<span class="font-title-md text-title-md font-semibold text-on-surface">Tren Jam Belajar Harian</span>
-<span class="font-timer text-timer text-primary font-bold text-xs">Total: 14.5 Jam / Pekan</span>
-</div>
-<!-- Inline Sparkline SVG Chart -->
-<div class="pt-space-sm">
-<svg class="w-full h-16" fill="none" viewBox="0 0 280 60">
-<!-- Grid guide -->
-<line class="text-surface-container-highest" stroke="currentColor" stroke-width="1" x1="0" x2="280" y1="50" y2="50"></line>
-<line class="text-surface-container-highest" stroke="currentColor" stroke-dasharray="2,2" stroke-width="1" x1="0" x2="280" y1="25" y2="25"></line>
-<!-- Area Fill -->
-<path class="text-primary-container/20" d="M 10 45 L 50 35 L 90 40 L 130 20 L 170 28 L 210 12 L 250 18 L 250 50 L 10 50 Z" fill="currentColor"></path>
-<!-- Stroke Line -->
-<path class="text-primary" d="M 10 45 L 50 35 L 90 40 L 130 20 L 170 28 L 210 12 L 250 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
-<!-- Data Points -->
-<circle class="text-primary" cx="10" cy="45" fill="currentColor" r="3"></circle>
-<circle class="text-primary" cx="50" cy="35" fill="currentColor" r="3"></circle>
-<circle class="text-primary" cx="90" cy="40" fill="currentColor" r="3"></circle>
-<circle class="text-primary" cx="130" cy="20" fill="currentColor" r="3"></circle>
-<circle class="text-primary" cx="170" cy="28" fill="currentColor" r="3"></circle>
-<circle class="text-primary-container" cx="210" cy="12" fill="currentColor" r="4"></circle>
-<circle class="text-primary" cx="250" cy="18" fill="currentColor" r="3"></circle>
-</svg>
-<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant pt-space-xs text-[10px]">
-<span class="">Sen</span>
-<span class="">Sel</span>
-<span class="">Rab</span>
-<span class="">Kam</span>
-<span class="">Jum</span>
-<span class="font-bold text-primary">Sab</span>
-<span class="">Min</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Quick Help & Diagnostic Footer Bar -->
-<div class="w-full bg-surface-container rounded-xl p-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md">
-<div class="flex items-center gap-space-md">
-<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
-<span class="material-symbols-outlined text-[24px]">school</span>
-</div>
-<div>
-<span class="font-title-md text-title-md text-on-surface font-semibold block">Butuh Penyesuaian Beban Belajar?</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Olimpix AI AI dapat mengatur ulang ritme H-18 jika target harian terlalu padat.</span>
-</div>
-</div>
-<button class="h-10 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md font-medium hover:bg-surface-container-high transition-colors shadow-sm shrink-0" type="button">
-        Konsultasikan Ritme Jadwal
-      </button>
-</div>
-</section>
-<!-- Interactive Client-side Script -->
-<script>
-    (function() {
-      // Setup dynamic feedback for checklist items
-      const checklistContainer = document.getElementById('timeline-checklist');
-      if (checklistContainer) {
-        const checkboxes = checklistContainer.querySelectorAll('input[type="checkbox"]');
-        checkboxes.forEach(function(cb) {
-          cb.addEventListener('change', function() {
-            const labelText = this.nextElementSibling;
-            if (this.checked) {
-              labelText.classList.add('line-through', 'text-on-surface-variant');
-              labelText.classList.remove('font-medium', 'text-on-surface');
-            } else {
-              labelText.classList.remove('line-through', 'text-on-surface-variant');
-              labelText.classList.add('font-medium', 'text-on-surface');
-            }
-          });
-        });
-      }
+</head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen flex flex-col overflow-x-hidden"><!-- NAVBAR PORTAL SISWA TERSTANDARISASI (TIPE B) -->
+<header class="fixed top-0 left-0 w-full z-50 bg-white/95 border-[#E2E8F0] backdrop-blur-md shadow-sm border-b">
+  <div class="max-w-7xl mx-auto h-[72px] px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+    <!-- Logo -->
+    <a href="dashboard-terang.html" style="text-decoration:none;" class="flex items-center gap-3 shrink-0">
+      <img alt="Medalis Logo" class="h-8 sm:h-9 w-auto object-contain" src="assets/medalis_logo.svg">
+      <div class="flex flex-col">
+        <span class="font-bold text-lg sm:text-xl tracking-wider text-[#0B1E3A] leading-none">MEDALIS</span>
+        <span class="text-[10px] tracking-widest uppercase font-semibold text-[#D4A747]">Portal Belajar Siswa</span>
+      </div>
+    </a>
 
-      // Competition Selector Change interaction
-      const compSelect = document.getElementById('competition-select');
-      if (compSelect) {
-        compSelect.addEventListener('change', function() {
-          console.log('Kompetisi aktif dialihkan ke:', this.value);
-        });
-      }
-    })();
-  </script>
-</div></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_8px_rgba(0,0,0,0.03)] mt-auto"><div class="w-full px-gutter py-space-xl"><div class="flex flex-col md:flex-row items-center justify-between gap-space-lg pb-space-lg mb-space-lg"><div class="flex items-center gap-space-md"><img alt="medalis_logo_transparent.png" class="h-7 w-auto object-contain" src="assets/medalis_logo.svg"><span class="font-headline-sm text-headline-sm text-primary tracking-wider">MEDALIS</span><span class="hidden md:inline-block font-body-sm text-body-sm text-on-surface-variant pl-space-md">Platform Pembinaan Prestasi Olimpiade Sains Nasional</span></div><div class="flex items-center gap-space-lg"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="beranda" href="dashboard-terang.html" style="text-decoration:none;">Beranda</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="modul" href="daftar-modul-terang.html" style="text-decoration:none;">Modul</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="tryout" href="lobby-tryout-terang.html" style="text-decoration:none;">Tryout</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="guru-ai" href="guru-ai-terang.html" style="text-decoration:none;">Guru AI</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="timeline" href="prep-timeline-terang.html">Timeline</a></div></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><p class="">© 2024 Medalis. Hak Cipta Dilindungi Undang-Undang.</p><p class="font-timer text-timer text-on-surface-variant">Olimpix AI AI Guided Prep System</p></div></div></footer>
+    <!-- Navigasi Tengah Desktop (Seragam 5 Menu Teks Bersih) -->
+    <nav class="hidden lg:flex items-center gap-1.5 bg-black/5 dark:bg-white/5 p-1 rounded-2xl border border-black/5 dark:border-white/5">
+      <a href="dashboard-terang.html" class="px-3.5 py-1.5 rounded-xl text-sm transition-all text-[#475569] hover:text-[#0B1E3A] hover:bg-slate-100">Beranda</a>
+      <a href="daftar-modul-terang.html" class="px-3.5 py-1.5 rounded-xl text-sm transition-all text-[#475569] hover:text-[#0B1E3A] hover:bg-slate-100">Modul & Past Papers</a>
+      <a href="lobby-tryout-terang.html" class="px-3.5 py-1.5 rounded-xl text-sm transition-all text-[#475569] hover:text-[#0B1E3A] hover:bg-slate-100">Simulasi Tryout</a>
+      <a href="guru-ai-terang.html" class="px-3.5 py-1.5 rounded-xl text-sm transition-all text-[#475569] hover:text-[#0B1E3A] hover:bg-slate-100">Tutor Olimpix</a>
+      <a href="prep-timeline-terang.html" class="px-3.5 py-1.5 rounded-xl text-sm transition-all bg-[#D4A747] text-[#0B1E3A] font-bold shadow-sm">Kalender Lomba</a>
+    </nav>
+
+    <!-- Right Profile & Theme Switcher -->
+    <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+      <!-- Theme Switcher -->
+      <div class="flex items-center bg-black/5 dark:bg-white/10 p-1 rounded-full text-xs font-medium">
+        <a href="prep-timeline-terang.html" class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-white text-[#0B1E3A] shadow-sm font-semibold">
+          <span class="material-symbols-outlined text-[15px]">light_mode</span>
+          <span class="hidden xl:inline">Terang</span>
+        </a>
+        <a href="prep-timeline-gelap.html" class="flex items-center gap-1 px-2.5 py-1 rounded-full text-[#64748B] hover:text-[#0B1E3A]">
+          <span class="material-symbols-outlined text-[15px]">dark_mode</span>
+          <span class="hidden xl:inline">Gelap</span>
+        </a>
+      </div>
+
+      <!-- Single Standard Student Chip -->
+      <div class="flex items-center gap-2 pl-2 sm:pl-3 border-l border-black/10 dark:border-white/10">
+        <div class="w-9 h-9 rounded-full bg-[#0B1E3A] dark:bg-[#D4A747] text-[#D4A747] dark:text-[#0B1E3A] flex items-center justify-center font-bold text-xs select-none shadow-sm">
+          AP
+        </div>
+        <div class="hidden sm:flex flex-col text-left">
+          <span class="font-bold text-xs sm:text-sm text-[#0B1E3A] leading-tight">Aisyah</span>
+          <span class="text-[11px] text-[#64748B] dark:text-[#94A3B8] leading-tight">Kelas 8 SMP • OSN Madya</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE BOTTOM NAVIGATION BAR (PORTAL SISWA) -->
+<nav class="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 border-[#E2E8F0] border-t shadow-[0_-2px_10px_rgba(0,0,0,0.05)] flex items-center justify-around px-2 py-1 safe-area-pb">
+  
+    <a href="dashboard-terang.html" class="flex flex-col items-center justify-center flex-1 py-1.5 text-[#64748B]">
+      <span class="material-symbols-outlined text-[22px]">home</span>
+      <span class="text-[11px] tracking-tight">Beranda</span>
+    </a>
+    <a href="daftar-modul-terang.html" class="flex flex-col items-center justify-center flex-1 py-1.5 text-[#64748B]">
+      <span class="material-symbols-outlined text-[22px]">menu_book</span>
+      <span class="text-[11px] tracking-tight">Modul</span>
+    </a>
+    <a href="lobby-tryout-terang.html" class="flex flex-col items-center justify-center flex-1 py-1.5 text-[#64748B]">
+      <span class="material-symbols-outlined text-[22px]">timer</span>
+      <span class="text-[11px] tracking-tight">Simulasi Tryout</span>
+    </a>
+    <a href="guru-ai-terang.html" class="flex flex-col items-center justify-center flex-1 py-1.5 text-[#64748B]">
+      <span class="material-symbols-outlined text-[22px]">psychology</span>
+      <span class="text-[11px] tracking-tight">Tutor</span>
+    </a>
+    <a href="prep-timeline-terang.html" class="flex flex-col items-center justify-center flex-1 py-1.5 text-[#D4A747] font-bold">
+      <span class="material-symbols-outlined text-[22px]">calendar_month</span>
+      <span class="text-[11px] tracking-tight">Kalender</span>
+    </a>
+</nav>
+<main class="w-full pt-[72px] bg-background flex-1 pb-24 lg:pb-8">
+
+<!-- SEKSI BARU: PUSAT KALENDER AGENDA LOMBA & NOTIFIKASI WHATSAPP BUNDA -->
+<div class="flex flex-col gap-8 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+  <!-- Header Kalender Lomba -->
+  <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-black/10 dark:border-white/10">
+    <div>
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#D4A747]/15 border border-[#D4A747]/30 text-[#D4A747] text-xs font-bold tracking-wide uppercase mb-3">
+        <span class="material-symbols-outlined text-[16px]">calendar_month</span>
+        Kalender Agenda Resmi Olimpiade 2026
+      </div>
+      <h1 class="text-2xl sm:text-3xl font-extrabold text-[#0B1E3A] tracking-tight">Pusat Jadwal Kompetisi Sains & Panduan Pendaftaran</h1>
+      <p class="text-sm sm:text-base text-[#64748B] mt-2 max-w-3xl">Pantau seluruh tanggal penting seleksi nasional & internasional (OSN, SASMO, AMO, KSNR). Unduh juknis resmi dan aktifkan bot pengingat WhatsApp agar tidak terlewat berkas.</p>
+    </div>
+
+    <!-- Banner Sinkronisasi WhatsApp -->
+    <div class="bg-white border-[#E2E8F0] rounded-2xl border p-4 shadow-sm flex items-center gap-4 shrink-0">
+      <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-[#059669] flex items-center justify-center shrink-0">
+        <span class="material-symbols-outlined text-[28px]">chat</span>
+      </div>
+      <div class="flex flex-col">
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-bold text-[#059669] flex items-center gap-1">
+            <span class="w-2 h-2 rounded-full bg-[#059669] animate-pulse"></span> BOT WA AKTIF
+          </span>
+        </div>
+        <span class="font-bold text-sm text-[#0B1E3A]">Pengingat WhatsApp Bunda</span>
+        <span class="text-xs text-[#64748B]">Nomor: +62 812-••••-8819</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Daftar Event Lomba Utama -->
+  <div class="flex flex-col gap-6">
+
+    <!-- EVENT 1: OSN-K 2026 (Penyisihan Kabupaten/Kota) -->
+    <div class="bg-white border-[#E2E8F0] rounded-2xl border p-6 shadow-sm flex flex-col gap-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-black/5 dark:border-white/5">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 font-bold flex items-center justify-center text-sm">
+            01
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="px-2.5 py-0.5 rounded text-[10px] font-bold uppercase bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20">Seleksi Nasional</span>
+              <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400">Pendaftaran Dibuka</span>
+            </div>
+            <h2 class="text-lg sm:text-xl font-bold text-[#0B1E3A]">OSN-K 2026 (Olimpiade Sains Nasional Tingkat Kota/Kabupaten)</h2>
+          </div>
+        </div>
+
+        <!-- Toggle Switch WhatsApp Reminder -->
+        <label class="flex items-center gap-3 cursor-pointer select-none bg-black/5 dark:bg-white/5 px-4 py-2 rounded-xl">
+          <div class="flex flex-col text-right">
+            <span class="text-xs font-bold text-[#0B1E3A]">Ingatkan via WhatsApp</span>
+            <span class="text-[10px] text-[#64748B]">Kirim notif H-7 & H-1</span>
+          </div>
+          <input type="checkbox" checked class="w-5 h-5 accent-[#059669] rounded cursor-pointer">
+        </label>
+      </div>
+
+      <!-- Milestone Timeline Card -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+        <div class="p-4 rounded-xl bg-[#F8FAFC] border border-black/5 dark:border-white/5">
+          <span class="font-bold text-[#D4A747] uppercase tracking-wider block mb-1">Tahap 1: Registrasi</span>
+          <span class="font-bold text-sm text-[#0B1E3A] block">1 - 25 Maret 2026</span>
+          <span class="text-[#64748B] block mt-1">Unggah berkas fakta integritas & surat rekomendasi kepsek.</span>
+        </div>
+
+        <div class="p-4 rounded-xl bg-[#F8FAFC] border border-black/5 dark:border-white/5">
+          <span class="font-bold text-[#D4A747] uppercase tracking-wider block mb-1">Tahap 2: Simulasi CBT</span>
+          <span class="font-bold text-sm text-[#0B1E3A] block">10 - 12 April 2026</span>
+          <span class="text-[#64748B] block mt-1">Uji coba aplikasi ujian daring resmi nasional.</span>
+        </div>
+
+        <div class="p-4 rounded-xl bg-[#F8FAFC] border border-emerald-500/30 bg-emerald-500/5">
+          <span class="font-bold text-[#059669] uppercase tracking-wider block mb-1">Tahap 3: Hari-H Lomba</span>
+          <span class="font-bold text-sm text-[#059669] block">14 Mei 2026</span>
+          <span class="text-[#64748B] block mt-1">Babak penyisihan serentak sesi pagi (08:30 WIB).</span>
+        </div>
+
+        <div class="p-4 rounded-xl bg-[#F8FAFC] border border-black/5 dark:border-white/5">
+          <span class="font-bold text-[#D4A747] uppercase tracking-wider block mb-1">Tahap 4: Pengumuman</span>
+          <span class="font-bold text-sm text-[#0B1E3A] block">28 Mei 2026</span>
+          <span class="text-[#64748B] block mt-1">Rilis SK lolos ke tingkat provinsi (OSN-P).</span>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-black/5 dark:border-white/5">
+        <div class="flex flex-wrap items-center gap-2">
+          <a href="https://pusatprestasinasional.kemdikbud.go.id" target="_blank" class="px-3.5 py-2 rounded-xl text-xs font-semibold border border-black/10 dark:border-white/10 text-[#0B1E3A] hover:bg-black/5 dark:hover:bg-white/5 flex items-center gap-1.5 transition-colors">
+            <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+            <span>Portal Registrasi Resmi</span>
+          </a>
+          <a href="daftar-modul-terang.html" class="px-3.5 py-2 rounded-xl text-xs font-semibold border border-[#D4A747]/30 text-[#D4A747] bg-[#D4A747]/10 hover:bg-[#D4A747]/20 flex items-center gap-1.5 transition-colors">
+            <span class="material-symbols-outlined text-[16px]">download</span>
+            <span>Unduh Juknis & Silabus PDF</span>
+          </a>
+        </div>
+
+        <a href="lobby-tryout-terang.html" class="px-4 py-2 rounded-xl text-xs font-bold bg-[#D4A747] text-[#0B1E3A] hover:bg-[#c4973b] shadow-sm flex items-center gap-1.5 transition-all">
+          <span>Latihan Sesuai Silabus Ini</span>
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- EVENT 2: SASMO 2026 (Kompetisi Internasional) -->
+    <div class="bg-white border-[#E2E8F0] rounded-2xl border p-6 shadow-sm flex flex-col gap-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-black/5 dark:border-white/5">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400 font-bold flex items-center justify-center text-sm">
+            02
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="px-2.5 py-0.5 rounded text-[10px] font-bold uppercase bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">Kompetisi Asia & Global</span>
+              <span class="text-xs font-bold text-[#D4A747]">Segera Dimulai</span>
+            </div>
+            <h2 class="text-lg sm:text-xl font-bold text-[#0B1E3A]">SASMO 2026 (Singapore and Asian Schools Math Olympiad)</h2>
+          </div>
+        </div>
+
+        <label class="flex items-center gap-3 cursor-pointer select-none bg-black/5 dark:bg-white/5 px-4 py-2 rounded-xl">
+          <div class="flex flex-col text-right">
+            <span class="text-xs font-bold text-[#0B1E3A]">Ingatkan via WhatsApp</span>
+            <span class="text-[10px] text-[#64748B]">Kirim notif H-7 & H-1</span>
+          </div>
+          <input type="checkbox" checked class="w-5 h-5 accent-[#059669] rounded cursor-pointer">
+        </label>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+        <div class="p-4 rounded-xl bg-[#F8FAFC] border border-black/5 dark:border-white/5">
+          <span class="font-bold text-[#D4A747] uppercase tracking-wider block mb-1">Tahap 1: Batas Akhir Daftar</span>
+          <span class="font-bold text-sm text-[#0B1E3A] block">20 Maret 2026</span>
+          <span class="text-[#64748B] block mt-1">Registrasi individu / kolektif sekolah via SIMCC.</span>
+        </div>
+
+        <div class="p-4 rounded-xl bg-[#F8FAFC] border border-black/5 dark:border-white/5">
+          <span class="font-bold text-[#D4A747] uppercase tracking-wider block mb-1">Tahap 2: Uji Coba Platform</span>
+          <span class="font-bold text-sm text-[#0B1E3A] block">28 Maret 2026</span>
+          <span class="text-[#64748B] block mt-1">Simulasi portal daring ujian berbasis iPad / Laptop.</span>
+        </div>
+
+        <div class="p-4 rounded-xl bg-[#F8FAFC] border border-emerald-500/30 bg-emerald-500/5">
+          <span class="font-bold text-[#059669] uppercase tracking-wider block mb-1">Tahap 3: Hari-H Ujian</span>
+          <span class="font-bold text-sm text-[#059669] block">11 April 2026</span>
+          <span class="text-[#64748B] block mt-1">Pengerjaan 25 soal penalaran berdurasi 90 menit.</span>
+        </div>
+
+        <div class="p-4 rounded-xl bg-[#F8FAFC] border border-black/5 dark:border-white/5">
+          <span class="font-bold text-[#D4A747] uppercase tracking-wider block mb-1">Tahap 4: Hasil & Medali</span>
+          <span class="font-bold text-sm text-[#0B1E3A] block">Mei 2026</span>
+          <span class="text-[#64748B] block mt-1">Kualifikasi menuju IJMO & SIMOC Singapura.</span>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-black/5 dark:border-white/5">
+        <div class="flex flex-wrap items-center gap-2">
+          <a href="https://sasmo.sg" target="_blank" class="px-3.5 py-2 rounded-xl text-xs font-semibold border border-black/10 dark:border-white/10 text-[#0B1E3A] hover:bg-black/5 dark:hover:bg-white/5 flex items-center gap-1.5 transition-colors">
+            <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+            <span>Website Resmi SASMO</span>
+          </a>
+          <a href="daftar-modul-terang.html" class="px-3.5 py-2 rounded-xl text-xs font-semibold border border-[#D4A747]/30 text-[#D4A747] bg-[#D4A747]/10 hover:bg-[#D4A747]/20 flex items-center gap-1.5 transition-colors">
+            <span class="material-symbols-outlined text-[16px]">download</span>
+            <span>Silabus & Contoh Soal PDF</span>
+          </a>
+        </div>
+
+        <a href="lobby-tryout-terang.html" class="px-4 py-2 rounded-xl text-xs font-bold bg-[#D4A747] text-[#0B1E3A] hover:bg-[#c4973b] shadow-sm flex items-center gap-1.5 transition-all">
+          <span>Latihan Soal SASMO</span>
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</main><footer class="w-full bg-surface-container-low shadow-[0_-1px_8px_rgba(0,0,0,0.03)] mt-auto"><div class="w-full px-gutter py-space-xl"><div class="flex flex-col md:flex-row items-center justify-between gap-space-lg pb-space-lg mb-space-lg"><div class="flex items-center gap-space-md"><img alt="medalis_logo_transparent.png" class="h-7 w-auto object-contain" src="assets/medalis_logo.svg"><span class="font-headline-sm text-headline-sm text-primary tracking-wider">MEDALIS</span><span class="hidden md:inline-block font-body-sm text-body-sm text-on-surface-variant pl-space-md">Platform Pembinaan Prestasi Olimpiade Sains Nasional</span></div><div class="flex items-center gap-space-lg"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="beranda" href="dashboard-terang.html" style="text-decoration:none;">Beranda</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="modul" href="daftar-modul-terang.html" style="text-decoration:none;">Modul</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="tryout" href="lobby-tryout-terang.html" style="text-decoration:none;">Tryout</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="guru-ai" href="guru-ai-terang.html" style="text-decoration:none;">Tutor Olimpix</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="timeline" href="prep-timeline-terang.html">Timeline</a></div></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><p class="">© 2024 Medalis. Hak Cipta Dilindungi Undang-Undang.</p><p class="font-timer text-timer text-on-surface-variant">Olimpix Engine AI Guided Prep System</p></div></div></footer>
 
 
 
