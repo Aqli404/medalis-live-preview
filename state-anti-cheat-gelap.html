@@ -2,54 +2,53 @@
 
 <html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-container": "#c9daff", "outline": "#807665", "on-secondary-fixed-variant": "#364765", "tertiary-fixed": "#d7e2ff", "inverse-on-surface": "#f3f1ea", "primary-fixed-dim": "#efc05d", "on-primary": "#ffffff", "secondary": "#4e5f7e", "surface": "#fbf9f2", "error": "#ba1a1a", "on-background": "#1b1c18", "on-primary-fixed-variant": "#5c4200", "error-container": "#ffdad6", "on-tertiary-container": "#18407b", "surface-container-low": "#f6f4ed", "background": "#fbf9f2", "tertiary-container": "#8caef0", "on-error": "#ffffff", "tertiary-fixed-dim": "#abc7ff", "outline-variant": "#d2c5b1", "surface-container": "#f0eee7", "surface-variant": "#e4e2dc", "on-primary-container": "#563d00", "surface-bright": "#fbf9f2", "inverse-surface": "#30312c", "on-tertiary": "#ffffff", "red": "#DC2626", "on-tertiary-fixed": "#001b3f", "surface-container-highest": "#e4e2dc", "surface-container-high": "#eae8e1", "on-secondary-container": "#4f5f7f", "on-error-container": "#93000a", "primary-container": "#d4a747", "surface-tint": "#7a5900", "on-primary-fixed": "#261900", "emerald": "#059669", "on-surface": "#1b1c18", "primary-fixed": "#ffdea2", "inverse-primary": "#efc05d", "primary": "#7a5900", "tertiary": "#3b5e9a", "on-surface-variant": "#4e4637", "secondary-fixed-dim": "#b6c7eb", "amber": "#F59E0B", "on-tertiary-fixed-variant": "#1f4681", "surface-container-lowest": "#ffffff", "on-secondary-fixed": "#081b37", "surface-dim": "#dcdad3", "secondary-fixed": "#d6e3ff", "on-secondary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "gutter": "1.5rem", "space-xl": "2.5rem", "space-md": "1rem", "space-xs": "0.25rem", "margin": "2rem", "space-lg": "1.5rem" }, "fontFamily": { "headline-lg": ["Poppins"], "headline-xl": ["Poppins"], "title-lg": ["Poppins"], "label-md": ["Poppins"], "headline-lg-mobile": ["Poppins"], "body-lg": ["Poppins"], "timer": ["JetBrains Mono"], "body-md": ["Poppins"], "headline-sm": ["Poppins"], "body-sm": ["Poppins"], "headline-md": ["Poppins"], "label-sm": ["Poppins"], "title-md": ["Poppins"] }, "fontSize": { "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "headline-xl": ["40px", { "lineHeight": "48px", "fontWeight": "700" }], "title-lg": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "headline-lg-mobile": ["26px", { "lineHeight": "32px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "timer": ["16px", { "lineHeight": "20px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }] } } } };</script><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>  <link rel="stylesheet" href="assets/medalis_interactive.css">
-</head><body class="bg-[#071324] text-white font-body-md overflow-x-hidden"><!-- NAVBAR PORTAL SISWA TERSTANDARISASI (TIPE B) -->
-<header class="fixed top-0 left-0 w-full z-50 bg-[#0B1E3A]/95 border-[#1E293B] backdrop-blur-md shadow-sm border-b">
-  <div class="max-w-7xl mx-auto h-[72px] px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
-    <!-- Logo -->
-    <a href="dashboard-gelap.html" style="text-decoration:none;" class="flex items-center gap-3 shrink-0">
-      <img alt="Medalis Logo" class="h-8 sm:h-9 w-auto object-contain" src="assets/medalis_logo.svg">
-      <div class="flex flex-col">
-        <span class="font-bold text-lg sm:text-xl tracking-wider text-white leading-none">MEDALIS</span>
-        <span class="text-[10px] tracking-widest uppercase font-semibold text-[#D4A747]">Portal Belajar Siswa</span>
-      </div>
-    </a>
+</head><body class="bg-[#071324] text-white font-body-md overflow-x-hidden">
 
-    <!-- Navigasi Tengah Desktop (Seragam 5 Menu Teks Bersih) -->
-    <nav class="hidden lg:flex items-center gap-1.5 bg-black/5 dark:bg-white/5 p-1 rounded-2xl border border-black/5 dark:border-white/5">
-      <a href="dashboard-gelap.html" class="px-3.5 py-1.5 rounded-xl text-sm transition-all text-[#94A3B8] hover:text-white hover:bg-white/5">Beranda</a>
-      <a href="daftar-modul-gelap.html" class="px-3.5 py-1.5 rounded-xl text-sm transition-all text-[#94A3B8] hover:text-white hover:bg-white/5">Modul & Past Papers</a>
-      <a href="lobby-tryout-gelap.html" class="px-3.5 py-1.5 rounded-xl text-sm transition-all text-[#94A3B8] hover:text-white hover:bg-white/5">Simulasi Tryout</a>
-      <a href="guru-ai-gelap.html" class="px-3.5 py-1.5 rounded-xl text-sm transition-all text-[#94A3B8] hover:text-white hover:bg-white/5">Tutor Olimpix</a>
-      <a href="prep-timeline-gelap.html" class="px-3.5 py-1.5 rounded-xl text-sm transition-all text-[#94A3B8] hover:text-white hover:bg-white/5">Kalender Lomba</a>
-    </nav>
-
-    <!-- Right Profile & Theme Switcher -->
-    <div class="flex items-center gap-2 sm:gap-3 shrink-0">
-      <!-- Theme Switcher -->
-      <div class="flex items-center bg-black/5 dark:bg-white/10 p-1 rounded-full text-xs font-medium">
-        <a href="state-anti-cheat-terang.html" class="flex items-center gap-1 px-2.5 py-1 rounded-full text-[#94A3B8] hover:text-white">
-          <span class="material-symbols-outlined text-[15px]">light_mode</span>
-          <span class="hidden xl:inline">Terang</span>
-        </a>
-        <a href="state-anti-cheat-gelap.html" class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#0F2444] text-white shadow-sm font-semibold">
-          <span class="material-symbols-outlined text-[15px]">dark_mode</span>
-          <span class="hidden xl:inline">Gelap</span>
-        </a>
+<header class="sticky top-0 z-50 h-[72px] bg-[#071324] border-[#1E293B] text-white border-b shadow-sm px-4 sm:px-8 flex items-center justify-between">
+  <!-- Sisi Kiri: Logo & Info Mata Uji -->
+  <div class="flex items-center gap-4">
+    <div class="flex items-center gap-2.5 pr-4 border-r border-black/10 dark:border-white/10">
+      <img alt="Medalis Logo" class="h-8 w-auto object-contain" src="assets/medalis_logo.svg">
+      <span class="font-bold text-lg tracking-wider hidden sm:inline">MEDALIS</span>
+    </div>
+    <div class="flex flex-col">
+      <div class="flex items-center gap-2">
+        <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-[#D4A747]/20 text-[#D4A747] border border-[#D4A747]/30">CBT RESMI</span>
+        <span class="font-bold text-xs sm:text-sm tracking-tight">KSNR Matematika SMP</span>
       </div>
-
-      <!-- Single Standard Student Chip -->
-      <div class="flex items-center gap-2 pl-2 sm:pl-3 border-l border-black/10 dark:border-white/10">
-        <div class="w-9 h-9 rounded-full bg-[#0B1E3A] dark:bg-[#D4A747] text-[#D4A747] dark:text-[#0B1E3A] flex items-center justify-center font-bold text-xs select-none shadow-sm">
-          AP
-        </div>
-        <div class="hidden sm:flex flex-col text-left">
-          <span class="font-bold text-xs sm:text-sm text-white leading-tight">Aisyah</span>
-          <span class="text-[11px] text-[#64748B] dark:text-[#94A3B8] leading-tight">Kelas 8 SMP • OSN Madya</span>
-        </div>
-      </div>
+      <span class="text-[11px] text-[#64748B] dark:text-[#94A3B8] hidden sm:inline">Simulasi Babak Penyisihan Nasional</span>
     </div>
   </div>
+
+  <!-- Sisi Tengah: Progres & Timer Monospace -->
+  <div class="flex items-center gap-3 sm:gap-6">
+    <div class="hidden md:flex flex-col items-center">
+      <span class="text-[11px] font-medium text-[#64748B] dark:text-[#94A3B8]">Progres Soal</span>
+      <span class="font-bold text-xs sm:text-sm text-[#059669]">14 / 40 Terjawab</span>
+    </div>
+    
+    <div class="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-black/5 dark:bg-white/10 border border-black/10 dark:border-white/10">
+      <span class="material-symbols-outlined text-[18px] text-[#D4A747]">timer</span>
+      <span class="font-mono font-bold text-sm sm:text-base tracking-wider text-red-600 dark:text-red-400" id="live-timer-cbt">01:25:40</span>
+    </div>
+  </div>
+
+  <!-- Sisi Kanan: Autosave & Tombol Selesai Ujian -->
+  <div class="flex items-center gap-2 sm:gap-3">
+    <!-- Autosave Local Indicator -->
+    <div class="hidden sm:flex items-center gap-1.5 text-xs text-[#059669] font-medium px-2.5 py-1 rounded-lg bg-emerald-500/10">
+      <span class="material-symbols-outlined text-[16px]">cloud_done</span>
+      <span>Tersimpan di Lokal</span>
+    </div>
+
+    <!-- Tombol Selesai Ujian (Marun Berwibawa) -->
+    <a href="hasil-tryout-gelap.html" class="px-3.5 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-[#881337] text-white hover:bg-[#9f1239] transition-all shadow-sm flex items-center gap-1.5">
+      <span>Selesai Ujian</span>
+      <span class="material-symbols-outlined text-[16px]">flag</span>
+    </a>
+  </div>
 </header>
+
 
 <!-- MOBILE BOTTOM NAVIGATION BAR (PORTAL SISWA) -->
 <nav class="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#0B1E3A]/95 border-[#1E293B] border-t shadow-[0_-2px_10px_rgba(0,0,0,0.05)] flex items-center justify-around px-2 py-1 safe-area-pb">
