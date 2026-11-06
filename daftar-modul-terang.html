@@ -23,16 +23,11 @@
 
     <!-- Right Profile & Theme Switcher -->
     <div class="flex items-center gap-2 sm:gap-3 shrink-0">
-      <!-- Theme Switcher -->
+      <!-- Theme Switcher (3-Mode Terang | Gelap | Sistem) -->
       <div class="flex items-center bg-black/5 dark:bg-white/10 p-1 rounded-full text-xs font-medium">
-        <a href="daftar-modul-terang.html" class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-white text-[#0B1E3A] shadow-sm font-semibold">
-          <span class="material-symbols-outlined text-[15px]">light_mode</span>
-          <span class="hidden xl:inline">Terang</span>
-        </a>
-        <a href="daftar-modul-gelap.html" class="flex items-center gap-1 px-2.5 py-1 rounded-full text-[#64748B] hover:text-[#0B1E3A]">
-          <span class="material-symbols-outlined text-[15px]">dark_mode</span>
-          <span class="hidden xl:inline">Gelap</span>
-        </a>
+        <a href="daftar-modul-terang.html" onclick="setMedalisTheme('light')" class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#0B1E3A] text-white font-bold shadow-sm transition-all"><span class="material-symbols-outlined text-[15px]">light_mode</span><span class="hidden sm:inline">Terang</span></a>
+        <a href="daftar-modul-gelap.html" onclick="setMedalisTheme('dark')" class="flex items-center gap-1 px-2.5 py-1 rounded-full text-[#64748B] hover:text-[#0B1E3A] transition-all"><span class="material-symbols-outlined text-[15px]">dark_mode</span><span class="hidden sm:inline">Gelap</span></a>
+        <button type="button" onclick="applySystemTheme('daftar-modul')" id="theme-system-btn" class="flex items-center gap-1 px-2.5 py-1 rounded-full text-[#64748B] hover:text-[#0B1E3A] transition-all"><span class="material-symbols-outlined text-[15px]">desktop_windows</span><span class="hidden sm:inline">Sistem</span></button>
       </div>
 
       <!-- Single Standard Student Chip -->

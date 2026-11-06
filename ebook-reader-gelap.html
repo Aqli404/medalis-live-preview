@@ -25,16 +25,11 @@
 
     <!-- Right Profile & Theme Switcher -->
     <div class="flex items-center gap-2 sm:gap-3 shrink-0">
-      <!-- Theme Switcher -->
+      <!-- Theme Switcher (3-Mode Terang | Gelap | Sistem) -->
       <div class="flex items-center bg-black/5 dark:bg-white/10 p-1 rounded-full text-xs font-medium">
-        <a href="ebook-reader-terang.html" class="flex items-center gap-1 px-2.5 py-1 rounded-full text-[#94A3B8] hover:text-white">
-          <span class="material-symbols-outlined text-[15px]">light_mode</span>
-          <span class="hidden xl:inline">Terang</span>
-        </a>
-        <a href="ebook-reader-gelap.html" class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#0F2444] text-white shadow-sm font-semibold">
-          <span class="material-symbols-outlined text-[15px]">dark_mode</span>
-          <span class="hidden xl:inline">Gelap</span>
-        </a>
+        <a href="ebook-reader-terang.html" onclick="setMedalisTheme('light')" class="flex items-center gap-1 px-2.5 py-1 rounded-full text-[#94A3B8] hover:text-white transition-all"><span class="material-symbols-outlined text-[15px]">light_mode</span><span class="hidden sm:inline">Terang</span></a>
+        <a href="ebook-reader-gelap.html" onclick="setMedalisTheme('dark')" class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#D4A747] text-[#0B1E3A] font-bold shadow-sm transition-all"><span class="material-symbols-outlined text-[15px]">dark_mode</span><span class="hidden sm:inline">Gelap</span></a>
+        <button type="button" onclick="applySystemTheme('ebook-reader')" id="theme-system-btn" class="flex items-center gap-1 px-2.5 py-1 rounded-full text-[#94A3B8] hover:text-white transition-all"><span class="material-symbols-outlined text-[15px]">desktop_windows</span><span class="hidden sm:inline">Sistem</span></button>
       </div>
 
       <!-- Single Standard Student Chip -->

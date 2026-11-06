@@ -498,3 +498,42 @@ document.addEventListener('DOMContentLoaded', () => {
     setupEarlyLearnerTK();
   }
 });
+
+
+// Global Theme Switcher Helper for 3-Mode [ Terang | Gelap | Sistem ]
+function setMedalisTheme(mode) {
+  try {
+    localStorage.setItem('medalis_preferred_theme', mode);
+  } catch (e) {}
+}
+
+function applySystemTheme(prefix) {
+  try {
+    localStorage.setItem('medalis_preferred_theme', 'system');
+  } catch (e) {}
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const target = prefersDark ? prefix + '-gelap.html' : prefix + '-terang.html';
+  if (!window.location.pathname.endsWith(target)) {
+    window.location.href = target;
+  }
+}
+
+// Highlight System button if preferred theme is system
+document.addEventListener('DOMContentLoaded', function() {
+  try {
+    const pref = localStorage.getItem('medalis_preferred_theme');
+    const sysBtn = document.getElementById('theme-system-btn');
+    if (pref === 'system' && sysBtn) {
+      const isDark = document.documentElement.classList.contains('dark') || window.location.pathname.includes('-gelap');
+      if (isDark) {
+        sysBtn.className = 'flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#D4A747] text-[#0B1E3A] font-bold shadow-sm transition-all';
+        const gelapBtn = sysBtn.previousElementSibling;
+        if (gelapBtn) gelapBtn.className = 'flex items-center gap-1 px-2.5 py-1 rounded-full text-[#94A3B8] hover:text-white transition-all';
+      } else {
+        sysBtn.className = 'flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#0B1E3A] text-white font-bold shadow-sm transition-all';
+        const terangBtn = sysBtn.previousElementSibling ? sysBtn.previousElementSibling.previousElementSibling : null;
+        if (terangBtn) terangBtn.className = 'flex items-center gap-1 px-2.5 py-1 rounded-full text-[#64748B] hover:text-[#0B1E3A] transition-all';
+      }
+    }
+  } catch (e) {}
+});
