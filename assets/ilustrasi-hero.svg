@@ -1,30 +1,74 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="420" viewBox="0 0 420 420" role="img" aria-label="Ilustrasi podium juara olimpiade">
-  <rect width="420" height="420" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-label="Ilustrasi siswa belajar bersama laptop">
+  <defs>
+    <style>
+      .bg{fill:#EFEEE6}
+      .card{fill:#FFFFFF}
+      .navy{fill:#0B1E3A}
+      .gold{fill:#D4A747}
+      .muted{fill:#CBD5E1}
+    </style>
+  </defs>
 
-  <!-- Lingkaran latar -->
-  <circle cx="210" cy="200" r="150" fill="#EFEEE6"/>
-  <circle cx="210" cy="200" r="150" fill="none" stroke="#D4A747" stroke-width="3" stroke-dasharray="10 8"/>
+  <!-- Latar panel -->
+  <rect class="bg" x="0" y="0" width="900" height="600" rx="32"/>
+  <circle cx="450" cy="330" r="250" fill="#F7F5EE"/>
+  <circle cx="450" cy="330" r="288" fill="none" stroke="#D4A747" stroke-width="2" stroke-dasharray="10 12" opacity="0.5"/>
 
-  <!-- Podium -->
-  <rect x="150" y="270" width="56" height="90" rx="6" fill="#1E3A5F"/>
-  <rect x="210" y="240" width="56" height="120" rx="6" fill="#0B1E3A"/>
-  <rect x="270" y="290" width="56" height="70" rx="6" fill="#1E3A5F"/>
-  <text x="178" y="320" font-family="monospace" font-size="20" font-weight="700" fill="#94A3B8" text-anchor="middle">2</text>
-  <text x="238" y="296" font-family="monospace" font-size="24" font-weight="700" fill="#D4A747" text-anchor="middle">1</text>
-  <text x="298" y="332" font-family="monospace" font-size="20" font-weight="700" fill="#94A3B8" text-anchor="middle">3</text>
+  <!-- Meja panjang -->
+  <rect class="navy" x="90" y="486" width="720" height="18" rx="9"/>
+  <rect class="navy" x="150" y="504" width="14" height="60" rx="7" opacity="0.85"/>
+  <rect class="navy" x="736" y="504" width="14" height="60" rx="7" opacity="0.85"/>
 
-  <!-- Medali di atas podium juara -->
-  <line x1="238" y1="240" x2="238" y2="196" stroke="#D4A747" stroke-width="3"/>
-  <circle cx="238" cy="176" r="26" fill="#D4A747"/>
-  <circle cx="238" cy="176" r="16" fill="none" stroke="#0B1E3A" stroke-width="3"/>
-  <path d="M232 176 l4 4 l8 -9" stroke="#0B1E3A" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Laptop terbuka di tengah (dilihat dari belakang) -->
+  <rect class="navy" x="352" y="250" width="196" height="150" rx="12"/>
+  <rect x="364" y="262" width="172" height="126" rx="6" fill="#F7F5EE"/>
+  <!-- isi layar: soal -->
+  <rect class="gold" x="378" y="276" width="66" height="9" rx="4.5"/>
+  <rect class="muted" x="378" y="294" width="140" height="6" rx="3"/>
+  <rect class="muted" x="378" y="308" width="116" height="6" rx="3"/>
+  <rect class="gold" x="378" y="330" width="20" height="20" rx="6"/>
+  <path d="M382.5 340 l4.5 4.5 l8 -9" stroke="#F7F5EE" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="406" y="336" width="70" height="8" rx="4" fill="#334155"/>
+  <rect x="378" y="360" width="20" height="20" rx="6" fill="none" stroke="#CBD5E1" stroke-width="2.5"/>
+  <rect class="muted" x="406" y="366" width="86" height="8" rx="4"/>
+  <!-- keyboard base -->
+  <path class="navy" d="M336 400 l-16 -10 q-5 -4 0 -8 l244 0 q5 4 0 8 l-16 10 z"/>
 
-  <!-- Bintang -->
-  <path d="M210 110 l7 15 l16 2 l-12 12 l3 16 l-14 -8 l-14 8 l3 -16 l-12 -12 l16 -2 z" fill="#D4A747" opacity="0.9"/>
-  <path d="M312 132 l5 11 l12 1.5 l-9 8.5 l2 12 l-10 -6 l-10 6 l2 -12 l-9 -8.5 l12 -1.5 z" fill="#D4A747" opacity="0.5"/>
-  <path d="M128 150 l4 9 l10 1.5 l-7 7 l2 10 l-9 -5 l-8 5 l2 -10 l-7 -7 l10 -1.5 z" fill="#D4A747" opacity="0.4"/>
+  <!-- Figur kiri: duduk, membaca buku -->
+  <g transform="translate(110, 120) scale(0.85)">
+    <image href="humaaans/sitting-1.svg" width="380" height="400"/>
+  </g>
 
-  <!-- Sorot lampu dari atas -->
-  <path d="M170 40 l40 240 h-56 z" fill="#D4A747" opacity="0.10"/>
-  <path d="M250 40 l40 240 h-56 z" fill="#D4A747" opacity="0.10"/>
+  <!-- Figur kanan: duduk, mencatat -->
+  <g transform="translate(520, 120) scale(0.85)">
+    <image href="humaaans/sitting-4.svg" width="380" height="400"/>
+  </g>
+
+  <!-- Timer di atas -->
+  <rect class="navy" x="606" y="120" width="150" height="48" rx="14"/>
+  <text x="681" y="152" font-family="monospace" font-size="26" font-weight="700" fill="#D4A747" text-anchor="middle">10:00</text>
+
+  <!-- Medali tersimpan -->
+  <g transform="translate(150, 96)">
+    <circle r="30" class="gold"/>
+    <circle r="19" fill="none" stroke="#0B1E3A" stroke-width="3.5"/>
+    <path d="M-8 0 l5 5 l11 -11" stroke="#0B1E3A" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Buku di meja kiri -->
+  <g transform="translate(196, 452)">
+    <rect width="96" height="16" rx="3" class="navy"/>
+    <rect x="4" y="-8" width="88" height="10" rx="2" fill="#F7F5EE"/>
+    <rect x="4" y="-24" width="88" height="16" rx="3" class="gold"/>
+  </g>
+
+  <!-- Buku di meja kanan -->
+  <g transform="translate(620, 452)">
+    <rect width="88" height="16" rx="3" class="navy"/>
+    <rect x="4" y="-8" width="80" height="10" rx="2" fill="#F7F5EE"/>
+  </g>
+
+  <!-- Bintang dekoratif -->
+  <path d="M112 226 l6 13 l14 2 l-10 10 l2 14 l-12 -7 l-13 7 l2 -14 l-10 -10 l14 -2 z" fill="#D4A747" opacity="0.6"/>
+  <path d="M788 300 l5 11 l12 1.6 l-9 8.5 l2 12 l-10 -6 l-10 6 l2 -12 l-9 -8.5 l12 -1.6 z" fill="#D4A747" opacity="0.45"/>
 </svg>
