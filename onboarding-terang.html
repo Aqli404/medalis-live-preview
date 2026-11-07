@@ -32,7 +32,7 @@
       <img alt="Medalis Logo" class="h-8 sm:h-9 w-auto object-contain" src="assets/medalis_logo.svg">
       <div class="flex flex-col">
         <span class="font-bold text-lg sm:text-xl tracking-wider text-[#0B1E3A] leading-none">MEDALIS</span>
-        <span class="text-[10px] tracking-widest uppercase font-semibold text-[#D4A747]">Olympiad Academy</span>
+        <span class="text-[10px] tracking-widest uppercase font-semibold text-[#D4A747]">Akademi Olimpiade</span>
       </div>
     </a>
 
@@ -149,10 +149,20 @@ function toggleMobileDrawer() {
       </div>
 
       <!-- 3 Steps Shown in a Horizontal Flow (3 Frames in a Row) -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full items-stretch">
+      <div class="w-full max-w-[640px] mx-auto mb-5">
+        <div class="flex items-center justify-center gap-2 mb-2" id="stepDots" aria-hidden="true">
+          <span class="dot w-2.5 h-2.5 rounded-full bg-[#D4A747]" ></span>
+          <span class="w-8 h-0.5 bg-[#E2E8F0]"></span>
+          <span class="dot w-2.5 h-2.5 rounded-full bg-[#E2E8F0]"></span>
+          <span class="w-8 h-0.5 bg-[#E2E8F0]"></span>
+          <span class="dot w-2.5 h-2.5 rounded-full bg-[#E2E8F0]"></span>
+        </div>
+        <p class="text-center text-xs font-semibold text-[#64748B] m-0" id="stepLabel">Langkah 1 dari 3</p>
+      </div>
+      <div class="w-full max-w-[640px] mx-auto">
 
         <!-- FRAME STEP 1: PILIH JENJANG -->
-        <div class="bg-[#FFFFFF] rounded-2xl border border-[#E2E8F0] p-6 shadow-xl flex flex-col justify-between relative overflow-hidden">
+        <div data-step="1" class="step-card bg-[#FFFFFF] rounded-2xl border border-[#E2E8F0] p-5 sm:p-6 shadow-xl flex flex-col justify-between relative overflow-hidden">
           <!-- Top Tag & Progress -->
           <div>
             <div class="flex items-center justify-between mb-4">
@@ -227,7 +237,7 @@ function toggleMobileDrawer() {
         </div>
 
         <!-- FRAME STEP 2: NOMOR WHATSAPP BUNDA (WITH ERROR STATE) -->
-        <div class="bg-[#FFFFFF] rounded-2xl border border-[#E2E8F0] p-6 shadow-xl flex flex-col justify-between relative overflow-hidden">
+        <div data-step="2" class="step-card hidden bg-[#FFFFFF] rounded-2xl border border-[#E2E8F0] p-5 sm:p-6 shadow-xl flex flex-col justify-between relative overflow-hidden">
           <!-- Top Tag & Progress -->
           <div>
             <div class="flex items-center justify-between mb-4">
@@ -265,8 +275,7 @@ function toggleMobileDrawer() {
                   </div>
                 </div>
                 <!-- Error State Warning Message -->
-                <p class="text-[11px] text-[#DC2626] mt-1.5 flex items-center gap-1 font-medium">
-                  <svg class="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <p id="waError" style="display:none" class="text-[11px] text-[#DC2626] mt-1.5 flex items-center gap-1 font-medium">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
                   Nomor WhatsApp tidak valid (minimal 9 digit setelah kode +62).
@@ -290,10 +299,10 @@ function toggleMobileDrawer() {
 
           <!-- Bottom Button Frame 2 -->
           <div class="pt-4 border-t border-[#E2E8F0] flex items-center gap-3">
-            <a href="login-terang.html" class="h-12 px-4 rounded-xl border border-[#E2E8F0] bg-white text-[#334155] hover:text-[#0B1E3A] font-medium text-xs transition" style="text-decoration:none;">
+            <button type="button" data-goto="1" class="h-12 px-4 rounded-xl border border-[#E2E8F0] bg-white text-[#334155] hover:text-[#0B1E3A] font-medium text-xs transition">
               Kembali
-            </a>
-            <button class="flex-1 h-12 rounded-xl bg-[#D4A747] hover:bg-[#C29535] text-[#0B1E3A] font-semibold text-sm flex items-center justify-center gap-2 transition">
+            </button>
+            <button type="button" data-next="3" class="flex-1 h-12 rounded-xl bg-[#D4A747] hover:bg-[#C29535] text-[#0B1E3A] font-semibold text-sm flex items-center justify-center gap-2 transition">
               <span class="">Lanjut ke Persetujuan</span>
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -303,7 +312,7 @@ function toggleMobileDrawer() {
         </div>
 
         <!-- FRAME STEP 3: DUA CHECKBOXES & MULAI BELAJAR -->
-        <div class="bg-[#FFFFFF] rounded-2xl border border-[#E2E8F0] p-6 shadow-xl flex flex-col justify-between relative overflow-hidden">
+        <div data-step="3" class="step-card hidden bg-[#FFFFFF] rounded-2xl border border-[#E2E8F0] p-5 sm:p-6 shadow-xl flex flex-col justify-between relative overflow-hidden">
           <!-- Top Tag & Progress -->
           <div>
             <div class="flex items-center justify-between mb-4">
@@ -362,12 +371,15 @@ function toggleMobileDrawer() {
 
           <!-- Bottom Button Frame 3: Gold "Mulai Belajar" -->
           <div class="pt-4 border-t border-[#E2E8F0]">
-            <a href="dashboard-terang.html" data-screen="SCREEN_171" class="w-full h-12 rounded-xl bg-[#D4A747] hover:bg-[#C29535] text-[#0B1E3A] font-bold text-sm flex items-center justify-center gap-2 shadow-[0_4px_16px_rgba(212,167,71,0.2)] transition" style="text-decoration:none;">
+            <button type="button" data-goto="2" class="h-12 px-4 rounded-xl border border-[#E2E8F0] bg-white text-[#334155] hover:text-[#0B1E3A] font-medium text-xs transition">
+              Kembali
+            </button>
+            <button type="button" data-finish="1" class="flex-1 h-12 rounded-xl bg-[#D4A747] hover:bg-[#C29535] text-[#0B1E3A] font-semibold text-sm flex items-center justify-center gap-2 shadow-[0_4px_16px_rgba(212,167,71,0.2)] transition">
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
               </svg>
               <span class="">Mulai Belajar</span>
-            </a>
+            </button>
           </div>
         </div>
 
@@ -523,6 +535,86 @@ function toggleMobileDrawer() {
   });
 
   paintTabs(); paintBtn();
+})();
+</script>
+
+<script>
+(function(){
+  var cards = document.querySelectorAll('.step-card');
+  var dots  = document.querySelectorAll('#stepDots .dot');
+  var label = document.getElementById('stepLabel');
+  var current = 1;
+
+  function show(n){
+    n = Math.max(1, Math.min(3, n));
+    current = n;
+    cards.forEach(function(c){
+      c.classList.toggle('hidden', Number(c.dataset.step) !== n);
+    });
+    dots.forEach(function(d,i){
+      d.style.background = (i+1 === n) ? '#D4A747' : '#E2E8F0';
+      d.style.transform  = (i+1 === n) ? 'scale(1.25)' : 'scale(1)';
+      d.style.transition = 'all .2s ease';
+    });
+    if(label) label.textContent = 'Langkah ' + n + ' dari 3';
+    window.scrollTo({top:0, behavior:'smooth'});
+  }
+
+  // Validasi per langkah
+  function valid(n){
+    if(n === 1){
+      var btn = document.getElementById('lanjut-btn');
+      return btn && btn.dataset.ready === '1';
+    }
+    if(n === 2){
+      var inp = document.querySelector('[data-step="2"] input[type="text"], [data-step="2"] input[type="tel"]');
+      if(!inp) return true;
+      var digits = (inp.value || '').replace(/\D/g,'');
+      var err = document.getElementById('waError');
+      if(digits.length < 9){
+        inp.style.borderColor = '#DC2626';
+        if(err) err.style.display='flex';
+        inp.focus();
+        return false;
+      }
+      inp.style.borderColor = '';
+      if(err) err.style.display='none';
+      return true;
+    }
+    return true;
+  }
+
+  // Tombol Lanjut (dari step 1)
+  var lanjut = document.getElementById('lanjut-btn');
+  if(lanjut){
+    lanjut.addEventListener('click', function(e){
+      if(lanjut.dataset.ready !== '1'){ e.preventDefault(); return; }
+      e.preventDefault();
+      show(2);
+    });
+  }
+
+  document.querySelectorAll('[data-next]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var target = Number(b.dataset.next);
+      if(valid(current)) show(target);
+    });
+  });
+
+  document.querySelectorAll('[data-goto]').forEach(function(b){
+    b.addEventListener('click', function(){ show(Number(b.dataset.goto)); });
+  });
+
+  document.querySelectorAll('[data-finish]').forEach(function(b){
+    b.addEventListener('click', function(){
+      try{
+        localStorage.setItem('medalis_onboarding_done','1');
+      }catch(err){}
+      window.location.href = 'dashboard-terang.html';
+    });
+  });
+
+  show(1);
 })();
 </script>
 </body></html>
