@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Matematika">
+  <rect x="18" y="22" width="84" height="76" rx="10" fill="#0B1E3A"/>
+  <rect x="26" y="30" width="68" height="14" rx="4" fill="#D4A747"/>
+  <text x="60" y="41" font-family="monospace" font-size="10" font-weight="700" fill="#0B1E3A" text-anchor="middle">1 + 2 = 3</text>
+  <text x="42" y="70" font-family="monospace" font-size="24" font-weight="700" fill="#F7F5EE" text-anchor="middle">+</text>
+  <text x="78" y="70" font-family="monospace" font-size="24" font-weight="700" fill="#F7F5EE" text-anchor="middle">×</text>
+  <text x="42" y="92" font-family="monospace" font-size="24" font-weight="700" fill="#D4A747" text-anchor="middle">%</text>
+  <text x="78" y="92" font-family="monospace" font-size="24" font-weight="700" fill="#F7F5EE" text-anchor="middle">√</text>
+</svg>

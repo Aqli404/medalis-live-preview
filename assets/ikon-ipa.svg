@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Ilmu Pengetahuan Alam">
+  <circle cx="60" cy="60" r="20" fill="#D4A747"/>
+  <ellipse cx="60" cy="60" rx="44" ry="17" fill="none" stroke="#0B1E3A" stroke-width="6" transform="rotate(-30 60 60)"/>
+  <ellipse cx="60" cy="60" rx="44" ry="17" fill="none" stroke="#0B1E3A" stroke-width="6" transform="rotate(30 60 60)"/>
+  <ellipse cx="60" cy="60" rx="44" ry="17" fill="none" stroke="#0B1E3A" stroke-width="6"/>
+  <circle cx="98" cy="72" r="6" fill="#0B1E3A"/>
+  <circle cx="22" cy="48" r="6" fill="#0B1E3A"/>
+</svg>

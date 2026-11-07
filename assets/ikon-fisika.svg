@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Fisika">
+  <path d="M28 92 A34 34 0 0 1 96 92" fill="none" stroke="#0B1E3A" stroke-width="8" stroke-linecap="round"/>
+  <path d="M20 92 A44 44 0 0 1 108 92" fill="none" stroke="#D4A747" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 8"/>
+  <circle cx="62" cy="42" r="10" fill="#D4A747"/>
+  <path d="M62 52 v20" stroke="#0B1E3A" stroke-width="6" stroke-linecap="round"/>
+  <path d="M52 60 l10 -8 l10 8" stroke="#0B1E3A" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

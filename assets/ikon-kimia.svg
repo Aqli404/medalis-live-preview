@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="Kimia">
+  <path d="M46 22 h28 v16 l20 46 a10 10 0 0 1 -9 14 h-50 a10 10 0 0 1 -9 -14 l20 -46 z" fill="#0B1E3A"/>
+  <path d="M40 72 l6 -14 h28 l6 14 a5 5 0 0 1 -4 7 h-30 a5 5 0 0 1 -6 -7 z" fill="#D4A747"/>
+  <circle cx="52" cy="66" r="3.5" fill="#F7F5EE"/>
+  <circle cx="68" cy="70" r="2.5" fill="#F7F5EE"/>
+  <rect x="42" y="18" width="36" height="6" rx="3" fill="#D4A747"/>
+</svg>
