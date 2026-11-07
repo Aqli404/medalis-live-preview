@@ -181,11 +181,6 @@ function toggleMobileDrawer() {
               <div class="h-2 flex-1 rounded-sm bg-[#1E3A5F] facet-slant"></div>
             </div>
 
-            <h2 class="text-lg font-bold text-white mb-1">Pilih Jenjang dan Kelas</h2>
-            <p class="text-xs text-[#CBD5E1] mb-5">
-              Materi dan soal otomatis disesuaikan dengan kelasnya.
-            </p>
-
             <!-- PILIH JENJANG + KELAS -->
             <h2 class="text-lg font-bold text-white mb-1">Anak Bunda sekarang kelas berapa?</h2>
             <p class="text-xs text-[#CBD5E1] mb-5">
@@ -315,9 +310,9 @@ function toggleMobileDrawer() {
                   </div>
                 </div>
                 <!-- Error State Warning Message -->
-                <p class="text-[11px] text-[#DC2626] mt-1.5 flex items-center gap-1 font-medium">
+                <p id="waError" style="display:none" class="text-[11px] text-[#DC2626] mt-1.5 flex items-center gap-1 font-medium">
                   <svg class="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <p id="waError" style="display:none" class="text-[11px] text-[#DC2626] mt-1.5 items-center gap-1 font-medium">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
                   Nomor WhatsApp tidak valid (minimal 9 digit setelah kode +62).
                 </p>
@@ -449,6 +444,7 @@ function toggleMobileDrawer() {
       </div>
 
     </div>
+    </div>
   </main>
 
   <!-- OFFICIAL DARK FOOTER (Exactly matching DESIGN_v3.md) -->
@@ -525,8 +521,8 @@ function toggleMobileDrawer() {
       btn.dataset.ready = '1';
     } else {
       info.classList.add('hidden');
-      btn.style.background = '#C9CDD4';
-      btn.style.color = '#7C8595';
+      btn.style.background = '#1E3A5F';
+      btn.style.color = '#94A3B8';
       btn.classList.add('pointer-events-none','cursor-not-allowed');
       btn.setAttribute('aria-disabled','true');
       btnLbl.textContent = 'Pilih kelas dulu';
