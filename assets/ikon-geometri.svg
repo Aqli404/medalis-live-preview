@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="Geometri">
+  <path d="M24 92 L96 92 L60 28 Z" fill="#0B1E3A"/>
+  <path d="M60 28 L96 92" stroke="#D4A747" stroke-width="3"/>
+  <path d="M24 92 L60 28" stroke="#D4A747" stroke-width="3"/>
+  <path d="M60 92 L60 62 L84 62" fill="none" stroke="#D4A747" stroke-width="3" stroke-linecap="round"/>
+  <path d="M56 92 L56 64 L58 64 L58 92 Z" fill="#D4A747" opacity="0.5"/>
+  <circle cx="60" cy="28" r="6" fill="#D4A747"/>
+  <circle cx="24" cy="92" r="6" fill="#D4A747"/>
+  <circle cx="96" cy="92" r="6" fill="#D4A747"/>
+</svg>
