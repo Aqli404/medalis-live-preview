@@ -199,7 +199,7 @@ function paintSave(){
     saveBtn.style.color='#0B1E3A';
     saveBtn.style.cursor='pointer';
     saveBtn.querySelector('.ms').textContent='check';
-    saveLbl.textContent='Simpan & Mulai Belajar';
+    saveLbl.textContent='Simpan & Lanjut ke Langkah 2';
   } else {
     infoEl.classList.add('hidden');
     saveBtn.disabled=true;
@@ -225,7 +225,8 @@ saveBtn.addEventListener('click', ()=>{
     localStorage.setItem('medalis_level', curLevel);
     localStorage.setItem('medalis_grade', curGrade);
   }catch(e){}
-  window.location.href = 'dashboard-terang.html';
+  // Lanjut ke Langkah 2 (Nomor WhatsApp Bunda) via onboarding - k sudah dicatat
+  window.location.href = 'onboarding-terang.html#lanjut';
 });
 </script>
 </body>

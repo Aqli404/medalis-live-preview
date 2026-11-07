@@ -294,6 +294,12 @@ function toggleMobileDrawer() {
               Tiap Minggu Bunda terima ringkasan: anak sudah bisa apa, dan bagian mana yang masih perlu dilatih.
             </p>
 
+            <!-- Kelas terpilih (konteks dari langkah 1) -->
+            <div id="kelas-context" class="hidden mb-5 px-3.5 py-2.5 rounded-xl border border-[#D4A747]/30 bg-[#D4A747]/10 flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-[18px] text-[#D4A747]">school</span>
+              <p class="text-xs font-semibold text-white m-0" id="kelas-context-label">—</p>
+            </div>
+
             <!-- Input Form With +62 prefix and Error Demonstration -->
             <div class="space-y-4 mb-4">
               <div>
@@ -492,6 +498,15 @@ function toggleMobileDrawer() {
 
   let lvl = null, grd = null;
 
+  // Rute langsung dari halaman pilih-kelas: kelas sudah dipilih, langsung ke Langkah 2
+  try{
+    const savedLvl = localStorage.getItem('medalis_level');
+    const savedGrd = localStorage.getItem('medalis_grade');
+    if(location.hash === '#lanjut' && savedLvl && savedGrd){
+      lvl = savedLvl; grd = savedGrd;
+    }
+  }catch(e){}
+
   function paint(){
     btns.forEach(b=>{
       const on = (b.dataset.level === lvl && b.dataset.grade === grd);
@@ -612,7 +627,26 @@ function toggleMobileDrawer() {
       window.location.href = 'dashboard-gelap.html';
     });
   });
-  show(1);
+  // Rute langsung dari pilih-kelas: mulai di Langkah 2, tampilkan chip kelas terpilih
+  var startStep = 1;
+  if(location.hash === '#lanjut'){
+    var sLvl = null, sGrd = null;
+    try{
+      sLvl = localStorage.getItem('medalis_level');
+      sGrd = localStorage.getItem('medalis_grade');
+    }catch(e){}
+    if(sLvl && sGrd){
+      startStep = 2;
+      var ctx = document.getElementById('kelas-context');
+      var lbl = document.getElementById('kelas-context-label');
+      if(ctx && lbl){
+        var SH = { tk:'TK', sd:'SD', smp:'SMP', sma:'SMA' };
+        lbl.textContent = (sLvl==='tk' ? ('TK '+sGrd) : ('Kelas '+sGrd+' '+(SH[sLvl]||''))) + ' sudah dipilih. Bisa diubah lewat tombol Kembali.';
+        ctx.classList.remove('hidden');
+      }
+    }
+  }
+  show(startStep);
 })();
 </script>
 </body>
