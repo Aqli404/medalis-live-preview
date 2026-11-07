@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="Pertidaksamaan">
+  <path d="M60 26 L96 88 L24 88 Z" fill="none" stroke="#0B1E3A" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M60 26 L96 88 L24 88 Z" fill="#D4A747" opacity="0.18"/>
+  <text x="60" y="74" font-family="monospace" font-size="26" font-weight="700" fill="#0B1E3A" text-anchor="middle">≥</text>
+  <line x1="20" y1="98" x2="100" y2="98" stroke="#D4A747" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="60" cy="26" r="6" fill="#D4A747"/>
+  <circle cx="24" cy="88" r="6" fill="#D4A747"/>
+  <circle cx="96" cy="88" r="6" fill="#D4A747"/>
+</svg>
