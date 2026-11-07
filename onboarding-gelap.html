@@ -192,29 +192,67 @@ function toggleMobileDrawer() {
               Materi dan soal otomatis disesuaikan dengan kelasnya.
             </p>
 
-            <!-- Tab Jenjang -->
-            <div class="grid grid-cols-4 gap-2 mb-5" id="level-tabs" role="tablist" aria-label="Pilih jenjang">
-              <button type="button" data-level="tk" class="lv-tab h-[68px] rounded-xl border-2 border-[#1E3A5F] bg-white flex flex-col items-center justify-center gap-1 cursor-pointer transition">
-                <span class="material-symbols-outlined text-[24px] text-[#7a5900]">child_care</span>
-                <span class="lv-label text-xs font-bold text-white">TK</span>
-              </button>
-              <button type="button" data-level="sd" class="lv-tab h-[68px] rounded-xl border-2 border-[#1E3A5F] bg-white flex flex-col items-center justify-center gap-1 cursor-pointer transition">
-                <span class="material-symbols-outlined text-[24px] text-[#7a5900]">menu_book</span>
-                <span class="lv-label text-xs font-bold text-white">SD</span>
-              </button>
-              <button type="button" data-level="smp" class="lv-tab h-[68px] rounded-xl border-2 border-[#1E3A5F] bg-white flex flex-col items-center justify-center gap-1 cursor-pointer transition">
-                <span class="material-symbols-outlined text-[24px] text-[#7a5900]">science</span>
-                <span class="lv-label text-xs font-bold text-white">SMP</span>
-              </button>
-              <button type="button" data-level="sma" class="lv-tab h-[68px] rounded-xl border-2 border-[#1E3A5F] bg-white flex flex-col items-center justify-center gap-1 cursor-pointer transition">
-                <span class="material-symbols-outlined text-[24px] text-[#7a5900]">school</span>
-                <span class="lv-label text-xs font-bold text-white">SMA</span>
-              </button>
+            <!-- Grid Kelas Lengkap (semua jenjang terlihat) -->
+            <p class="text-[10px] font-bold uppercase tracking-widest text-[#64748B] mb-2.5">Pilih Kelas</p>
+
+            <!-- TK -->
+            <div class="mb-3">
+              <div class="flex items-center gap-1.5 mb-1.5">
+                <span class="material-symbols-outlined text-[16px] text-[#D4A747]">child_care</span>
+                <span class="text-[11px] font-bold text-[#94A3B8] uppercase tracking-wider">TK</span>
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <button type="button" data-level="tk" data-grade="A" class="grade-btn h-[54px] rounded-xl border-2 border-[#1E3A5F] bg-[#142642] flex items-center justify-center gap-1.5 cursor-pointer transition">
+                  <span class="text-[15px] font-extrabold text-white">TK A</span>
+                  <span class="text-[10px] text-[#94A3B8]">4–5 th</span>
+                </button>
+                <button type="button" data-level="tk" data-grade="B" class="grade-btn h-[54px] rounded-xl border-2 border-[#1E3A5F] bg-[#142642] flex items-center justify-center gap-1.5 cursor-pointer transition">
+                  <span class="text-[15px] font-extrabold text-white">TK B</span>
+                  <span class="text-[10px] text-[#94A3B8]">5–6 th</span>
+                </button>
+              </div>
             </div>
 
-            <!-- Grid Kelas -->
-            <div id="grade-grid" class="grid grid-cols-3 gap-2 mb-4" role="group" aria-label="Pilih kelas">
-              <p class="col-span-3 text-xs text-[#94A3B8] text-center py-6">Pilih jenjang di atas dulu.</p>
+            <!-- SD -->
+            <div class="mb-3">
+              <div class="flex items-center gap-1.5 mb-1.5">
+                <span class="material-symbols-outlined text-[16px] text-[#D4A747]">menu_book</span>
+                <span class="text-[11px] font-bold text-[#94A3B8] uppercase tracking-wider">SD</span>
+              </div>
+              <div class="grid grid-cols-3 gap-2">
+                <button type="button" data-level="sd" data-grade="1" class="grade-btn h-[54px] rounded-xl border-2 border-[#1E3A5F] bg-[#142642] flex items-center justify-center cursor-pointer transition"><span class="text-[15px] font-extrabold text-white">1</span></button>
+                <button type="button" data-level="sd" data-grade="2" class="grade-btn h-[54px] rounded-xl border-2 border-[#1E3A5F] bg-[#142642] flex items-center justify-center cursor-pointer transition"><span class="text-[15px] font-extrabold text-white">2</span></button>
+                <button type="button" data-level="sd" data-grade="3" class="grade-btn h-[54px] rounded-xl border-2 border-[#1E3A5F] bg-[#142642] flex items-center justify-center cursor-pointer transition"><span class="text-[15px] font-extrabold text-white">3</span></button>
+                <button type="button" data-level="sd" data-grade="4" class="grade-btn h-[54px] rounded-xl border-2 border-[#1E3A5F] bg-[#142642] flex items-center justify-center cursor-pointer transition"><span class="text-[15px] font-extrabold text-white">4</span></button>
+                <button type="button" data-level="sd" data-grade="5" class="grade-btn h-[54px] rounded-xl border-2 border-[#1E3A5F] bg-[#142642] flex items-center justify-center cursor-pointer transition"><span class="text-[15px] font-extrabold text-white">5</span></button>
+                <button type="button" data-level="sd" data-grade="6" class="grade-btn h-[54px] rounded-xl border-2 border-[#1E3A5F] bg-[#142642] flex items-center justify-center cursor-pointer transition"><span class="text-[15px] font-extrabold text-white">6</span></button>
+              </div>
+            </div>
+
+            <!-- SMP -->
+            <div class="mb-3">
+              <div class="flex items-center gap-1.5 mb-1.5">
+                <span class="material-symbols-outlined text-[16px] text-[#D4A747]">science</span>
+                <span class="text-[11px] font-bold text-[#94A3B8] uppercase tracking-wider">SMP</span>
+              </div>
+              <div class="grid grid-cols-3 gap-2">
+                <button type="button" data-level="smp" data-grade="7" class="grade-btn h-[54px] rounded-xl border-2 border-[#1E3A5F] bg-[#142642] flex items-center justify-center cursor-pointer transition"><span class="text-[15px] font-extrabold text-white">7</span></button>
+                <button type="button" data-level="smp" data-grade="8" class="grade-btn h-[54px] rounded-xl border-2 border-[#1E3A5F] bg-[#142642] flex items-center justify-center cursor-pointer transition"><span class="text-[15px] font-extrabold text-white">8</span></button>
+                <button type="button" data-level="smp" data-grade="9" class="grade-btn h-[54px] rounded-xl border-2 border-[#1E3A5F] bg-[#142642] flex items-center justify-center cursor-pointer transition"><span class="text-[15px] font-extrabold text-white">9</span></button>
+              </div>
+            </div>
+
+            <!-- SMA -->
+            <div class="mb-4">
+              <div class="flex items-center gap-1.5 mb-1.5">
+                <span class="material-symbols-outlined text-[16px] text-[#D4A747]">school</span>
+                <span class="text-[11px] font-bold text-[#94A3B8] uppercase tracking-wider">SMA / SMK</span>
+              </div>
+              <div class="grid grid-cols-3 gap-2">
+                <button type="button" data-level="sma" data-grade="10" class="grade-btn h-[54px] rounded-xl border-2 border-[#1E3A5F] bg-[#142642] flex items-center justify-center cursor-pointer transition"><span class="text-[15px] font-extrabold text-white">10</span></button>
+                <button type="button" data-level="sma" data-grade="11" class="grade-btn h-[54px] rounded-xl border-2 border-[#1E3A5F] bg-[#142642] flex items-center justify-center cursor-pointer transition"><span class="text-[15px] font-extrabold text-white">11</span></button>
+                <button type="button" data-level="sma" data-grade="12" class="grade-btn h-[54px] rounded-xl border-2 border-[#1E3A5F] bg-[#142642] flex items-center justify-center cursor-pointer transition"><span class="text-[15px] font-extrabold text-white">12</span></button>
+              </div>
             </div>
 
             <!-- Info mapel -->
@@ -441,67 +479,46 @@ function toggleMobileDrawer() {
 
 <script>
 (function(){
-  const DATA = {
-    tk:  {short:'TK', grades:[{n:'A',s:'Usia 4–5'},{n:'B',s:'Usia 5–6'}],
-          mapel:'Kartu bergambar, angka, dan bentuk. Soal dibacakan lewat suara.'},
-    sd:  {short:'SD', grades:[1,2,3,4,5,6].map(k=>({n:String(k),s:'Kelas '+k})),
-          mapel:'Matematika dan IPA.'},
-    smp: {short:'SMP', grades:[7,8,9].map(k=>({n:String(k),s:'Kelas '+k})),
-          mapel:'Matematika, IPA, dan IPS.'},
-    sma: {short:'SMA', grades:[10,11,12].map(k=>({n:String(k),s:'Kelas '+k})),
-          mapel:'Matematika, Fisika, Kimia, dan Biologi.'}
+  const btns  = document.querySelectorAll('.grade-btn');
+  const info  = document.getElementById('grade-info');
+  const infoT = document.getElementById('grade-info-title');
+  const infoX = document.getElementById('grade-info-text');
+  const btn   = document.getElementById('lanjut-btn');
+  const btnLbl= document.getElementById('lanjut-label');
+
+  const MAPEL = {
+    tk:'Kartu bergambar, angka, dan bentuk. Soal dibacakan lewat suara.',
+    sd:'Matematika dan IPA.',
+    smp:'Matematika, IPA, dan IPS.',
+    sma:'Matematika, Fisika, Kimia, dan Biologi.'
   };
-  let lvl=null, grd=null;
+  const SHORT = { tk:'TK', sd:'SD', smp:'SMP', sma:'SMA' };
 
-  const tabs   = document.querySelectorAll('.lv-tab');
-  const grid   = document.getElementById('grade-grid');
-  const info   = document.getElementById('grade-info');
-  const infoT  = document.getElementById('grade-info-title');
-  const infoX  = document.getElementById('grade-info-text');
-  const btn    = document.getElementById('lanjut-btn');
-  const btnLbl = document.getElementById('lanjut-label');
+  let lvl = null, grd = null;
 
-  function paintTabs(){
-    tabs.forEach(t=>{
-      const on = t.dataset.level === lvl;
-      t.style.borderColor = on ? '#D4A747' : '#1E3A5F';
-      t.style.background  = on ? '#0B1E3A' : '#0F2444';
-      t.setAttribute('aria-selected', on ? 'true':'false');
-      t.style.boxShadow   = on ? '0 3px 0 0 #D4A747' : 'none';
-      t.querySelector('.lv-label').style.color = on ? '#ffffff' : '#ffffff';
-      t.querySelector('.material-symbols-outlined').style.color = on ? '#D4A747' : '#7a5900';
+  function paint(){
+    btns.forEach(b=>{
+      const on = (b.dataset.level === lvl && b.dataset.grade === grd);
+      b.style.borderColor = on ? '#D4A747' : '#1E3A5F';
+      b.style.background  = on ? '#0B1E3A' : '#142642';
+      b.style.boxShadow   = on ? '0 3px 0 0 #D4A747' : 'none';
+      b.querySelectorAll('span').forEach(s=>{
+        if (s.style.fontWeight === '800' || s.className.includes('font-extrabold')) {
+          s.style.color = on ? '#D4A747' : '#ffffff';
+        } else {
+          s.style.color = on ? '#CBD5E1' : '#94A3B8';
+        }
+      });
     });
-  }
 
-  function render(){
-    if(!lvl){
-      grid.innerHTML = '<p class="col-span-3 text-xs text-[#64748B] text-center py-6">Pilih jenjang di atas dulu.</p>';
-      return;
-    }
-    grid.innerHTML = DATA[lvl].grades.map(g=>{
-      const sel = grd === g.n;
-      return '<button type="button" data-grade="'+g.n+'" class="gr-btn rounded-xl border-2 flex flex-col items-center justify-center cursor-pointer transition" '
-        + 'style="min-height:76px;border-color:'+(sel?'#D4A747':'#1E3A5F')+';background:'+(sel?'#0B1E3A':'#0F2444')+';box-shadow:'+(sel?'0 3px 0 0 #D4A747':'none')+'">'
-        + '<span style="font-weight:800;font-size:22px;line-height:1;color:'+(sel?'#D4A747':'#ffffff')+'">'+g.n+'</span>'
-        + '<span style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-top:4px;color:'+(sel?'#CBD5E1':'#94A3B8')+'">'+g.s+'</span>'
-        + '</button>';
-    }).join('');
-    grid.querySelectorAll('.gr-btn').forEach(b=>{
-      b.addEventListener('click', ()=>{ grd = b.dataset.grade; render(); paintBtn(); });
-    });
-  }
-
-  function paintBtn(){
     const ready = lvl && grd;
     if(ready){
-      const d = DATA[lvl];
-      const nama = lvl==='tk' ? 'TK '+grd : 'Kelas '+grd+' '+d.short;
+      const nama = (lvl==='tk') ? ('TK '+grd) : ('Kelas '+grd+' '+SHORT[lvl]);
       info.classList.remove('hidden');
       infoT.textContent = nama + ' dipilih';
-      infoX.textContent = 'Mapel: ' + d.mapel;
+      infoX.textContent = 'Mapel: ' + MAPEL[lvl];
       btn.style.background = '#D4A747';
       btn.style.color = '#0B1E3A';
-      btn.style.boxShadow = '0 4px 0 0 rgba(212,167,71,.35)';
       btn.classList.remove('pointer-events-none','cursor-not-allowed');
       btn.setAttribute('aria-disabled','false');
       btnLbl.textContent = 'Lanjut ke Kontak Bunda';
@@ -510,7 +527,6 @@ function toggleMobileDrawer() {
       info.classList.add('hidden');
       btn.style.background = '#C9CDD4';
       btn.style.color = '#7C8595';
-      btn.style.boxShadow = 'none';
       btn.classList.add('pointer-events-none','cursor-not-allowed');
       btn.setAttribute('aria-disabled','true');
       btnLbl.textContent = 'Pilih kelas dulu';
@@ -518,19 +534,25 @@ function toggleMobileDrawer() {
     }
   }
 
-  tabs.forEach(t=>{
-    t.addEventListener('click', ()=>{ lvl = t.dataset.level; grd = null; paintTabs(); render(); paintBtn(); });
+  btns.forEach(b=>{
+    b.addEventListener('click', ()=>{
+      lvl = b.dataset.level;
+      grd = b.dataset.grade;
+      paint();
+    });
   });
 
-  btn.addEventListener('click', function(e){
-    if(btn.dataset.ready !== '1'){ e.preventDefault(); return; }
-    try{
-      localStorage.setItem('medalis_level', lvl);
-      localStorage.setItem('medalis_grade', grd);
-    }catch(err){}
-  });
+  if(btn){
+    btn.addEventListener('click', function(e){
+      if(btn.dataset.ready !== '1'){ e.preventDefault(); return; }
+      try{
+        localStorage.setItem('medalis_level', lvl);
+        localStorage.setItem('medalis_grade', grd);
+      }catch(err){}
+    });
+  }
 
-  paintTabs(); paintBtn();
+  paint();
 })();
 </script>
 <script>
