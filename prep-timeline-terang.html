@@ -45,7 +45,7 @@
 
 <!-- MOBILE BOTTOM NAVIGATION BAR (PORTAL SISWA) -->
 <nav class="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 border-[#E2E8F0] border-t shadow-[0_-2px_10px_rgba(0,0,0,0.05)] flex items-center justify-around px-2 py-1 safe-area-pb">
-  
+
     <a href="landing-terang.html" class="flex flex-col items-center justify-center flex-1 py-1.5 text-[#64748B]">
       <span class="material-symbols-outlined text-[22px]">home</span>
       <span class="text-[11px] tracking-tight">Beranda</span>
@@ -77,10 +77,10 @@
     <div>
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#D4A747]/15 border border-[#D4A747]/30 text-[#D4A747] text-xs font-bold tracking-wide uppercase mb-3">
         <span class="material-symbols-outlined text-[16px]">calendar_month</span>
-        Kalender Agenda Resmi Olimpiade 2026
+        Katalog Lomba & Persiapan
       </div>
-      <h1 class="text-2xl sm:text-3xl font-extrabold text-[#0B1E3A] tracking-tight">Pusat Jadwal Kompetisi Sains & Panduan Pendaftaran</h1>
-      <p class="text-sm sm:text-base text-[#64748B] mt-2 max-w-3xl">Pantau seluruh tanggal penting seleksi nasional & internasional (OSN, SASMO, AMO, KSNR). Unduh juknis resmi dan aktifkan bot pengingat WhatsApp agar tidak terlewat berkas.</p>
+      <h1 class="text-2xl sm:text-3xl font-extrabold text-[#0B1E3A] tracking-tight">Pilih lomba. Siapkan diri sebaik mungkin.</h1>
+      <p class="text-sm sm:text-base text-[#64748B] mt-2 max-w-3xl">Lihat ringkasan kompetisi di katalog ini, lalu mulai latihan dari materi yang relevan. Tanggal merujuk arsip 2026 sebagai contoh tampilan; jadwal terbaru perlu dikonfirmasi ke penyelenggara/admin.</p>
     </div>
 
     <!-- Banner Sinkronisasi WhatsApp -->
@@ -91,21 +91,26 @@
       <div class="flex flex-col">
         <div class="flex items-center gap-2">
           <span class="text-xs font-bold text-[#059669] flex items-center gap-1">
-            <span class="w-2 h-2 rounded-full bg-[#059669] animate-pulse"></span> BOT WA AKTIF
+            <span class="w-2 h-2 rounded-full bg-[#059669] animate-pulse"></span> OPSI PENGINGAT
           </span>
         </div>
         <span class="font-bold text-sm text-[#0B1E3A]">Pengingat WhatsApp Bunda</span>
-        <span class="text-xs text-[#64748B]">Nomor: +62 812-••••-8819</span>
+        <span class="text-xs text-[#64748B]">Preferensi demo, belum mengirim pesan</span>
       </div>
     </div>
   </div>
 
   <!-- Daftar Event Lomba Utama (Struktur Hierarki POSI dalam Tema Medalis) -->
   <div class="flex flex-col gap-6">
+<div class="rounded-xl border border-[#D4A747]/30 bg-[#D4A747]/10 px-4 py-3 text-xs leading-relaxed">Versi demo katalog kompetisi menggunakan poster ilustrasi Medalis, bukan pamflet resmi. Pendaftaran resmi dilakukan oleh penyelenggara lomba, bukan melalui halaman ini.</div>
 
-    <!-- KOMPETISI 1: OSN-K 2026 -->
-    <div class="bg-white border-[#E2E8F0] rounded-2xl border p-6 shadow-sm hover:shadow-md transition-all flex flex-col gap-6">
-      
+    <!-- KOMPETISI 1: OSN-K 2026 --><div class="bg-[#071324] md:w-[290px] w-full shrink-0">
+<img src="assets/poster-osn-preview.svg" alt="Poster ilustrasi preview persiapan OSN Matematika SMP Medalis" width="1280" height="960" class="w-full h-[220px] md:h-full object-cover md:min-h-[420px]">
+</div>
+<div class="p-5 sm:p-6 flex-1 min-w-0 flex flex-col gap-5">
+
+    <div class="bg-white border-[#E2E8F0] rounded-2xl border shadow-sm hover:shadow-md transition-all overflow-hidden flex md:flex-row flex-col gap-0">
+
       <!-- Top Row: Badge Header & Aksi WhatsApp Reminder -->
       <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 border-b border-[#E2E8F0]">
         <div class="flex items-start sm:items-center gap-3.5">
@@ -117,10 +122,10 @@
             <div class="flex flex-wrap items-center gap-2 mb-1.5">
               <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/25">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5"></span>
-                Pendaftaran Dibuka
+                Profil Lomba Preview
               </span>
               <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-600 border-blue-500/20 border">
-                Seleksi Resmi Puspresnas
+                Olimpiade Sains Nasional
               </span>
               <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20">
                 Online CBT
@@ -131,18 +136,15 @@
         </div>
 
         <!-- WhatsApp Reminder Pill -->
-        <label class="flex items-center gap-3 cursor-pointer select-none bg-black/5 dark:bg-white/5 px-4 py-2.5 rounded-xl border border-[#E2E8F0] shrink-0">
-          <div class="flex flex-col text-right">
-            <span class="text-xs font-bold text-[#0B1E3A]">Ingatkan via WhatsApp</span>
-            <span class="text-[10px] text-[#64748B] dark:text-[#94A3B8]">Kirim notif H-7 & H-1</span>
-          </div>
-          <input type="checkbox" checked class="w-5 h-5 rounded text-[#D4A747] focus:ring-[#D4A747] accent-[#D4A747] cursor-pointer">
-        </label>
+        <div class="shrink-0 rounded-xl border border-[#D4A747]/25 bg-[#D4A747]/10 px-3.5 py-2.5">
+<span class="block text-xs font-bold">Pratinjau Katalog</span>
+<span class="block text-[10px] opacity-75 mt-0.5">Aktual &amp; tanggal diverifikasi admin</span>
+</div>
       </div>
 
       <!-- Middle Row: Jenjang Pills & Detail Pelaksanaan (Pola POSI) -->
       <div class="grid grid-cols-1 md:grid-cols-12 gap-5 items-center">
-        
+
         <!-- Left: Jenjang & Bidang Studi -->
         <div class="md:col-span-7 flex flex-col gap-3">
           <div class="flex flex-wrap items-center gap-2">
@@ -166,7 +168,7 @@
           <div class="p-3.5 rounded-xl bg-[#F8FAFC] border-[#E2E8F0] border flex flex-col">
             <span class="text-[11px] font-semibold text-[#64748B] dark:text-[#94A3B8] uppercase">Hari Pelaksanaan</span>
             <span class="text-sm sm:text-base font-bold text-[#0B1E3A] mt-1">25–26 Maret 2026</span>
-            <span class="text-[10px] text-emerald-600 dark:text-emerald-400 font-medium">Sisa 18 Hari Lagi</span>
+            <span class="text-[10px] text-emerald-600 dark:text-emerald-400 font-medium">Timeline contoh</span>
           </div>
         </div>
 
@@ -175,16 +177,16 @@
       <!-- Bottom Row: Aksi Utama (Unduh Juknis, Tanya Admin, & Ikut Simulasi) -->
       <div class="flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 pt-4 border-t border-[#E2E8F0]">
         <div class="flex items-center gap-2">
-          <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20butuh%20juknis%20resmi%20OSN-K%202026" 
-             target="_blank" 
-             rel="noopener noreferrer" 
+          <a href="https://wa.me/6285792945213?text=Halo%20Admin%20Medalis,%20saya%20ingin%20minta%20juknis%20OSN-K%202026"
+             target="_blank"
+             rel="noopener noreferrer"
              class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold border border-[#E2E8F0] text-[#0B1E3A] hover:bg-black/5 dark:hover:bg-white/5 transition-all">
-            <span class="material-symbols-outlined text-[17px] text-[#D4A747]">download</span>
-            Unduh Juknis & Silabus (PDF)
+            <span class="material-symbols-outlined text-[17px] text-[#D4A747]">chat</span>
+            Minta Juknis via Admin
           </a>
-          <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20tanya%20tentang%20OSN-K%202026" 
-             target="_blank" 
-             rel="noopener noreferrer" 
+          <a href="https://wa.me/6285792945213?text=Halo%20Admin%20Medalis,%20saya%20ingin%20tanya%20tentang%20OSN-K%202026"
+             target="_blank"
+             rel="noopener noreferrer"
              class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold text-[#64748B] dark:text-[#94A3B8] hover:text-[#0B1E3A] dark:hover:text-white transition-all">
             <span class="material-symbols-outlined text-[17px]">help</span>
             Tanya Admin
@@ -199,11 +201,17 @@
         </div>
       </div>
 
-    </div>
 
-    <!-- KOMPETISI 2: SASMO 2026 (Singapore & Asian Schools Math Olympiad) -->
-    <div class="bg-white border-[#E2E8F0] rounded-2xl border p-6 shadow-sm hover:shadow-md transition-all flex flex-col gap-6">
-      
+</div>
+</div>
+
+<!-- KOMPETISI 2: SASMO 2026 (Singapore & Asian Schools Math Olympiad) --><div class="bg-[#071324] md:w-[290px] w-full shrink-0">
+<img src="assets/poster-sasmo-preview.svg" alt="Poster ilustrasi preview persiapan SASMO dan AMO Medalis" width="1280" height="960" class="w-full h-[220px] md:h-full object-cover md:min-h-[420px]">
+</div>
+<div class="p-5 sm:p-6 flex-1 min-w-0 flex flex-col gap-5">
+
+    <div class="bg-white border-[#E2E8F0] rounded-2xl border shadow-sm hover:shadow-md transition-all overflow-hidden flex md:flex-row flex-col gap-0">
+
       <!-- Top Row: Badge Header & Aksi WhatsApp Reminder -->
       <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 border-b border-[#E2E8F0]">
         <div class="flex items-start sm:items-center gap-3.5">
@@ -215,7 +223,7 @@
             <div class="flex flex-wrap items-center gap-2 mb-1.5">
               <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/25">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5"></span>
-                Pendaftaran Dibuka
+                Profil Lomba Preview
               </span>
               <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-[#D4A747]/15 text-[#0B1E3A] border-[#D4A747]/30 border">
                 Kompetisi Internasional (SIMCC)
@@ -229,18 +237,15 @@
         </div>
 
         <!-- WhatsApp Reminder Pill -->
-        <label class="flex items-center gap-3 cursor-pointer select-none bg-black/5 dark:bg-white/5 px-4 py-2.5 rounded-xl border border-[#E2E8F0] shrink-0">
-          <div class="flex flex-col text-right">
-            <span class="text-xs font-bold text-[#0B1E3A]">Ingatkan via WhatsApp</span>
-            <span class="text-[10px] text-[#64748B] dark:text-[#94A3B8]">Kirim notif H-7 & H-1</span>
-          </div>
-          <input type="checkbox" checked class="w-5 h-5 rounded text-[#D4A747] focus:ring-[#D4A747] accent-[#D4A747] cursor-pointer">
-        </label>
+        <div class="shrink-0 rounded-xl border border-[#D4A747]/25 bg-[#D4A747]/10 px-3.5 py-2.5">
+<span class="block text-xs font-bold">Pratinjau Katalog</span>
+<span class="block text-[10px] opacity-75 mt-0.5">Aktual &amp; tanggal diverifikasi admin</span>
+</div>
       </div>
 
       <!-- Middle Row: Jenjang Pills & Detail Pelaksanaan (Pola POSI) -->
       <div class="grid grid-cols-1 md:grid-cols-12 gap-5 items-center">
-        
+
         <!-- Left: Jenjang & Bidang Studi -->
         <div class="md:col-span-7 flex flex-col gap-3">
           <div class="flex flex-wrap items-center gap-2">
@@ -264,7 +269,7 @@
           <div class="p-3.5 rounded-xl bg-[#F8FAFC] border-[#E2E8F0] border flex flex-col">
             <span class="text-[11px] font-semibold text-[#64748B] dark:text-[#94A3B8] uppercase">Hari Pelaksanaan</span>
             <span class="text-sm sm:text-base font-bold text-[#0B1E3A] mt-1">11–12 April 2026</span>
-            <span class="text-[10px] text-emerald-600 dark:text-emerald-400 font-medium">Sisa 35 Hari Lagi</span>
+            <span class="text-[10px] text-emerald-600 dark:text-emerald-400 font-medium">Timeline contoh</span>
           </div>
         </div>
 
@@ -273,16 +278,16 @@
       <!-- Bottom Row: Aksi Utama (Unduh Juknis, Tanya Admin, & Ikut Simulasi) -->
       <div class="flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 pt-4 border-t border-[#E2E8F0]">
         <div class="flex items-center gap-2">
-          <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20butuh%20juknis%20resmi%20SASMO%202026" 
-             target="_blank" 
-             rel="noopener noreferrer" 
+          <a href="https://wa.me/6285792945213?text=Halo%20Admin%20Medalis,%20saya%20ingin%20minta%20juknis%20SASMO%202026"
+             target="_blank"
+             rel="noopener noreferrer"
              class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold border border-[#E2E8F0] text-[#0B1E3A] hover:bg-black/5 dark:hover:bg-white/5 transition-all">
-            <span class="material-symbols-outlined text-[17px] text-[#D4A747]">download</span>
-            Unduh Juknis & Silabus (PDF)
+            <span class="material-symbols-outlined text-[17px] text-[#D4A747]">chat</span>
+            Minta Juknis via Admin
           </a>
-          <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20tanya%20tentang%20SASMO%202026" 
-             target="_blank" 
-             rel="noopener noreferrer" 
+          <a href="https://wa.me/6285792945213?text=Halo%20Admin%20Medalis,%20saya%20ingin%20tanya%20tentang%20SASMO%202026"
+             target="_blank"
+             rel="noopener noreferrer"
              class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold text-[#64748B] dark:text-[#94A3B8] hover:text-[#0B1E3A] dark:hover:text-white transition-all">
             <span class="material-symbols-outlined text-[17px]">help</span>
             Tanya Admin
@@ -299,7 +304,10 @@
 
     </div>
 
-  </div>
+
+</div>
+</div>
+
 </div></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_8px_rgba(0,0,0,0.03)] mt-auto"><div class="w-full px-gutter py-space-xl"><div class="flex flex-col md:flex-row items-center justify-between gap-space-lg pb-space-lg mb-space-lg"><div class="flex items-center gap-space-md"><img alt="medalis_logo_transparent.png" class="h-7 w-auto object-contain" src="assets/medalis_logo.svg"><span class="font-headline-sm text-headline-sm text-primary tracking-wider">MEDALIS</span><span class="hidden md:inline-block font-body-sm text-body-sm text-on-surface-variant pl-space-md">Platform Pembinaan Prestasi Olimpiade Sains Nasional</span></div><div class="flex items-center gap-space-lg"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="beranda" href="landing-terang.html" style="text-decoration:none;">Beranda</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="modul" href="daftar-modul-terang.html" style="text-decoration:none;">Modul</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="tryout" href="lobby-tryout-terang.html" style="text-decoration:none;">Tryout</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="guru-ai" href="guru-ai-terang.html" style="text-decoration:none;">Olimpix Engine</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="timeline" href="prep-timeline-terang.html">Timeline</a></div></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><p class="">© 2024 Medalis. Hak Cipta Dilindungi Undang-Undang.</p><p class="font-timer text-timer text-on-surface-variant">Olimpix Engine</p></div></div></footer>
 
 

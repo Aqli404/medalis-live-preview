@@ -1,0 +1,22 @@
+<svg width="1280" height="960" viewBox="0 0 1280 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071324"/><stop offset="1" stop-color="#16365E"/></linearGradient><pattern id="grid" width="70" height="70" patternUnits="userSpaceOnUse"><path d="M70 0H0V70" stroke="#D4A747" stroke-opacity=".075" stroke-width="2"/></pattern></defs>
+<rect width="1280" height="960" rx="40" fill="url(#bg)"/>
+<rect width="1280" height="960" rx="40" fill="url(#grid)"/>
+<rect x="72" y="64" width="437" height="62" rx="31" fill="#D4A747"/>
+<text x="96" y="105" fill="#0B1E3A" font-family="Poppins,Arial,sans-serif" font-weight="700" font-size="24" letter-spacing="2">PREVIEW PERSIAPAN</text>
+<text x="74" y="277" fill="white" font-family="Poppins,Arial,sans-serif" font-weight="700" font-size="54">SASMO</text>
+<text x="74" y="333" fill="white" font-family="Poppins,Arial,sans-serif" font-weight="700" font-size="54">AMO</text>
+<text x="74" y="389" fill="#D4A747" font-family="Poppins,Arial,sans-serif" font-weight="600" font-size="42">INTERNASIONAL</text>
+<path d="M76 459H462" stroke="#D4A747" stroke-width="5"/>
+<text x="76" y="514" fill="#CBD5E1" font-family="Poppins,Arial,sans-serif" font-size="27">Soal non-rutin &amp; penalaran.</text>
+<text x="76" y="551" fill="#CBD5E1" font-family="Poppins,Arial,sans-serif" font-size="27">Coba cara cepat olimpiade.</text>
+<circle cx="994" cy="589" r="193" fill="#D4A747" fill-opacity=".055" stroke="#D4A747" stroke-width="4"/>
+<circle cx="994" cy="589" r="113" fill="#D4A747" fill-opacity=".055" stroke="#D4A747" stroke-width="3"/>
+<ellipse cx="994" cy="589" rx="67" ry="194" transform="rotate(-26 994 589)" stroke="#D4A747" stroke-width="3"/>
+<path d="M804 589H1184M994 396V782M851 482C922 552 1057 552 1137 482M851 696C922 626 1057 626 1137 696" stroke="#D4A747" stroke-width="3"/>
+<circle cx="1092" cy="453" r="21" fill="#D4A747"/><circle cx="889" cy="729" r="15" fill="#D4A747"/>
+<rect x="72" y="800" width="511" height="76" rx="18" fill="#0F2444" stroke="#D4A747" stroke-opacity=".35"/>
+<text x="96" y="848" fill="white" font-family="Arial,sans-serif" font-weight="500" font-size="23">MEDALIS • ILUSTRASI PREVIEW</text>
+<text x="650" y="915" fill="#94A3B8" font-family="Arial,sans-serif" font-size="17">Bukan pamflet resmi / jadwal penyelenggara</text>
+<text x="855" y="850" fill="#D4A747" font-family="Arial,sans-serif" font-weight="700" font-size="26">LOGIKA • KREATIVITAS</text>
+</svg>
