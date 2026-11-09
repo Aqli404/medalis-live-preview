@@ -4,7 +4,7 @@
 <header class="fixed top-0 left-0 w-full z-50 bg-white/95 border-[#E2E8F0] backdrop-blur-md shadow-sm border-b">
   <div class="w-full px-4 sm:px-6 lg:px-8 xl:px-12 h-[72px] flex items-center justify-between gap-4">
     <!-- Logo -->
-    <a href="dashboard-terang.html" style="text-decoration:none;" class="flex items-center gap-3 shrink-0">
+    <a href="landing-terang.html" style="text-decoration:none;" class="flex items-center gap-3 shrink-0">
       <img alt="Medalis Logo" class="h-8 sm:h-9 w-auto object-contain" src="assets/medalis_logo.svg">
       <div class="flex flex-col">
         <span class="font-bold text-lg sm:text-xl tracking-wider text-[#0B1E3A] leading-none">MEDALIS</span>
@@ -14,7 +14,7 @@
 
     <!-- Navigasi Tengah Desktop (Seragam 5 Menu Teks Bersih) -->
     <nav class="hidden lg:flex items-center gap-1.5 bg-black/5 dark:bg-white/5 p-1 rounded-2xl border border-black/5 dark:border-white/5 shrink-0">
-      <a href="dashboard-terang.html" class="px-3.5 py-1.5 rounded-xl text-sm transition-all text-[#475569] hover:text-[#0B1E3A] hover:bg-slate-100 whitespace-nowrap shrink-0">Beranda</a>
+      <a href="landing-terang.html" class="px-3.5 py-1.5 rounded-xl text-sm transition-all text-[#475569] hover:text-[#0B1E3A] hover:bg-slate-100 whitespace-nowrap shrink-0">Beranda</a>
       <a href="daftar-modul-terang.html" class="px-3.5 py-1.5 rounded-xl text-sm transition-all bg-[#D4A747] text-[#0B1E3A] font-bold shadow-sm whitespace-nowrap shrink-0">Modul Belajar</a>
       <a href="lobby-tryout-terang.html" class="px-3.5 py-1.5 rounded-xl text-sm transition-all text-[#475569] hover:text-[#0B1E3A] hover:bg-slate-100 whitespace-nowrap shrink-0">Simulasi Tryout</a>
       <a href="guru-ai-terang.html" class="px-3.5 py-1.5 rounded-xl text-sm transition-all text-[#475569] hover:text-[#0B1E3A] hover:bg-slate-100 whitespace-nowrap shrink-0">Olimpix Engine</a>
@@ -30,15 +30,14 @@
         <button type="button" onclick="applySystemTheme('daftar-modul')" id="theme-system-btn" class="flex items-center gap-1 px-2.5 py-1 rounded-full text-[#64748B] hover:text-[#0B1E3A] transition-all"><span class="material-symbols-outlined text-[15px]">desktop_windows</span><span class="hidden sm:inline">Sistem</span></button>
       </div>
 
-      <!-- Single Standard Student Chip -->
+      <!-- Guest Auth CTAs (Pola Ruangguru: Masuk & Coba Gratis) -->
       <div class="flex items-center gap-2 pl-2 sm:pl-3 border-l border-black/10 dark:border-white/10">
-        <div class="w-9 h-9 rounded-full bg-[#0B1E3A] dark:bg-[#D4A747] text-[#D4A747] dark:text-[#0B1E3A] flex items-center justify-center font-bold text-xs select-none shadow-sm">
-          AP
-        </div>
-        <div class="hidden sm:flex flex-col text-left">
-          <span class="font-bold text-xs sm:text-sm text-[#0B1E3A] leading-tight">Aisyah</span>
-          <span class="text-[11px] text-[#64748B] dark:text-[#94A3B8] leading-tight">Kelas 8 SMP • OSN Madya</span>
-        </div>
+        <a href="login-terang.html" class="hidden sm:inline-flex items-center justify-center px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold border border-[#CBD5E1] dark:border-[#334155] text-[#0B1E3A] dark:text-white hover:bg-black/5 dark:hover:bg-white/5 transition-all">
+          Masuk
+        </a>
+        <a href="login-terang.html" class="inline-flex items-center justify-center px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-[#D4A747] text-[#0B1E3A] hover:bg-[#c4973b] shadow-sm transition-all whitespace-nowrap">
+          Coba Gratis
+        </a>
       </div>
     </div>
   </div>
@@ -47,7 +46,7 @@
 <!-- MOBILE BOTTOM NAVIGATION BAR (PORTAL SISWA) -->
 <nav class="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 border-[#E2E8F0] border-t shadow-[0_-2px_10px_rgba(0,0,0,0.05)] flex items-center justify-around px-2 py-1 safe-area-pb">
   
-    <a href="dashboard-terang.html" class="flex flex-col items-center justify-center flex-1 py-1.5 text-[#64748B]">
+    <a href="landing-terang.html" class="flex flex-col items-center justify-center flex-1 py-1.5 text-[#64748B]">
       <span class="material-symbols-outlined text-[22px]">home</span>
       <span class="text-[11px] tracking-tight">Beranda</span>
     </a>
@@ -73,7 +72,7 @@
 <div class="w-full max-w-7xl mx-auto px-gutter py-space-lg flex flex-col gap-space-lg">
 <!-- 1. Breadcrumb -->
 <nav aria-label="Breadcrumb" class="flex items-center gap-space-xs font-label-md text-label-md text-[#64748B]">
-<a class="hover:text-[#0B1E3A] transition-colors" href="dashboard-terang.html" style="text-decoration:none;">Beranda</a>
+<a class="hover:text-[#0B1E3A] transition-colors" href="landing-terang.html" style="text-decoration:none;">Beranda</a>
 <span class="text-[#94A3B8]">/</span>
 <a class="hover:text-[#0B1E3A] transition-colors" href="#">Kurikulum KSNR &amp; OSN</a>
 <span class="text-[#94A3B8]">/</span>
@@ -151,16 +150,36 @@
         </button>
 </div>
 </section>
-<!-- 4. Chapter Cards Grid (3 Columns, 2 Rows) -->
-<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
-<!-- Card 1: Bab 01 -->
+<!-- 4. MODUL PER-PAKET: PAKET 01 & PAKET 02 (Aturan: Modul 1-2 Free per Paket, 3+ VIP) -->
+<div class="flex flex-col gap-10">
+
+  <!-- ================= PAKET 01 ================= -->
+  <div class="flex flex-col gap-5">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-[#E2E8F0] dark:border-white/10">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-[#0B1E3A] text-[#D4A747] font-bold text-sm flex items-center justify-center shadow-sm">
+          01
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-0.5 rounded text-[10px] font-bold uppercase bg-[#D4A747]/15 text-[#0B1E3A] dark:text-[#D4A747] border border-[#D4A747]/30">Kurikulum Inti</span>
+            <span class="text-xs font-semibold text-[#047857] dark:text-[#10B981]">2 Modul Pertama Gratis</span>
+          </div>
+          <h2 class="text-lg sm:text-xl font-bold text-[#0B1E3A] dark:text-white">Paket Olimpiade Sains Nasional (OSN Matematika SMP)</h2>
+        </div>
+      </div>
+      <span class="text-xs text-[#64748B] dark:text-[#94A3B8] font-medium">3 Modul Lengkap (Dasar s/d Mahir)</span>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+      <!-- Card 1: Bab 01 -->
 <div class="flex flex-col justify-between bg-white border border-[#E2E8F0] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow relative">
 <div class="flex flex-col gap-4">
 <div class="flex items-center justify-between">
 <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-semibold text-[#047857] bg-[rgba(5,150,105,0.12)] border border-[rgba(5,150,105,0.25)]">
               GRATIS
             </span>
-<span class="font-label-sm text-label-sm font-bold text-[#64748B] tracking-wider">BAB 01</span>
+<span class="font-label-sm text-label-sm font-bold text-[#64748B] tracking-wider">MODUL 01</span>
 </div>
 
 <div class="flex items-center gap-3 pb-1">
@@ -200,14 +219,14 @@
 </a>
 </div>
 </div>
-<!-- Card 2: Bab 02 -->
+      <!-- Card 2: Bab 02 -->
 <div class="flex flex-col justify-between bg-white border border-[#E2E8F0] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow relative">
 <div class="flex flex-col gap-4">
 <div class="flex items-center justify-between">
 <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-semibold text-[#047857] bg-[rgba(5,150,105,0.12)] border border-[rgba(5,150,105,0.25)]">
               GRATIS
             </span>
-<span class="font-label-sm text-label-sm font-bold text-[#64748B] tracking-wider">BAB 02</span>
+<span class="font-label-sm text-label-sm font-bold text-[#64748B] tracking-wider">MODUL 02</span>
 </div>
 
 <div class="flex items-center gap-3 pb-1">
@@ -245,15 +264,15 @@
 </a>
 </div>
 </div>
-<!-- Card 3: Bab 03 -->
+      <!-- Card 3: Bab 03 -->
 <div class="flex flex-col justify-between bg-white border border-[#E2E8F0] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow relative">
 <div class="flex flex-col gap-4">
 <div class="flex items-center justify-between">
 <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-semibold text-[#B45309] bg-[rgba(212,167,71,0.15)] border border-[rgba(212,167,71,0.35)]">
 <span class="material-symbols-outlined text-[14px]">lock</span>
-              PREMIUM
+              VIP
             </span>
-<span class="font-label-sm text-label-sm font-bold text-[#64748B] tracking-wider">BAB 03</span>
+<span class="font-label-sm text-label-sm font-bold text-[#64748B] tracking-wider">MODUL 03</span>
 </div>
 
 <div class="flex items-center gap-3 pb-1">
@@ -282,19 +301,42 @@
           </p>
 <a href="pricing-terang.html" class="w-full h-11 rounded-xl bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] font-label-md text-label-md font-semibold hover:bg-slate-200 transition-colors flex items-center justify-center gap-2"  style="text-decoration:none;">
 <span class="material-symbols-outlined text-[18px]">lock_open</span>
-<span class="">Buka Akses Premium</span>
+<span class="">Buka Akses VIP</span>
 </a>
 </div>
 </div>
-<!-- Card 4: Bab 04 -->
+    </div>
+  </div>
+
+  <!-- ================= PAKET 02 ================= -->
+  <div class="flex flex-col gap-5">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-[#E2E8F0] dark:border-white/10">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-[#D4A747] text-[#0B1E3A] font-bold text-sm flex items-center justify-center shadow-sm">
+          02
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-0.5 rounded text-[10px] font-bold uppercase bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20">Kompetisi Spesialis</span>
+            <span class="text-xs font-semibold text-[#047857] dark:text-[#10B981]">2 Modul Pertama Gratis</span>
+          </div>
+          <h2 class="text-lg sm:text-xl font-bold text-[#0B1E3A] dark:text-white">Paket Penalaran Lanjutan & Kombinatorika Kompetisi</h2>
+        </div>
+      </div>
+      <span class="text-xs text-[#64748B] dark:text-[#94A3B8] font-medium">3 Modul Lengkap (Dasar s/d Mahir)</span>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+      <!-- Paket 2 - Modul 01 -->
 <div class="flex flex-col justify-between bg-white border border-[#E2E8F0] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow relative">
 <div class="flex flex-col gap-4">
 <div class="flex items-center justify-between">
-<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-semibold text-[#B45309] bg-[rgba(212,167,71,0.15)] border border-[rgba(212,167,71,0.35)]">
-<span class="material-symbols-outlined text-[14px]">lock</span>
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-semibold text-[#047857] bg-[rgba(5,150,105,0.12)] border border-[rgba(5,150,105,0.25)]">
+              GRATIS
+            </span>
               PREMIUM
             </span>
-<span class="font-label-sm text-label-sm font-bold text-[#64748B] tracking-wider">BAB 04</span>
+<span class="font-label-sm text-label-sm font-bold text-[#64748B] tracking-wider">MODUL 01</span>
 </div>
 
 <div class="flex items-center gap-3 pb-1">
@@ -317,25 +359,34 @@
 </div>
 </div>
 <div class="flex flex-col gap-3 mt-6 pt-4 border-t border-[#F1F5F9]">
-<p class="font-body-sm text-body-sm text-[#64748B] flex items-center gap-1.5">
-<span class="material-symbols-outlined text-[16px] text-[#94A3B8]">lock</span>
-            Terkunci · Termasuk 50 soal latihan dan cara cepat 10 detik.
-          </p>
-<a href="pricing-terang.html" class="w-full h-11 rounded-xl bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] font-label-md text-label-md font-semibold hover:bg-slate-200 transition-colors flex items-center justify-center gap-2"  style="text-decoration:none;">
-<span class="material-symbols-outlined text-[18px]">lock_open</span>
-<span class="">Buka Akses Premium</span>
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="text-[#047857] font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#047857]"></span>
+                Akses Terbuka (Gratis)
+              </span>
+<span class="text-[#64748B]">18 Halaman</span>
+</div>
+<div class="w-full bg-[#E2E8F0] dark:bg-[#334155] h-1.5 rounded-full overflow-hidden">
+<div class="bg-[#047857] h-full rounded-full" style="width: 0%"></div>
+</div>
+</div>
+<a class="w-full h-11 rounded-xl bg-[#0B1E3A] text-white hover:bg-[#1E293B] font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-2" href="ebook-reader-terang.html" style="text-decoration:none;">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<span>Buka Modul (Gratis)</span>
 </a>
 </div>
 </div>
-<!-- Card 5: Bab 05 -->
+      <!-- Paket 2 - Modul 02 -->
 <div class="flex flex-col justify-between bg-white border border-[#E2E8F0] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow relative">
 <div class="flex flex-col gap-4">
 <div class="flex items-center justify-between">
-<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-semibold text-[#B45309] bg-[rgba(212,167,71,0.15)] border border-[rgba(212,167,71,0.35)]">
-<span class="material-symbols-outlined text-[14px]">lock</span>
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-semibold text-[#047857] bg-[rgba(5,150,105,0.12)] border border-[rgba(5,150,105,0.25)]">
+              GRATIS
+            </span>
               PREMIUM
             </span>
-<span class="font-label-sm text-label-sm font-bold text-[#64748B] tracking-wider">BAB 05</span>
+<span class="font-label-sm text-label-sm font-bold text-[#64748B] tracking-wider">MODUL 02</span>
 </div>
 
 <div class="flex items-center gap-3 pb-1">
@@ -358,25 +409,33 @@
 </div>
 </div>
 <div class="flex flex-col gap-3 mt-6 pt-4 border-t border-[#F1F5F9]">
-<p class="font-body-sm text-body-sm text-[#64748B] flex items-center gap-1.5">
-<span class="material-symbols-outlined text-[16px] text-[#94A3B8]">lock</span>
-            Terkunci · Buka untuk melihat materi.
-          </p>
-<a href="pricing-terang.html" class="w-full h-11 rounded-xl bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] font-label-md text-label-md font-semibold hover:bg-slate-200 transition-colors flex items-center justify-center gap-2"  style="text-decoration:none;">
-<span class="material-symbols-outlined text-[18px]">lock_open</span>
-<span class="">Buka Akses Premium</span>
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="text-[#047857] font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#047857]"></span>
+                Akses Terbuka (Gratis)
+              </span>
+<span class="text-[#64748B]">22 Halaman</span>
+</div>
+<div class="w-full bg-[#E2E8F0] dark:bg-[#334155] h-1.5 rounded-full overflow-hidden">
+<div class="bg-[#047857] h-full rounded-full" style="width: 0%"></div>
+</div>
+</div>
+<a class="w-full h-11 rounded-xl bg-[#0B1E3A] text-white hover:bg-[#1E293B] font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-2" href="ebook-reader-terang.html" style="text-decoration:none;">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<span>Buka Modul (Gratis)</span>
 </a>
 </div>
 </div>
-<!-- Card 6: Bab 06 -->
+      <!-- Paket 2 - Modul 03 -->
 <div class="flex flex-col justify-between bg-white border border-[#E2E8F0] rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow relative">
 <div class="flex flex-col gap-4">
 <div class="flex items-center justify-between">
 <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-semibold text-[#B45309] bg-[rgba(212,167,71,0.15)] border border-[rgba(212,167,71,0.35)]">
 <span class="material-symbols-outlined text-[14px]">lock</span>
-              PREMIUM
+              VIP
             </span>
-<span class="font-label-sm text-label-sm font-bold text-[#64748B] tracking-wider">BAB 06</span>
+<span class="font-label-sm text-label-sm font-bold text-[#64748B] tracking-wider">MODUL 03</span>
 </div>
 
 <div class="flex items-center gap-3 pb-1">
@@ -405,11 +464,14 @@
           </p>
 <a href="pricing-terang.html" class="w-full h-11 rounded-xl bg-[#F1F5F9] border border-[#E2E8F0] text-[#0B1E3A] font-label-md text-label-md font-semibold hover:bg-slate-200 transition-colors flex items-center justify-center gap-2"  style="text-decoration:none;">
 <span class="material-symbols-outlined text-[18px]">lock_open</span>
-<span class="">Buka Akses Premium</span>
+<span class="">Buka Akses VIP</span>
 </a>
 </div>
 </div>
-</section>
+    </div>
+  </div>
+
+</div>
 
 <!-- SEKSI BARU: BANK ARSIP SOAL ASLI (PAST PAPERS) DENGAN STRUKTUR BERJENJANG (ALA JAGOTPA) -->
 <section class="flex flex-col gap-6 mt-4">

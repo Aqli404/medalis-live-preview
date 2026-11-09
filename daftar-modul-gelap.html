@@ -4,7 +4,7 @@
 <header class="fixed top-0 left-0 w-full z-50 bg-[#0B1E3A]/95 border-[#1E293B] backdrop-blur-md shadow-sm border-b">
   <div class="w-full px-4 sm:px-6 lg:px-8 xl:px-12 h-[72px] flex items-center justify-between gap-4">
     <!-- Logo -->
-    <a href="dashboard-gelap.html" style="text-decoration:none;" class="flex items-center gap-3 shrink-0">
+    <a href="landing-gelap.html" style="text-decoration:none;" class="flex items-center gap-3 shrink-0">
       <img alt="Medalis Logo" class="h-8 sm:h-9 w-auto object-contain" src="assets/medalis_logo.svg">
       <div class="flex flex-col">
         <span class="font-bold text-lg sm:text-xl tracking-wider text-white leading-none">MEDALIS</span>
@@ -14,7 +14,7 @@
 
     <!-- Navigasi Tengah Desktop (Seragam 5 Menu Teks Bersih) -->
     <nav class="hidden lg:flex items-center gap-1.5 bg-black/5 dark:bg-white/5 p-1 rounded-2xl border border-black/5 dark:border-white/5 shrink-0">
-      <a href="dashboard-gelap.html" class="px-3.5 py-1.5 rounded-xl text-sm transition-all text-[#94A3B8] hover:text-white hover:bg-white/5 whitespace-nowrap shrink-0">Beranda</a>
+      <a href="landing-gelap.html" class="px-3.5 py-1.5 rounded-xl text-sm transition-all text-[#94A3B8] hover:text-white hover:bg-white/5 whitespace-nowrap shrink-0">Beranda</a>
       <a href="daftar-modul-gelap.html" class="px-3.5 py-1.5 rounded-xl text-sm transition-all bg-[#D4A747] text-[#0B1E3A] font-bold shadow-sm whitespace-nowrap shrink-0">Modul Belajar</a>
       <a href="lobby-tryout-gelap.html" class="px-3.5 py-1.5 rounded-xl text-sm transition-all text-[#94A3B8] hover:text-white hover:bg-white/5 whitespace-nowrap shrink-0">Simulasi Tryout</a>
       <a href="guru-ai-gelap.html" class="px-3.5 py-1.5 rounded-xl text-sm transition-all text-[#94A3B8] hover:text-white hover:bg-white/5 whitespace-nowrap shrink-0">Olimpix Engine</a>
@@ -30,15 +30,14 @@
         <button type="button" onclick="applySystemTheme('daftar-modul')" id="theme-system-btn" class="flex items-center gap-1 px-2.5 py-1 rounded-full text-[#94A3B8] hover:text-white transition-all"><span class="material-symbols-outlined text-[15px]">desktop_windows</span><span class="hidden sm:inline">Sistem</span></button>
       </div>
 
-      <!-- Single Standard Student Chip -->
+      <!-- Guest Auth CTAs (Pola Ruangguru: Masuk & Coba Gratis) -->
       <div class="flex items-center gap-2 pl-2 sm:pl-3 border-l border-black/10 dark:border-white/10">
-        <div class="w-9 h-9 rounded-full bg-[#0B1E3A] dark:bg-[#D4A747] text-[#D4A747] dark:text-[#0B1E3A] flex items-center justify-center font-bold text-xs select-none shadow-sm">
-          AP
-        </div>
-        <div class="hidden sm:flex flex-col text-left">
-          <span class="font-bold text-xs sm:text-sm text-white leading-tight">Aisyah</span>
-          <span class="text-[11px] text-[#64748B] dark:text-[#94A3B8] leading-tight">Kelas 8 SMP • OSN Madya</span>
-        </div>
+        <a href="login-terang.html" class="hidden sm:inline-flex items-center justify-center px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold border border-[#CBD5E1] dark:border-[#334155] text-[#0B1E3A] dark:text-white hover:bg-black/5 dark:hover:bg-white/5 transition-all">
+          Masuk
+        </a>
+        <a href="login-terang.html" class="inline-flex items-center justify-center px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-[#D4A747] text-[#0B1E3A] hover:bg-[#c4973b] shadow-sm transition-all whitespace-nowrap">
+          Coba Gratis
+        </a>
       </div>
     </div>
   </div>
@@ -47,7 +46,7 @@
 <!-- MOBILE BOTTOM NAVIGATION BAR (PORTAL SISWA) -->
 <nav class="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#0B1E3A]/95 border-[#1E293B] border-t shadow-[0_-2px_10px_rgba(0,0,0,0.05)] flex items-center justify-around px-2 py-1 safe-area-pb">
   
-    <a href="dashboard-gelap.html" class="flex flex-col items-center justify-center flex-1 py-1.5 text-[#94A3B8]">
+    <a href="landing-gelap.html" class="flex flex-col items-center justify-center flex-1 py-1.5 text-[#94A3B8]">
       <span class="material-symbols-outlined text-[22px]">home</span>
       <span class="text-[11px] tracking-tight">Beranda</span>
     </a>
@@ -79,7 +78,7 @@
 <header class="flex flex-col gap-space-md">
 <!-- Breadcrumb Nav -->
 <nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-label-sm font-label-sm text-secondary">
-<a class="hover:text-primary transition-colors flex items-center gap-1" href="dashboard-gelap.html" style="text-decoration:none;">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="landing-gelap.html" style="text-decoration:none;">
 <span class="material-symbols-outlined text-[16px]">home</span>
             Beranda
           </a>
@@ -167,10 +166,29 @@
           </button>
 </div>
 </section>
-<!-- Pedagogical Module Grid (3-Column Academic Layout) -->
-<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg items-stretch">
-<!-- CARD 1: Aljabar (Gratis / 100% Complete) -->
-<article class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<!-- 4. MODUL PER-PAKET: PAKET 01 & PAKET 02 (Aturan: Modul 1-2 Free per Paket, 3+ VIP) -->
+<div class="flex flex-col gap-10">
+
+  <!-- ================= PAKET 01 ================= -->
+  <div class="flex flex-col gap-5">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-white/10">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-[#0B1E3A] text-[#D4A747] border border-[#D4A747]/40 font-bold text-sm flex items-center justify-center shadow-sm">
+          01
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-0.5 rounded text-[10px] font-bold uppercase bg-[#D4A747]/15 text-[#D4A747] border border-[#D4A747]/30">Kurikulum Inti</span>
+            <span class="text-xs font-semibold text-emerald">2 Modul Pertama Gratis</span>
+          </div>
+          <h2 class="text-lg sm:text-xl font-bold text-white">Paket Olimpiade Sains Nasional (OSN Matematika SMP)</h2>
+        </div>
+      </div>
+      <span class="text-xs text-secondary font-medium">3 Modul Lengkap (Dasar s/d Mahir)</span>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg items-stretch">
+      <article class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
 <!-- Top Badge Bar -->
 <div class="flex flex-col gap-space-md">
 <div class="flex items-center justify-between gap-space-sm">
@@ -178,7 +196,7 @@
 <span class="material-symbols-outlined text-[16px]">check_circle</span>
                 GRATIS
               </div>
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">BAB 01</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">MODUL 01</span>
 </div>
 <!-- Header and Description -->
 
@@ -216,8 +234,7 @@
             </a>
 </div>
 </article>
-<!-- CARD 2: Teori Bilangan (Gratis / 65% In-Progress) -->
-<article class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+      <article class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
 <!-- Top Badge Bar -->
 <div class="flex flex-col gap-space-md">
 <div class="flex items-center justify-between gap-space-sm">
@@ -225,7 +242,7 @@
 <span class="material-symbols-outlined text-[16px]">lock_open</span>
                 GRATIS
               </div>
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">BAB 02</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">MODUL 02</span>
 </div>
 <!-- Header and Description -->
 
@@ -263,16 +280,15 @@
             </a>
 </div>
 </article>
-<!-- CARD 3: Geometri Bidang (Premium) -->
-<article class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+      <article class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
 <!-- Top Badge Bar -->
 <div class="flex flex-col gap-space-md">
 <div class="flex items-center justify-between gap-space-sm">
 <div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">
 <span class="material-symbols-outlined text-[16px]">lock</span>
-                PREMIUM
+                VIP
               </div>
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">BAB 03</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">MODUL 03</span>
 </div>
 <!-- Header and Description -->
 
@@ -301,12 +317,33 @@
 </div>
 <a href="pricing-gelap.html" class="w-full h-12 px-space-md rounded-xl bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-space-xs shadow-sm"  style="text-decoration:none;">
 <span class="material-symbols-outlined text-[18px] text-primary">lock</span>
-              Buka Akses Premium
+              Buka Akses VIP
             </a>
 </div>
 </article>
-<!-- CARD 4: Kombinatorika (Premium) -->
-<article class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+    </div>
+  </div>
+
+  <!-- ================= PAKET 02 ================= -->
+  <div class="flex flex-col gap-5">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-white/10">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-[#D4A747] text-[#0B1E3A] font-bold text-sm flex items-center justify-center shadow-sm">
+          02
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-0.5 rounded text-[10px] font-bold uppercase bg-blue-500/10 text-blue-400 border border-blue-500/20">Kompetisi Spesialis</span>
+            <span class="text-xs font-semibold text-emerald">2 Modul Pertama Gratis</span>
+          </div>
+          <h2 class="text-lg sm:text-xl font-bold text-white">Paket Penalaran Lanjutan & Kombinatorika Kompetisi</h2>
+        </div>
+      </div>
+      <span class="text-xs text-secondary font-medium">3 Modul Lengkap (Dasar s/d Mahir)</span>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg items-stretch">
+      <article class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
 <!-- Top Badge Bar -->
 <div class="flex flex-col gap-space-md">
 <div class="flex items-center justify-between gap-space-sm">
@@ -314,7 +351,7 @@
 <span class="material-symbols-outlined text-[16px]">lock</span>
                 PREMIUM
               </div>
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">BAB 04</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">MODUL 01</span>
 </div>
 <!-- Header and Description -->
 
@@ -347,8 +384,7 @@
             </a>
 </div>
 </article>
-<!-- CARD 5: Pertidaksamaan (Premium) -->
-<article class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+      <article class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
 <!-- Top Badge Bar -->
 <div class="flex flex-col gap-space-md">
 <div class="flex items-center justify-between gap-space-sm">
@@ -356,7 +392,7 @@
 <span class="material-symbols-outlined text-[16px]">lock</span>
                 PREMIUM
               </div>
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">BAB 05</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">MODUL 02</span>
 </div>
 <!-- Header and Description -->
 
@@ -389,16 +425,15 @@
             </a>
 </div>
 </article>
-<!-- CARD 6: Vieta & Polinomial (Premium) -->
-<article class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+      <article class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
 <!-- Top Badge Bar -->
 <div class="flex flex-col gap-space-md">
 <div class="flex items-center justify-between gap-space-sm">
 <div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">
 <span class="material-symbols-outlined text-[16px]">lock</span>
-                PREMIUM
+                VIP
               </div>
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">BAB 06</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">MODUL 03</span>
 </div>
 <!-- Header and Description -->
 
@@ -427,51 +462,14 @@
 </div>
 <a href="pricing-gelap.html" class="w-full h-12 px-space-md rounded-xl bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-space-xs shadow-sm"  style="text-decoration:none;">
 <span class="material-symbols-outlined text-[18px] text-primary">lock</span>
-              Buka Akses Premium
+              Buka Akses VIP
             </a>
 </div>
 </article>
-</section>
-<!-- Pedagogical Feature Spotlight / Visual Anchor Section -->
-<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center bg-surface-container-low p-space-lg rounded-xl shadow-sm overflow-hidden">
-<div class="lg:col-span-7 flex flex-col gap-space-md">
-<div class="flex items-center gap-2 text-primary font-semibold font-label-md text-label-md">
-<span class="material-symbols-outlined text-[20px]">smart_toy</span>
-            Pedagogi Adaptif Olimpix Engine
-          </div>
-<h2 class="font-headline-md text-headline-md text-on-surface font-bold">
-            Belajar Bukan Menghafal, Tapi Membongkar Pola Berpikir
-          </h2>
-<p class="font-body-md text-body-md text-secondary leading-relaxed">
-            Setiap modul dirancang tidak hanya untuk menyelesaikan soal bertipe sama, melainkan menumbuhkan intuisi logika tingkat tinggi. Olimpix Engine siap menginterogasi langkah penyelesaianmu secara langsung tanpa memberikan contekan jawaban langsung.
-          </p>
-<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-emerald text-[20px]">check_circle</span>
-<span class="font-label-md text-label-md text-on-surface">50 Bank Soal per Bab</span>
+    </div>
+  </div>
+
 </div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-emerald text-[20px]">check_circle</span>
-<span class="font-label-md text-label-md text-on-surface">Validasi Notasi Math Real-Time</span>
-</div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-emerald text-[20px]">check_circle</span>
-<span class="font-label-md text-label-md text-on-surface">Simulasi Timer Ujian CBT</span>
-</div>
-</div>
-</div>
-<div class="lg:col-span-5 relative flex items-center justify-center">
-<div class="w-full h-64 rounded-xl overflow-hidden shadow-md relative group">
-<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="An Indonesian middle school student focused intently on studying advanced mathematics at a clean wooden study desk. In the background, a neat blackboard with geometric sketches and gold medal trophies bathed in warm cinematic study lamp illumination, editorial documentary aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcCvpy9XV7NmzJtVrYajc4ZCJyp1Rusw3ufvD19JZC5Kp6JiK2tWpK2zsIf6vIQhVfkNhM6_FoXlck7LIMs_hB03-1OsueOZYp3O-yX76wS0LqAFFNYJNacer8tIE_MYDzSRXqZNYsczuV8cL43-oVSvVOG-vdMsTarPMJyeGvJsTASJoehpowY8GaSwXaZ4QZyoWXUIAW8M7-ZT5CCcNAPsw6GVoY4y_sMX-F25yz">
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent flex items-end p-space-md">
-<div class="flex items-center gap-space-sm">
-<span class="material-symbols-outlined text-primary text-[24px]">workspace_premium</span>
-<span class="font-label-sm text-label-sm text-on-surface font-semibold">Dipandu Berbasis Standar Silabus OSN Nasional</span>
-</div>
-</div>
-</div>
-</div>
-</section>
 
 <!-- SEKSI BARU: BANK ARSIP SOAL ASLI (PAST PAPERS) DENGAN STRUKTUR BERJENJANG (ALA JAGOTPA) -->
 <section class="flex flex-col gap-6 mt-4">
