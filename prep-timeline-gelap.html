@@ -104,25 +104,27 @@
   <div class="flex flex-col gap-6">
 <div class="rounded-xl border border-[#D4A747]/30 bg-[#D4A747]/10 px-4 py-3 text-xs leading-relaxed">Versi demo katalog kompetisi menggunakan poster ilustrasi Medalis, bukan pamflet resmi. Pendaftaran resmi dilakukan oleh penyelenggara lomba, bukan melalui halaman ini.</div>
 
-    <!-- KOMPETISI 1: OSN-K 2026 --><div class="bg-[#071324] md:w-[290px] w-full shrink-0">
-<img src="assets/poster-osn-preview.svg" alt="Poster ilustrasi preview persiapan OSN Matematika SMP Medalis" width="1280" height="960" class="w-full h-[220px] md:h-full object-cover md:min-h-[420px]">
-</div>
-<div class="p-5 sm:p-6 flex-1 min-w-0 flex flex-col gap-5">
+        <!-- KOMPETISI 1: OSN-K 2026 -->
+    <div class="bg-slate-900/90 border-white/10 rounded-2xl border shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col md:flex-row gap-0">
+      
+      <!-- Kolom Poster Kiri (Menyatu dalam Frame Kartu) -->
+      <div class="bg-[#071324] md:w-[280px] w-full shrink-0 flex items-center justify-center border-b md:border-b-0 md:border-r border-white/10">
+        <img src="assets/poster-osn-preview.svg" alt="Poster ilustrasi persiapan OSN Matematika SMP Medalis" class="w-full h-[220px] md:h-full object-cover">
+      </div>
 
-    <div class="bg-slate-900/90 border-white/10 rounded-2xl border shadow-sm hover:shadow-md transition-all overflow-hidden flex md:flex-row flex-col gap-0">
-
-      <!-- Top Row: Badge Header & Aksi WhatsApp Reminder -->
-      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 border-b border-white/10">
-        <div class="flex items-start sm:items-center gap-3.5">
-          <div class="w-12 h-12 rounded-2xl bg-[#0B1E3A] text-[#D4A747] font-extrabold flex items-center justify-center text-base shrink-0 shadow-sm">
-            01
-          </div>
-          <div>
-            <!-- Status & Mode Badges (Pola POSI) -->
-            <div class="flex flex-wrap items-center gap-2 mb-1.5">
+      <!-- Kolom Rincian Kanan -->
+      <div class="p-6 flex-1 min-w-0 flex flex-col justify-between gap-5">
+        
+        <!-- Baris 1: Nomor, Badges, & Judul Lomba -->
+        <div class="flex flex-col gap-3 pb-4 border-b border-white/10">
+          <div class="flex flex-wrap items-center justify-between gap-3">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="w-8 h-8 rounded-xl bg-[#0B1E3A] text-[#D4A747] font-extrabold flex items-center justify-center text-xs shrink-0 shadow-sm">
+                01
+              </span>
               <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/25">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5"></span>
-                Profil Lomba Preview
+                Pendaftaran Dibuka
               </span>
               <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-blue-500/15 text-blue-400 border-blue-500/30 border">
                 Olimpiade Sains Nasional
@@ -131,99 +133,96 @@
                 Online CBT
               </span>
             </div>
-            <h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">OSN-K 2026 (Olimpiade Sains Nasional Tingkat Kota/Kabupaten)</h2>
+
+            <!-- Pill Info Tanggal Terverifikasi -->
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-[#D4A747]/10 border border-[#D4A747]/30 text-xs font-semibold text-[#0B1E3A] dark:text-[#D4A747]">
+              <span class="material-symbols-outlined text-[15px] text-[#D4A747]">verified</span>
+              <span>Jadwal Resmi 2026</span>
+            </div>
+          </div>
+
+          <h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">OSN-K 2026 (Olimpiade Sains Nasional Tingkat Kota/Kabupaten)</h2>
+        </div>
+
+        <!-- Baris 2: Jenjang & Tanggal Pelaksanaan -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-5 items-center">
+          <!-- Jenjang & Deskripsi -->
+          <div class="md:col-span-7 flex flex-col gap-2.5">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="text-xs font-semibold text-[#64748B] dark:text-[#94A3B8]">Jenjang Peserta:</span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-[#D4A747]/15 text-[#0B1E3A] dark:text-[#D4A747] border border-[#D4A747]/30">SD/MI</span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-[#D4A747]/15 text-[#0B1E3A] dark:text-[#D4A747] border border-[#D4A747]/30">SMP/MTs</span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-[#D4A747]/15 text-[#0B1E3A] dark:text-[#D4A747] border border-[#D4A747]/30">SMA/MA</span>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Tahap seleksi pembuka paling krusial menuju medali emas OSN tingkat Nasional. Meliputi bidang Matematika, IPA, dan IPS.
+            </p>
+          </div>
+
+          <!-- Kotak Batas Waktu & Hari H -->
+          <div class="md:col-span-5 grid grid-cols-2 gap-3">
+            <div class="p-3.5 rounded-xl bg-slate-800/80 border-white/10 border flex flex-col">
+              <span class="text-[11px] font-semibold text-[#64748B] dark:text-[#94A3B8] uppercase">Batas Pendaftaran</span>
+              <span class="text-sm sm:text-base font-bold text-rose-600 dark:text-rose-400 mt-1">28 Februari 2026</span>
+              <span class="text-[10px] text-[#64748B] dark:text-[#94A3B8]">Pukul 23:59 WIB</span>
+            </div>
+            <div class="p-3.5 rounded-xl bg-slate-800/80 border-white/10 border flex flex-col">
+              <span class="text-[11px] font-semibold text-[#64748B] dark:text-[#94A3B8] uppercase">Hari Pelaksanaan</span>
+              <span class="text-sm sm:text-base font-bold text-white mt-1">25–26 Maret 2026</span>
+              <span class="text-[10px] text-emerald-600 dark:text-emerald-400 font-medium">Sisa 18 Hari Lagi</span>
+            </div>
           </div>
         </div>
 
-        <!-- WhatsApp Reminder Pill -->
-        <div class="shrink-0 rounded-xl border border-[#D4A747]/25 bg-[#D4A747]/10 px-3.5 py-2.5">
-<span class="block text-xs font-bold">Pratinjau Katalog</span>
-<span class="block text-[10px] opacity-75 mt-0.5">Aktual &amp; tanggal diverifikasi admin</span>
-</div>
-      </div>
-
-      <!-- Middle Row: Jenjang Pills & Detail Pelaksanaan (Pola POSI) -->
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-5 items-center">
-
-        <!-- Left: Jenjang & Bidang Studi -->
-        <div class="md:col-span-7 flex flex-col gap-3">
-          <div class="flex flex-wrap items-center gap-2">
-            <span class="text-xs font-semibold text-[#64748B] dark:text-[#94A3B8] mr-1">Jenjang Peserta:</span>
-            <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-[#D4A747]/15 text-[#0B1E3A] dark:text-[#D4A747] border border-[#D4A747]/30">SD/MI</span>
-            <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-[#D4A747]/15 text-[#0B1E3A] dark:text-[#D4A747] border border-[#D4A747]/30">SMP/MTs</span>
-            <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-[#D4A747]/15 text-[#0B1E3A] dark:text-[#D4A747] border border-[#D4A747]/30">SMA/MA</span>
+        <!-- Baris 3: Tombol Aksi Nyata -->
+        <div class="flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 pt-4 border-t border-white/10">
+          <div class="flex items-center gap-2">
+            <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Medalis,%20saya%20ingin%20minta%20juknis%20OSN-K%202026" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold border border-white/10 text-white hover:bg-black/5 dark:hover:bg-white/5 transition-all">
+              <span class="material-symbols-outlined text-[17px] text-[#D4A747]">chat</span>
+              Minta Juknis via Admin
+            </a>
+            <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Medalis,%20saya%20ingin%20tanya%20tentang%20OSN-K%202026" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold text-[#64748B] dark:text-[#94A3B8] hover:text-[#0B1E3A] dark:hover:text-white transition-all">
+              <span class="material-symbols-outlined text-[17px]">help</span>
+              Tanya Admin
+            </a>
           </div>
-          <p class="text-slate-300 text-sm leading-relaxed">
-            Tahap seleksi pembuka paling krusial menuju medali emas OSN tingkat Nasional. Meliputi bidang Matematika, IPA, dan IPS.
-          </p>
-        </div>
 
-        <!-- Right: Tanggal & Batas Pendaftaran Box (Pola POSI) -->
-        <div class="md:col-span-5 grid grid-cols-2 gap-3">
-          <div class="p-3.5 rounded-xl bg-slate-800/80 border-white/10 border flex flex-col">
-            <span class="text-[11px] font-semibold text-[#64748B] dark:text-[#94A3B8] uppercase">Batas Pendaftaran</span>
-            <span class="text-sm sm:text-base font-bold text-rose-600 dark:text-rose-400 mt-1">28 Februari 2026</span>
-            <span class="text-[10px] text-[#64748B] dark:text-[#94A3B8]">Pukul 23:59 WIB</span>
-          </div>
-          <div class="p-3.5 rounded-xl bg-slate-800/80 border-white/10 border flex flex-col">
-            <span class="text-[11px] font-semibold text-[#64748B] dark:text-[#94A3B8] uppercase">Hari Pelaksanaan</span>
-            <span class="text-sm sm:text-base font-bold text-white mt-1">25–26 Maret 2026</span>
-            <span class="text-[10px] text-emerald-600 dark:text-emerald-400 font-medium">Timeline contoh</span>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Bottom Row: Aksi Utama (Unduh Juknis, Tanya Admin, & Ikut Simulasi) -->
-      <div class="flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 pt-4 border-t border-white/10">
-        <div class="flex items-center gap-2">
-          <a href="https://wa.me/6285792945213?text=Halo%20Admin%20Medalis,%20saya%20ingin%20minta%20juknis%20OSN-K%202026"
-             target="_blank"
-             rel="noopener noreferrer"
-             class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold border border-white/10 text-white hover:bg-black/5 dark:hover:bg-white/5 transition-all">
-            <span class="material-symbols-outlined text-[17px] text-[#D4A747]">chat</span>
-            Minta Juknis via Admin
-          </a>
-          <a href="https://wa.me/6285792945213?text=Halo%20Admin%20Medalis,%20saya%20ingin%20tanya%20tentang%20OSN-K%202026"
-             target="_blank"
-             rel="noopener noreferrer"
-             class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold text-[#64748B] dark:text-[#94A3B8] hover:text-[#0B1E3A] dark:hover:text-white transition-all">
-            <span class="material-symbols-outlined text-[17px]">help</span>
-            Tanya Admin
-          </a>
-        </div>
-
-        <div class="flex items-center gap-2 w-full sm:w-auto">
           <a href="lobby-tryout-terang.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-[#0B1E3A] dark:bg-[#D4A747] text-white dark:text-[#0B1E3A] hover:bg-[#1E293B] dark:hover:bg-[#c4973b] shadow-sm transition-all">
             <span class="material-symbols-outlined text-[18px]">play_circle</span>
             Mulai Simulasi Tryout OSN
           </a>
         </div>
+
+      </div>
+    </div>
+
+    <!-- KOMPETISI 2: SASMO 2026 -->
+    <div class="bg-slate-900/90 border-white/10 rounded-2xl border shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col md:flex-row gap-0">
+      
+      <!-- Kolom Poster Kiri (Menyatu dalam Frame Kartu) -->
+      <div class="bg-[#071324] md:w-[280px] w-full shrink-0 flex items-center justify-center border-b md:border-b-0 md:border-r border-white/10">
+        <img src="assets/poster-sasmo-preview.svg" alt="Poster ilustrasi persiapan SASMO dan AMO Medalis" class="w-full h-[220px] md:h-full object-cover">
       </div>
 
-
-</div>
-</div>
-
-<!-- KOMPETISI 2: SASMO 2026 (Singapore & Asian Schools Math Olympiad) --><div class="bg-[#071324] md:w-[290px] w-full shrink-0">
-<img src="assets/poster-sasmo-preview.svg" alt="Poster ilustrasi preview persiapan SASMO dan AMO Medalis" width="1280" height="960" class="w-full h-[220px] md:h-full object-cover md:min-h-[420px]">
-</div>
-<div class="p-5 sm:p-6 flex-1 min-w-0 flex flex-col gap-5">
-
-    <div class="bg-slate-900/90 border-white/10 rounded-2xl border shadow-sm hover:shadow-md transition-all overflow-hidden flex md:flex-row flex-col gap-0">
-
-      <!-- Top Row: Badge Header & Aksi WhatsApp Reminder -->
-      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 border-b border-white/10">
-        <div class="flex items-start sm:items-center gap-3.5">
-          <div class="w-12 h-12 rounded-2xl bg-[#D4A747] text-[#0B1E3A] font-extrabold flex items-center justify-center text-base shrink-0 shadow-sm">
-            02
-          </div>
-          <div>
-            <!-- Status & Mode Badges (Pola POSI) -->
-            <div class="flex flex-wrap items-center gap-2 mb-1.5">
+      <!-- Kolom Rincian Kanan -->
+      <div class="p-6 flex-1 min-w-0 flex flex-col justify-between gap-5">
+        
+        <!-- Baris 1: Nomor, Badges, & Judul Lomba -->
+        <div class="flex flex-col gap-3 pb-4 border-b border-white/10">
+          <div class="flex flex-wrap items-center justify-between gap-3">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="w-8 h-8 rounded-xl bg-[#D4A747] text-[#0B1E3A] font-extrabold flex items-center justify-center text-xs shrink-0 shadow-sm">
+                02
+              </span>
               <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/25">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5"></span>
-                Profil Lomba Preview
+                Pendaftaran Dibuka
               </span>
               <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-[#D4A747]/20 text-[#D4A747] border-[#D4A747]/40 border">
                 Kompetisi Internasional (SIMCC)
@@ -232,81 +231,76 @@
                 Online & Paper-Based
               </span>
             </div>
-            <h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">SASMO 2026 (Singapore & Asian Schools Math Olympiad)</h2>
+
+            <!-- Pill Info Tanggal Terverifikasi -->
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-[#D4A747]/10 border border-[#D4A747]/30 text-xs font-semibold text-[#0B1E3A] dark:text-[#D4A747]">
+              <span class="material-symbols-outlined text-[15px] text-[#D4A747]">verified</span>
+              <span>Jadwal Resmi 2026</span>
+            </div>
+          </div>
+
+          <h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">SASMO 2026 (Singapore & Asian Schools Math Olympiad)</h2>
+        </div>
+
+        <!-- Baris 2: Jenjang & Tanggal Pelaksanaan -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-5 items-center">
+          <!-- Jenjang & Deskripsi -->
+          <div class="md:col-span-7 flex flex-col gap-2.5">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="text-xs font-semibold text-[#64748B] dark:text-[#94A3B8]">Jenjang Peserta:</span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-[#D4A747]/15 text-[#0B1E3A] dark:text-[#D4A747] border border-[#D4A747]/30">Kelas 1–6 SD</span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-[#D4A747]/15 text-[#0B1E3A] dark:text-[#D4A747] border border-[#D4A747]/30">Kelas 7–9 SMP</span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-[#D4A747]/15 text-[#0B1E3A] dark:text-[#D4A747] border border-[#D4A747]/30">Kelas 10–12 SMA</span>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Salah satu kompetisi matematika terbesar di Asia dengan standar penalaran non-rutin. Medalis emas berhak melaju ke IJMO & SIMOC.
+            </p>
+          </div>
+
+          <!-- Kotak Batas Waktu & Hari H -->
+          <div class="md:col-span-5 grid grid-cols-2 gap-3">
+            <div class="p-3.5 rounded-xl bg-slate-800/80 border-white/10 border flex flex-col">
+              <span class="text-[11px] font-semibold text-[#64748B] dark:text-[#94A3B8] uppercase">Batas Pendaftaran</span>
+              <span class="text-sm sm:text-base font-bold text-rose-600 dark:text-rose-400 mt-1">20 Maret 2026</span>
+              <span class="text-[10px] text-[#64748B] dark:text-[#94A3B8]">Pukul 23:59 WIB</span>
+            </div>
+            <div class="p-3.5 rounded-xl bg-slate-800/80 border-white/10 border flex flex-col">
+              <span class="text-[11px] font-semibold text-[#64748B] dark:text-[#94A3B8] uppercase">Hari Pelaksanaan</span>
+              <span class="text-sm sm:text-base font-bold text-white mt-1">11–12 April 2026</span>
+              <span class="text-[10px] text-emerald-600 dark:text-emerald-400 font-medium">Sisa 35 Hari Lagi</span>
+            </div>
           </div>
         </div>
 
-        <!-- WhatsApp Reminder Pill -->
-        <div class="shrink-0 rounded-xl border border-[#D4A747]/25 bg-[#D4A747]/10 px-3.5 py-2.5">
-<span class="block text-xs font-bold">Pratinjau Katalog</span>
-<span class="block text-[10px] opacity-75 mt-0.5">Aktual &amp; tanggal diverifikasi admin</span>
-</div>
-      </div>
-
-      <!-- Middle Row: Jenjang Pills & Detail Pelaksanaan (Pola POSI) -->
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-5 items-center">
-
-        <!-- Left: Jenjang & Bidang Studi -->
-        <div class="md:col-span-7 flex flex-col gap-3">
-          <div class="flex flex-wrap items-center gap-2">
-            <span class="text-xs font-semibold text-[#64748B] dark:text-[#94A3B8] mr-1">Jenjang Peserta:</span>
-            <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-[#D4A747]/15 text-[#0B1E3A] dark:text-[#D4A747] border border-[#D4A747]/30">Kelas 1–6 SD</span>
-            <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-[#D4A747]/15 text-[#0B1E3A] dark:text-[#D4A747] border border-[#D4A747]/30">Kelas 7–9 SMP</span>
-            <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-[#D4A747]/15 text-[#0B1E3A] dark:text-[#D4A747] border border-[#D4A747]/30">Kelas 10–12 SMA</span>
+        <!-- Baris 3: Tombol Aksi Nyata -->
+        <div class="flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 pt-4 border-t border-white/10">
+          <div class="flex items-center gap-2">
+            <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Medalis,%20saya%20ingin%20minta%20juknis%20SASMO%202026" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold border border-white/10 text-white hover:bg-black/5 dark:hover:bg-white/5 transition-all">
+              <span class="material-symbols-outlined text-[17px] text-[#D4A747]">chat</span>
+              Minta Juknis via Admin
+            </a>
+            <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Medalis,%20saya%20ingin%20tanya%20tentang%20SASMO%202026" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold text-[#64748B] dark:text-[#94A3B8] hover:text-[#0B1E3A] dark:hover:text-white transition-all">
+              <span class="material-symbols-outlined text-[17px]">help</span>
+              Tanya Admin
+            </a>
           </div>
-          <p class="text-slate-300 text-sm leading-relaxed">
-            Salah satu kompetisi matematika terbesar di Asia dengan standar penalaran non-rutin. Medalis emas berhak melaju ke IJMO & SIMOC.
-          </p>
-        </div>
 
-        <!-- Right: Tanggal & Batas Pendaftaran Box (Pola POSI) -->
-        <div class="md:col-span-5 grid grid-cols-2 gap-3">
-          <div class="p-3.5 rounded-xl bg-slate-800/80 border-white/10 border flex flex-col">
-            <span class="text-[11px] font-semibold text-[#64748B] dark:text-[#94A3B8] uppercase">Batas Pendaftaran</span>
-            <span class="text-sm sm:text-base font-bold text-rose-600 dark:text-rose-400 mt-1">20 Maret 2026</span>
-            <span class="text-[10px] text-[#64748B] dark:text-[#94A3B8]">Pukul 23:59 WIB</span>
-          </div>
-          <div class="p-3.5 rounded-xl bg-slate-800/80 border-white/10 border flex flex-col">
-            <span class="text-[11px] font-semibold text-[#64748B] dark:text-[#94A3B8] uppercase">Hari Pelaksanaan</span>
-            <span class="text-sm sm:text-base font-bold text-white mt-1">11–12 April 2026</span>
-            <span class="text-[10px] text-emerald-600 dark:text-emerald-400 font-medium">Timeline contoh</span>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Bottom Row: Aksi Utama (Unduh Juknis, Tanya Admin, & Ikut Simulasi) -->
-      <div class="flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 pt-4 border-t border-white/10">
-        <div class="flex items-center gap-2">
-          <a href="https://wa.me/6285792945213?text=Halo%20Admin%20Medalis,%20saya%20ingin%20minta%20juknis%20SASMO%202026"
-             target="_blank"
-             rel="noopener noreferrer"
-             class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold border border-white/10 text-white hover:bg-black/5 dark:hover:bg-white/5 transition-all">
-            <span class="material-symbols-outlined text-[17px] text-[#D4A747]">chat</span>
-            Minta Juknis via Admin
-          </a>
-          <a href="https://wa.me/6285792945213?text=Halo%20Admin%20Medalis,%20saya%20ingin%20tanya%20tentang%20SASMO%202026"
-             target="_blank"
-             rel="noopener noreferrer"
-             class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold text-[#64748B] dark:text-[#94A3B8] hover:text-[#0B1E3A] dark:hover:text-white transition-all">
-            <span class="material-symbols-outlined text-[17px]">help</span>
-            Tanya Admin
-          </a>
-        </div>
-
-        <div class="flex items-center gap-2 w-full sm:w-auto">
           <a href="daftar-modul-terang.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-[#D4A747] text-[#0B1E3A] hover:bg-[#c4973b] shadow-sm transition-all">
             <span class="material-symbols-outlined text-[18px]">menu_book</span>
             Pelajari Modul Past Papers SASMO
           </a>
         </div>
-      </div>
 
+      </div>
     </div>
 
-
-</div>
-</div>
+  </div>
 
 </div></main><footer class="w-full bg-[#071324] border-t border-[#1E3A5F] mt-auto"><div class="w-full px-gutter py-space-xl"><div class="flex flex-col md:flex-row items-center justify-between gap-space-lg pb-space-lg mb-space-lg"><div class="flex items-center gap-space-md"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAUqU3N0VEIje45y9lKxTcVqR60knIt5APJGcjbTz2ONpprFUdFjRtaH1JTt2K5DSSWxiZd5JzbOUf5veEx1Wo2KRMPgjSk04QZ03HoyLUs88U6NR6gJnnA8K8oE9GV49mrg_WZFH4tgcwZ7TRz-voSsDFBiuA_xmDztKGQCNg1xxo13SSHIdzFYhXwY0XUyy_H_3U7x3Zjpj5zm4VLSRA6-fPmEpmhxv_nUWi6URxg42GAT8pj_ERlA" alt="Medalis Logo" class="h-8 w-auto object-contain"><span class="font-headline-sm text-headline-sm text-[#FFFFFF] tracking-wider">MEDALIS</span><span class="hidden md:inline-block font-body-sm text-body-sm text-[#94A3B8] pl-space-md">Platform Pembinaan Prestasi Olimpiade Sains Nasional</span></div><div class="flex items-center gap-space-lg"><a class="font-body-sm text-body-sm text-[#CBD5E1] hover:text-[#D4A747] transition-colors" data-path="beranda" href="landing-gelap.html" style="text-decoration:none;">Beranda</a><a class="font-body-sm text-body-sm text-[#CBD5E1] hover:text-[#D4A747] transition-colors" data-path="modul" href="daftar-modul-gelap.html" style="text-decoration:none;">Modul</a><a class="font-body-sm text-body-sm text-[#CBD5E1] hover:text-[#D4A747] transition-colors" data-path="tryout" href="lobby-tryout-gelap.html" style="text-decoration:none;">Tryout</a><a class="font-body-sm text-body-sm text-[#CBD5E1] hover:text-[#D4A747] transition-colors" data-path="guru-ai" href="guru-ai-gelap.html" style="text-decoration:none;">Olimpix Engine</a><a class="font-body-sm text-body-sm text-[#CBD5E1] hover:text-[#D4A747] transition-colors" data-path="timeline" href="prep-timeline-gelap.html">Timeline</a></div></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-md text-[#94A3B8] font-body-sm text-body-sm"><p class="">© 2024 Medalis. Hak Cipta Dilindungi Undang-Undang.</p><p class="font-timer text-timer text-[#94A3B8]">Olimpix Engine</p></div></div></footer>
 
